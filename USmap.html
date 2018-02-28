@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>US election map</title>
+  <style>
+  .boundary {
+    fill: #ddd;
+    stroke: #888;
+    stroke-linejoin: round;
+  }
+  svg {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+  }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+
+  <script>
+
+      var height = 950,
+          width = 1320,
+          projection = d3.geoAlbers(),
+          USdata = void 0;
+
+      // Special d3 helper that converts geo coordinates to paths
+      // based on a projection
+      var path = d3.geoPath().projection(projection);
+
+      var svg = d3.select("#map")
+          .append("svg")
+          .attr("width", width)
+          .attr("height", height);
+
+      d3.json('cb_2016_us_county_20m.json', function(error, data) { //get the data
+        if(error) return;
+
+        console.log('USdata', data);
+        var US = topojson.feature(data, data.objects.cb_2016_us_county_20m); //find geometries in JSON file
+
+        // Setup the scale and translate
+        var b, s, t;
+        projection.scale(1).translate([0, 0]); //setup scale and translation
+        var b = path.bounds(US); //box of min/max coordinates of geographic data
+        var widthMap =b[1][0] - b[0][0];
+        var heightMap = b[1][1] - b[0][1];
+        var maxEscalat = Math.max( widthMap / width, heightMap / height);
+
+        var s = .95 / maxEscalat; //scales every state with svg sizes .95 to leave some margin
+        var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]; //return the map to the center of the screen
+        projection.scale(s).translate(t); //reset scale and translation
+
+        var map = svg.append('g').attr('class', 'boundary');
+        USdata = map.selectAll('path').data(US.features);
+
+        //Enter
+        USdata.enter()
+           .append('path')
+           .attr('d', path);
+
+        //Update
+        USdata.attr('fill', '#eee');
+
+        //Exit
+        USdata.exit().remove();
+      });
+
+  </script>
+</body>

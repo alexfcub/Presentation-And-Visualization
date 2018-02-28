@@ -20,7 +20,8 @@
   <div id="map"></div>
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
-
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
   <script>
 
       var height = 950,
@@ -37,12 +38,60 @@
           .attr("width", width)
           .attr("height", height);
 
-      d3.json('cb_2016_us_county_20m.json', function(error, data) { //get the data
-        if(error) return;
 
+      /* The scale */   
+    var color = d3.scaleThreshold() 
+      .domain([0.125,0.25,0.375,0.5,0.625,0.75,0.85])
+      .range(['#2171b5','#6baed6','#bdd7e7','#eff3ff','#fee5d9','#fcae91','#fb6a4a','#cb181d'].reverse()) //extracted from d3.schemeBuPu
+
+    var labels = ['> 85% Republican vote','75% to 85% Republican vote', '62.5% to 75% Republican vote', '50% to 62.5% Republican vote', '50% to 62.5% Democrat vote', '62.5% to 75% Democrat vote', '75% to 85% Democrat vote', '> 85% Democrat vote']
+      /* The legend */
+    svg.append("g")
+      .attr("class", "legendQuant")
+      .attr("transform", "translate(20,300)");
+
+    var legend = d3.legendColor()
+      .labelFormat(d3.format(".0f")) //0 decimals
+      .labels(labels)
+      .scale(color) //reference to our Threshold scale
+    
+    svg.select(".legendQuant")
+      .call(legend);
+    /* end of legend */
+
+      d3.queue()
+        .defer(d3.json, 'cb_2016_us_county_20m.json')
+        .defer(d3.csv, './clean_data.csv')
+        .await(function(error, topo, data) {
+          process(topo, data)
+        })
+
+      function process(topo, data) {
         console.log('USdata', data);
-        var US = topojson.feature(data, data.objects.cb_2016_us_county_20m); //find geometries in JSON file
 
+        topo.objects['cb_2016_us_county_20m']
+          .geometries.forEach(function(d) {
+            d.id = d.properties.NAME;
+          });
+
+        data.forEach( function(d) {
+            d['county'] = d['county'];
+            d['Democrat'] = +d['Democrat'];
+            d['Republican'] = +d['Republican'];
+            d['proportion'] = +d['proportion'];
+            d['democratWin'] = d['democratWin'];
+
+        });
+        var dataKV = data.reduce(function(res,el) {
+          res[el.county] = el;
+          return res;
+        },{});
+
+        console.log("data",data); //cheat variable
+    console.log("dataKV",dataKV); //cheat variable
+        var US = topojson.feature(topo, topo.objects.cb_2016_us_county_20m); //find geometries in JSON file
+
+        console.log("countys", US);
         // Setup the scale and translate
         var b, s, t;
         projection.scale(1).translate([0, 0]); //setup scale and translation
@@ -55,20 +104,44 @@
         var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]; //return the map to the center of the screen
         projection.scale(s).translate(t); //reset scale and translation
 
-        var map = svg.append('g').attr('class', 'boundary');
+        var zoom = d3.zoom()
+          .scaleExtent([0.1,4]) //from 10% to 400%
+          .on("zoom",zoomed)
+
+        var map = svg.append('g')
+          .attr('class', 'boundary')
+          .call(zoom);
+
         USdata = map.selectAll('path').data(US.features);
+
+        function zoomed(){
+          map.attr("transform",d3.event.transform);
+        }
 
         //Enter
         USdata.enter()
            .append('path')
-           .attr('d', path);
+           .attr('class', "Countys")
+           .attr('d', path)
+           .attr('id',function(d){return "cid-" +d.id
+           })
+           .attr("fill", function(d) {
+            console.log(d.id)
+                try {
+                  return color(dataKV[d.id].proportion)
+                }
+                catch(err){
+                  return "#ffffff";
+                }
+            });
 
         //Update
         USdata.attr('fill', '#eee');
 
         //Exit
         USdata.exit().remove();
-      });
+      }
+      
 
   </script>
 </body>

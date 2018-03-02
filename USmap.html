@@ -12,19 +12,19 @@
     border-color: #ccc;
   }
   #tooltip{
-  border-radius: 5px;
-  border: 2px solid black;
-	position: absolute;
-	z-index: 2;
-	height:15px;
-	background: white;
-	color:#000
-	font-size: 1em;
-	padding:5px;
-	top:-1.5em;
-	left:-5em;
-	font-family: Helvetica, Arial, sans-serif;
-  white-space: nowrap;
+    border-radius: 5px;
+    border: 2px solid black;
+  	position: absolute;
+  	z-index: 2;
+  	height:15px;
+  	background: white;
+  	color:#000
+  	font-size: 1em;
+  	padding:5px;
+  	top:-1.5em;
+  	left:-5em;
+  	font-family: Helvetica, Arial, sans-serif;
+    white-space: nowrap;
  }
 
   #infobox{
@@ -73,22 +73,22 @@
     var selected = false;
     var id = '';
 
-      var height = 950,
-          width = 1320,
-          projection = d3.geoAlbers(),
-          USdata = void 0;
+    var height = 950,
+        width = 1320,
+        projection = d3.geoAlbers(),
+        USdata = void 0;
 
-      // Special d3 helper that converts geo coordinates to paths
-      // based on a projection
-      var path = d3.geoPath().projection(projection);
+    // Special d3 helper that converts geo coordinates to paths
+    // based on a projection
+    var path = d3.geoPath().projection(projection);
 
-      var svg = d3.select("#map")
-          .append("svg")
-          .attr("width", width)
-          .attr("height", height);
+    var svg = d3.select("#map")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
 
 
-      /* The scale */   
+    /* The scale */   
     var color = d3.scaleThreshold() 
       .domain([0.125,0.25,0.375,0.5,0.625,0.75,0.85])
       .range(['#2171b5','#6baed6','#bdd7e7','#eff3ff','#fee5d9','#fcae91','#fb6a4a','#cb181d'].reverse()) //extracted from d3.schemeBuPu
@@ -108,128 +108,131 @@
       .call(legend);
     /* end of legend */
 
-      d3.queue()
-        .defer(d3.json, 'cb_2016_us_county_20m.json')
-        .defer(d3.csv, './clean_data.csv')
-        .await(function(error, topo, data) {
-          process(topo, data)
-        })
+    d3.queue()
+      .defer(d3.json, 'cb_2016_us_county_20m.json')
+      .defer(d3.csv, './clean_data.csv')
+      .await(function(error, topo, data) {
+        process(topo, data)
+      })
 
-      function process(topo, data) {
-        console.log('USdata', data);
+    function process(topo, data) {
+      console.log('USdata', data);
 
-        topo.objects['cb_2016_us_county_20m']
-          .geometries.forEach(function(d) {
-            d.id = d.properties.NAME;
-          });
-
-        data.forEach( function(d) {
-            d['county'] = d['county'];
-            d['Democrat'] = +d['Democrat'];
-            d['Republican'] = +d['Republican'];
-            d['proportion'] = +d['proportion'];
-            d['democratWin'] = d['democratWin'];
-
+      topo.objects['cb_2016_us_county_20m']
+        .geometries.forEach(function(d) {
+          d.id = d.properties.NAME;
         });
-        var dataKV = data.reduce(function(res,el) {
-          res[el.county] = el;
-          return res;
-        },{});
 
-        console.log("data",data); //cheat variable
-    console.log("dataKV",dataKV); //cheat variable
-        var US = topojson.feature(topo, topo.objects.cb_2016_us_county_20m); //find geometries in JSON file
+      data.forEach( function(d) {
+          d['county'] = d['county'];
+          d['Democrat'] = +d['Democrat'];
+          d['Republican'] = +d['Republican'];
+          d['proportion'] = +d['proportion'];
+          d['democratWin'] = d['democratWin'];
 
-        console.log("countys", US);
-        // Setup the scale and translate
-        var b, s, t;
-        projection.scale(1).translate([0, 0]); //setup scale and translation
-        var b = path.bounds(US); //box of min/max coordinates of geographic data
-        var widthMap =b[1][0] - b[0][0];
-        var heightMap = b[1][1] - b[0][1];
-        var maxEscalat = Math.max( widthMap / width, heightMap / height);
+      });
+      var dataKV = data.reduce(function(res,el) {
+        res[el.county] = el;
+        return res;
+      },{});
 
-        var s = .95 / maxEscalat; //scales every state with svg sizes .95 to leave some margin
-        var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]; //return the map to the center of the screen
-        projection.scale(s).translate(t); //reset scale and translation
+      console.log("data",data); //cheat variable
+      console.log("dataKV",dataKV); //cheat variable
+      var US = topojson.feature(topo, topo.objects.cb_2016_us_county_20m); //find geometries in JSON file
 
-        var zoom = d3.zoom()
-          .scaleExtent([0.1,4]) //from 10% to 400%
-          .on("zoom",zoomed)
+      console.log("countys", US);
+      // Setup the scale and translate
+      var b, s, t;
+      projection.scale(1).translate([0, 0]); //setup scale and translation
+      var b = path.bounds(US); //box of min/max coordinates of geographic data
+      var widthMap =b[1][0] - b[0][0];
+      var heightMap = b[1][1] - b[0][1];
+      var maxEscalat = Math.max( widthMap / width, heightMap / height);
 
-        var map = svg.append('g')
-          .attr('class', 'boundary')
-          .call(zoom);
+      var s = .95 / maxEscalat; //scales every state with svg sizes .95 to leave some margin
+      var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]; //return the map to the center of the screen
+      projection.scale(s).translate(t); //reset scale and translation
 
-        USdata = map.selectAll('path').data(US.features);
+      var zoom = d3.zoom()
+        .scaleExtent([0.1,4]) //from 10% to 400%
+        .on("zoom",zoomed)
 
-        function zoomed(){
-          map.attr("transform",d3.event.transform);
+      var map = svg.append('g')
+        .attr('class', 'boundary')
+        .call(zoom);
+
+      USdata = map.selectAll('path').data(US.features);
+
+      function zoomed(){
+        map.attr("transform",d3.event.transform);
+      }
+
+      var focus = function(d){
+        if(dataKV[d.id]) {
+          var div = document.getElementById('tooltip');
+          div.style.display="block"; //this will show the element
+          div.style.left = event.pageX + 'px'; //we position it near the area
+          div.style.top = event.pageY + 'px';
+          div.style.width = "auto";
+          div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].proportion>0.5 ? Math.round(dataKV[d.id].proportion*100) : Math.round((1-dataKV[d.id].proportion)*100)) + '%';//we fill the tooltip with the county's name
         }
+  		  
+		  };
 
-        var focus = function(d){
-		  var div = document.getElementById('tooltip');
-  		  div.style.display="block"; //this will show the element
-		  div.style.left = event.pageX + 'px'; //we position it near the area
-		  div.style.top = event.pageY + 'px';
-      div.style.width = "auto";
-		  div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].proportion>0.5 ? Math.round(dataKV[d.id].proportion*100) : Math.round((1-dataKV[d.id].proportion)*100)) + '%';//we fill the tooltip with the county's name
-		};
+  		var focusout = function(d){
+  			document.getElementById('tooltip')
+  				.style.display="none"; //this will hide the element
+  		}
 
-		var focusout = function(d){
-			document.getElementById('tooltip')
-				.style.display="none"; //this will hide the element
-		}
+      var infobox = function(d){
+        if(d.id == id) selected = !selected;
+        else selected = true;
+        id = d.id;
+        if(selected) {
+          d3.selectAll('path').attr('fill-opacity',0.2) //all regions decrease opacity
+          d3.selectAll('[id="cid-' + d.id +'"]')          //our specific region
+            .transition().duration(500)         //the change is done in 500ms
+            .attr('fill-opacity',1);          //mantains opacity
 
-        var infobox = function(d){
-          if(d.id == id) selected = !selected;
-          else selected = true;
-          id = d.id;
-          if(selected) {
-            d3.selectAll('path').attr('fill-opacity',0.2) //all regions decrease opacity
-            d3.select('#' + 'cid-'+d.id)          //our specific region
-              .transition().duration(500)         //the change is done in 500ms
-              .attr('fill-opacity',1);          //mantains opacity
-
-            var div = document.getElementById('infobox');
-            div.style.display="block"
-            //div.style.background="#ddf";
-            div.style.borderColor = "black";
-            div.innerHTML = '<h2>'+dataKV[d.id].county+' votes' + '</h2>'+
-            '<dl>'+
-            '<dt>Democrats: </dt>'+
-            '<dd>'+dataKV[d.id].Democrat+'</dd>'+
-            '<dt>Republicans: </dt>'+
-            '<dd>'+dataKV[d.id].Republican+'</dd>';
-            }
-            else {
-              d3.selectAll('path').attr('fill-opacity',1);
-              var div = document.getElementById('infobox');
-              div.style.display = "none";
-            }
-          }
+          var div = document.getElementById('infobox');
+          div.style.display="block"
+          //div.style.background="#ddf";
+          div.style.borderColor = "black";
+          div.innerHTML = '<h2>'+dataKV[d.id].county+' votes' + '</h2>'+
+          '<dl>'+
+          '<dt>Democrats: </dt>'+
+          '<dd>'+dataKV[d.id].Democrat+'</dd>'+
+          '<dt>Republicans: </dt>'+
+          '<dd>'+dataKV[d.id].Republican+'</dd>';
+        }
+        else {
+          d3.selectAll('path').attr('fill-opacity',1);
+          var div = document.getElementById('infobox');
+          div.style.display = "none";
+        }
+      }
 
 
-        //Enter
-        USdata.enter()
-        .append('path')
-           .attr('class', "Countys")
-           .attr('d', path)
-           .attr('id',function(d){return "cid-" +d.id})
-           .on("mouseover",focus)
-  		     .on("focus",focus)
-  		     .on("mouseout",focusout)
-  		     .on("blur",focusout)
-           .on("click",infobox)
-           .attr("fill", function(d) {
-            console.log(d.id)
-                try {
-                  return color(dataKV[d.id].proportion)
-                }
-                catch(err){
-                  return "#ffffff";
-                }
-            });
+      //Enter
+      USdata.enter()
+         .append('path')
+         .attr('class', "Countys")
+         .attr('d', path)
+         .attr('id',function(d){return "cid-" +d.id})
+         .on("mouseover",focus)
+  	     .on("focus",focus)
+  	     .on("mouseout",focusout)
+  	     .on("blur",focusout)
+         .on("click",infobox)
+         .attr("fill", function(d) {
+          console.log(d.id)
+              try {
+                return color(dataKV[d.id].proportion)
+              }
+              catch(err){
+                return "#ffffff";
+              }
+          });
 
         //Update
         USdata.attr('fill', '#eee');

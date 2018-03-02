@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
-<style>
+<head>
+  <meta charset="utf-8">
+  <title>US election map</title>
+  <style>
   .boundary {
     fill: #ddd;
     stroke: #888;
@@ -11,53 +14,13 @@
     border-width: 1px;
     border-color: #ccc;
   }
-  #tooltip{
-	position: absolute;
-	z-index: 2;
-	height:1.5em;
-	background:#ccf;
-	color:#000
-	font-size: 1em;
-	padding:5px;
-	top:-1.5em;
-	left:-5em;
-	font-family: Helvetica, Arial, sans-serif;
- }
-
-  #infobox{
-	position:absolute;
-	height:200px;
-	width:150px;
-	top:50px;
-	left:850px;
-	z-index: 2;
-	background:#fff;
-	color:#000;
-	font-size: 1em;
-	padding:5px;
-	font-family: Helvetica, Arial, sans-serif;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #ccc;
-  }
-   #infobox dt {
-      float:left;
-   }
-
   </style>
-<head>
-  <meta charset="utf-8">
-  <title>US election map</title>
 </head>
 <body>
   <div id="map"></div>
-  <div id="tooltip"></div>
-  <div id="map"></div>
-  <div id="infobox"></div>
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
-  <script src="http://d3js.org/queue.v1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
+
   <script>
 
       var height = 950,
@@ -74,60 +37,12 @@
           .attr("width", width)
           .attr("height", height);
 
+      d3.json('cb_2016_us_county_20m.json', function(error, data) { //get the data
+        if(error) return;
 
-      /* The scale */   
-    var color = d3.scaleThreshold() 
-      .domain([0.125,0.25,0.375,0.5,0.625,0.75,0.85])
-      .range(['#2171b5','#6baed6','#bdd7e7','#eff3ff','#fee5d9','#fcae91','#fb6a4a','#cb181d'].reverse()) //extracted from d3.schemeBuPu
-
-    var labels = ['> 85% Republican vote','75% to 85% Republican vote', '62.5% to 75% Republican vote', '50% to 62.5% Republican vote', '50% to 62.5% Democrat vote', '62.5% to 75% Democrat vote', '75% to 85% Democrat vote', '> 85% Democrat vote']
-      /* The legend */
-    svg.append("g")
-      .attr("class", "legendQuant")
-      .attr("transform", "translate(20,300)");
-
-    var legend = d3.legendColor()
-      .labelFormat(d3.format(".0f")) //0 decimals
-      .labels(labels)
-      .scale(color) //reference to our Threshold scale
-    
-    svg.select(".legendQuant")
-      .call(legend);
-    /* end of legend */
-
-      d3.queue()
-        .defer(d3.json, 'cb_2016_us_county_20m.json')
-        .defer(d3.csv, './clean_data.csv')
-        .await(function(error, topo, data) {
-          process(topo, data)
-        })
-
-      function process(topo, data) {
         console.log('USdata', data);
+        var US = topojson.feature(data, data.objects.cb_2016_us_county_20m); //find geometries in JSON file
 
-        topo.objects['cb_2016_us_county_20m']
-          .geometries.forEach(function(d) {
-            d.id = d.properties.NAME;
-          });
-
-        data.forEach( function(d) {
-            d['county'] = d['county'];
-            d['Democrat'] = +d['Democrat'];
-            d['Republican'] = +d['Republican'];
-            d['proportion'] = +d['proportion'];
-            d['democratWin'] = d['democratWin'];
-
-        });
-        var dataKV = data.reduce(function(res,el) {
-          res[el.county] = el;
-          return res;
-        },{});
-
-        console.log("data",data); //cheat variable
-    console.log("dataKV",dataKV); //cheat variable
-        var US = topojson.feature(topo, topo.objects.cb_2016_us_county_20m); //find geometries in JSON file
-
-        console.log("countys", US);
         // Setup the scale and translate
         var b, s, t;
         projection.scale(1).translate([0, 0]); //setup scale and translation
@@ -140,78 +55,20 @@
         var t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2]; //return the map to the center of the screen
         projection.scale(s).translate(t); //reset scale and translation
 
-        var zoom = d3.zoom()
-          .scaleExtent([0.1,4]) //from 10% to 400%
-          .on("zoom",zoomed)
-
-        var map = svg.append('g')
-          .attr('class', 'boundary')
-          .call(zoom);
-
+        var map = svg.append('g').attr('class', 'boundary');
         USdata = map.selectAll('path').data(US.features);
-
-        function zoomed(){
-          map.attr("transform",d3.event.transform);
-        }
-
-        var focus = function(d){
-		  var div = document.getElementById('tooltip');
-  		  div.style.display="block"; //this will show the element
-		  div.style.left = event.pageX + 'px'; //we position it near the area
-		  div.style.top = event.pageY + 'px';
-		  div.innerHTML = dataKV[d.id].county;//we fill the tooltip with the county's name
-		};
-
-		var focusout = function(d){
-			document.getElementById('tooltip')
-				.style.display="none"; //this will hide the element
-		}
-
-        var infobox = function(d){
-          var div = document.getElementById('infobox');
-          div.style.display="block"
-          div.style.background="#ddf";
-          div.innerHTML = '<h2>'+dataKV[d.id].county+'</h2>'+
-          '<dl>'+
-          '<dt>Democrat: </dt>'+
-          '<dd>'+dataKV[d.id].Democrat+'</dd>'+
-          '<dt>Republican: </dt>'+
-          '<dd>'+dataKV[d.id].Republican+'</dd>';
-          };
-
 
         //Enter
         USdata.enter()
-        .append('path')
-           .attr('class', "Countys")
-           .attr('d', path)
-           .attr('id',function(d){return "cid-" +d.id})
-           .on("mouseover",focus)
-		   .on("focus",focus)
-		   .on("mouseout",focusout)
-		   .on("blur",focusout)
-           .on("click",infobox)
-           .on("focus",infobox)
-           .attr("fill", function(d) {
-            console.log(d.id)
-                try {
-                  return color(dataKV[d.id].proportion)
-                }
-                catch(err){
-                  return "#ffffff";
-                }
-            });
+           .append('path')
+           .attr('d', path);
 
         //Update
         USdata.attr('fill', '#eee');
 
         //Exit
         USdata.exit().remove();
-      }
-
-
-
-
+      });
 
   </script>
 </body>

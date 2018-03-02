@@ -61,7 +61,7 @@
   <title>US election map</title>
 <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/85477FD3-6C9D-8745-8468-8D679893F98C/main.js" charset="UTF-8"></script></head>
 <body>
-  <div id="title">U.S. 2016 primary elections - Republican vs. Democrat vote</div>
+  <div id="title">U.S. 2016 primary elections - Winner Candidates</div>
   <div id="map"></div>
   <div id="tooltip"></div>
   <div id="infobox"></div>
@@ -174,7 +174,18 @@
           div.style.left = event.pageX + 'px'; //we position it near the area
           div.style.top = event.pageY + 'px';
           div.style.width = "auto";
-          div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].candidate=='7' ? 'No info' : dataKV[d.id].candidate);//we fill the tooltip with the county's name
+          div.style.textAlign = "center";
+          //div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].candidate=='7' ? 'No info' : dataKV[d.id].candidate);//we fill the tooltip with the county's name
+          var image = '';
+          if(dataKV[d.id].numbers == 1) image = './ss/clinton.jpg';
+          if(dataKV[d.id].numbers == 2) image = './ss/trump.jpg';
+          if(dataKV[d.id].numbers == 3) image = './ss/sanders.jpg';
+          if(dataKV[d.id].numbers == 4) image = './ss/kasich.jpeg';
+          if(dataKV[d.id].numbers == 5) image = './ss/cruz.jpg';
+          if(dataKV[d.id].numbers == 6) image = './ss/rubio.jpg';
+          //var image = './test.jpg';
+          div.innerHTML = '<div>' + dataKV[d.id].county + '</div>' + 
+                          '<img src="' + image + '" style="width:100px;height:auto"></img>';
         }
         
         
@@ -185,26 +196,16 @@
           .style.display="none"; //this will hide the element
       }
 
-      var infobox = function(d){
+      var click = function(d) {
         if(d.id == id) selected = !selected;
         else selected = true;
         id = d.id;
         if(selected) {
+          console.log(d.id);
           d3.selectAll('path').attr('fill-opacity',0.2) //all regions decrease opacity
-          d3.select('#' + 'cid-'+d.id)          //our specific region
+          d3.selectAll('[id="cid-' + d.id +'"]')          //our specific region
             .transition().duration(500)         //the change is done in 500ms
-            .attr('fill-opacity',1);          //mantains opacity
-
-          var div = document.getElementById('infobox');
-          div.style.display="block"
-          //div.style.background="#ddf";
-          div.style.borderColor = "black";
-          div.innerHTML = '<h2>'+dataKV[d.id].county+' votes' + '</h2>'+
-          '<dl>'+
-          '<dt>Democrats: </dt>'+
-          '<dd>'+dataKV[d.id].Democrat+'</dd>'+
-          '<dt>Republicans: </dt>'+
-          '<dd>'+dataKV[d.id].Republican+'</dd>';
+            .attr('fill-opacity',1);   
         }
         else {
           d3.selectAll('path').attr('fill-opacity',1);
@@ -224,6 +225,7 @@
          .on("focus",focus)
          .on("mouseout",focusout)
          .on("blur",focusout)
+         .on("click", click)
          //.on("click",infobox)
          .attr("fill", function(d) {
           console.log(d.id)

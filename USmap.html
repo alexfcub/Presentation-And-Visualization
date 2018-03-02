@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>US election map</title>
-  <style>
+<style>
   .boundary {
     fill: #ddd;
     stroke: #888;
@@ -14,15 +11,67 @@
     border-width: 1px;
     border-color: #ccc;
   }
+  #tooltip{
+  border-radius: 5px;
+  border: 2px solid black;
+	position: absolute;
+	z-index: 2;
+	height:15px;
+	background: white;
+	color:#000
+	font-size: 1em;
+	padding:5px;
+	top:-1.5em;
+	left:-5em;
+	font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap;
+ }
+
+  #infobox{
+    text-align: center;
+  	position:absolute;
+  	height:150px;
+  	width:240px;
+  	top: 601px;
+    left: 186px;
+  	z-index: 2;
+  	background:#fff;
+  	color:#000;
+  	font-size: 1em;
+  	padding:5px;
+  	font-family: Helvetica, Arial, sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fff;
+    border-radius: 5px;
+  }
+   #infobox dt {
+      float:left;
+   }
+
+   #title {
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+
   </style>
-</head>
+<head>
+  <meta charset="utf-8">
+  <title>US election map</title>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/85477FD3-6C9D-8745-8468-8D679893F98C/main.js" charset="UTF-8"></script></head>
 <body>
+  <div id="title">U.S. 2016 primary elections - Republican vs. Democrat vote</div>
   <div id="map"></div>
+  <div id="tooltip"></div>
+  <div id="infobox"></div>
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://d3js.org/topojson.v1.min.js"></script>
   <script src="http://d3js.org/queue.v1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
   <script>
+    var selected = false;
+    var id = '';
 
       var height = 950,
           width = 1320,
@@ -118,13 +167,60 @@
           map.attr("transform",d3.event.transform);
         }
 
+        var focus = function(d){
+		  var div = document.getElementById('tooltip');
+  		  div.style.display="block"; //this will show the element
+		  div.style.left = event.pageX + 'px'; //we position it near the area
+		  div.style.top = event.pageY + 'px';
+      div.style.width = "auto";
+		  div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].proportion>0.5 ? Math.round(dataKV[d.id].proportion*100) : Math.round((1-dataKV[d.id].proportion)*100)) + '%';//we fill the tooltip with the county's name
+		};
+
+		var focusout = function(d){
+			document.getElementById('tooltip')
+				.style.display="none"; //this will hide the element
+		}
+
+        var infobox = function(d){
+          if(d.id == id) selected = !selected;
+          else selected = true;
+          id = d.id;
+          if(selected) {
+            d3.selectAll('path').attr('fill-opacity',0.2) //all regions decrease opacity
+            d3.select('#' + 'cid-'+d.id)          //our specific region
+              .transition().duration(500)         //the change is done in 500ms
+              .attr('fill-opacity',1);          //mantains opacity
+
+            var div = document.getElementById('infobox');
+            div.style.display="block"
+            //div.style.background="#ddf";
+            div.style.borderColor = "black";
+            div.innerHTML = '<h2>'+dataKV[d.id].county+' votes' + '</h2>'+
+            '<dl>'+
+            '<dt>Democrats: </dt>'+
+            '<dd>'+dataKV[d.id].Democrat+'</dd>'+
+            '<dt>Republicans: </dt>'+
+            '<dd>'+dataKV[d.id].Republican+'</dd>';
+            }
+            else {
+              d3.selectAll('path').attr('fill-opacity',1);
+              var div = document.getElementById('infobox');
+              div.style.display = "none";
+            }
+          }
+
+
         //Enter
         USdata.enter()
-           .append('path')
+        .append('path')
            .attr('class', "Countys")
            .attr('d', path)
-           .attr('id',function(d){return "cid-" +d.id
-           })
+           .attr('id',function(d){return "cid-" +d.id})
+           .on("mouseover",focus)
+  		     .on("focus",focus)
+  		     .on("mouseout",focusout)
+  		     .on("blur",focusout)
+           .on("click",infobox)
            .attr("fill", function(d) {
             console.log(d.id)
                 try {
@@ -141,7 +237,6 @@
         //Exit
         USdata.exit().remove();
       }
-      
 
   </script>
 </body>

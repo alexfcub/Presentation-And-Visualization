@@ -1,0 +1,1913 @@
+county,candidate,votes,educated,white,black
+Los Angeles,Hillary Clinton,590502.0,29.7,71,9
+Philadelphia,Hillary Clinton,212785.0,23.9,45,44
+Wayne,Hillary Clinton,163886.0,21.3,54,39
+Harris,Hillary Clinton,156729.0,28.4,70,19
+Orange,Donald Trump,146888.0,36.8,73,2
+Maricopa,Donald Trump,144522.0,29.8,84,5
+San Diego,Hillary Clinton,139813.0,34.6,76,5
+Broward,Hillary Clinton,132527.0,29.9,64,28
+Miami-Dade,Hillary Clinton,129467.0,26.3,77,18
+Cuyahoga,Hillary Clinton,125914.0,29.7,64,30
+Allegheny,Hillary Clinton,122399.0,35.9,81,13
+Queens,Hillary Clinton,122386.0,30.0,49,20
+Prince George's,Hillary Clinton,113912.0,29.8,26,64
+Dallas,Hillary Clinton,113574.0,28.6,68,23
+Santa Clara,Hillary Clinton,109963.0,46.5,56,2
+Montgomery,Hillary Clinton,109304.0,57.1,62,18
+Alameda,Hillary Clinton,107102.0,41.8,51,12
+Palm Beach,Hillary Clinton,103369.0,32.4,76,18
+Dane,Bernie Sanders,102585.0,46.6,86,5
+Franklin,John Kasich,101217.0,36.4,69,22
+Milwaukee,Hillary Clinton,100932.0,28.1,65,27
+Bronx,Hillary Clinton,95772.0,18.1,45,43
+Oakland,Hillary Clinton,92296.0,43.1,76,14
+Tarrant,Ted Cruz,88867.0,29.5,75,16
+Multnomah,Bernie Sanders,87247.0,39.9,80,5
+Fairfax,Hillary Clinton,86898.0,58.6,66,10
+San Francisco,Hillary Clinton,85070.0,52.4,53,5
+Riverside,Donald Trump,82814.0,20.5,80,7
+Fulton,Hillary Clinton,82576.0,48.2,46,44
+DeKalb,Hillary Clinton,82348.0,39.7,36,54
+Summit,John Kasich,79040.0,29.6,79,14
+Wake,Hillary Clinton,77927.0,48.0,69,21
+Bexar,Hillary Clinton,76502.0,26.3,85,8
+Waukesha,Ted Cruz,75123.0,40.2,93,1
+Essex,Hillary Clinton,75071.0,32.0,49,41
+Travis,Bernie Sanders,73889.0,44.9,80,8
+Baltimore,Hillary Clinton,73099.0,35.7,63,27
+Mecklenburg,Hillary Clinton,71265.0,40.7,59,32
+San Bernardino,Hillary Clinton,71246.0,18.7,77,9
+Nassau,Hillary Clinton,70947.0,41.5,76,12
+Contra Costa,Hillary Clinton,69809.0,39.0,67,9
+Westchester,Hillary Clinton,69628.0,45.4,74,16
+Suffolk,Donald Trump,69379.0,32.9,85,8
+Hillsborough,Hillary Clinton,68936.0,29.5,75,17
+Sacramento,Hillary Clinton,68248.0,28.0,64,10
+Hamilton,John Kasich,67510.0,33.7,69,26
+Jefferson,Hillary Clinton,67357.0,30.0,54,42
+Shelby,Hillary Clinton,66465.0,29.0,42,53
+DuPage,Bernie Sanders,65159.0,46.3,81,5
+King,Donald Trump,64740.0,46.6,70,6
+Pinellas,Hillary Clinton,63699.0,27.5,83,10
+Macomb,Donald Trump,60492.0,22.5,82,11
+Marion,Hillary Clinton,59649.0,27.4,66,27
+Duval,Hillary Clinton,58632.0,26.4,62,30
+Pima,Hillary Clinton,56317.0,29.8,85,4
+Bergen,Hillary Clinton,55264.0,45.9,74,6
+Lee,Donald Trump,51659.0,24.7,87,9
+Bucks,Donald Trump,51433.0,35.8,89,4
+Erie,Hillary Clinton,50199.0,30.9,80,13
+Hudson,Hillary Clinton,49798.0,36.3,65,15
+Lake,Hillary Clinton,49750.0,41.9,82,7
+Jackson,Hillary Clinton,48860.0,27.6,70,24
+Pierce,Donald Trump,48071.0,24.0,76,7
+Middlesex,Hillary Clinton,47978.0,40.1,62,11
+San Mateo,Hillary Clinton,47358.0,44.4,62,3
+Will,Bernie Sanders,46305.0,32.3,80,11
+Collin,Ted Cruz,46094.0,49.3,74,9
+Ventura,Hillary Clinton,45848.0,31.4,84,2
+Brevard,Donald Trump,45483.0,26.3,83,10
+Sonoma,Hillary Clinton,44923.0,32.2,87,1
+Delaware,Hillary Clinton,44775.0,35.0,71,21
+Ocean,Donald Trump,44672.0,25.4,92,3
+Camden,Hillary Clinton,43720.0,29.1,70,21
+Davidson,Hillary Clinton,43691.0,35.9,65,28
+Kent,Bernie Sanders,43375.0,31.7,83,10
+York,Donald Trump,41948.0,22.0,89,6
+Lane,Bernie Sanders,41883.0,27.7,90,1
+Washington,Bernie Sanders,41841.0,39.4,82,2
+Union,Hillary Clinton,40972.0,31.8,68,23
+Hidalgo,Hillary Clinton,40276.0,15.9,97,0
+Denton,Ted Cruz,39404.0,40.5,79,9
+Cobb,Hillary Clinton,39277.0,43.7,64,27
+Richland,Hillary Clinton,39243.0,36.1,47,46
+New Castle,Hillary Clinton,38580.0,33.8,67,24
+Morris,Donald Trump,38252.0,50.0,84,3
+Bernalillo,Bernie Sanders,38247.0,32.1,84,3
+Lancaster,Donald Trump,38171.0,24.2,90,4
+Washtenaw,Bernie Sanders,38063.0,51.3,74,12
+Guilford,Hillary Clinton,37880.0,33.2,58,34
+Fresno,Donald Trump,37672.0,19.6,77,5
+Gwinnett,Hillary Clinton,37465.0,33.9,58,27
+Spokane,Donald Trump,37357.0,28.4,89,1
+Monroe,Hillary Clinton,37309.0,35.8,77,16
+El Paso,Hillary Clinton,36067.0,20.7,92,4
+Durham,Hillary Clinton,35845.0,45.1,53,38
+Anne Arundel,Hillary Clinton,35659.0,37.1,76,16
+Salt Lake,Bernie Sanders,35610.0,31.0,88,2
+Chester,Donald Trump,35577.0,48.5,86,6
+Snohomish,Donald Trump,35474.0,28.9,80,3
+Monmouth,Donald Trump,35209.0,41.4,84,7
+Pulaski,Hillary Clinton,34862.0,31.2,59,36
+Sarasota,Donald Trump,34593.0,30.8,91,5
+Oklahoma,Hillary Clinton,34255.0,29.6,71,15
+Volusia,Donald Trump,34167.0,20.8,84,11
+Kern,Donald Trump,33838.0,15.0,82,6
+Pasco,Donald Trump,33536.0,20.4,89,5
+Stark,John Kasich,33297.0,21.1,88,7
+Polk,Donald Trump,33187.0,18.1,79,15
+Clark,Donald Trump,32947.0,26.0,87,2
+Burlington,Hillary Clinton,32712.0,34.6,74,17
+Westmoreland,Donald Trump,32145.0,25.3,95,2
+Lucas,Hillary Clinton,32137.0,23.4,75,19
+Solano,Hillary Clinton,31753.0,24.3,60,14
+Fort Bend,Ted Cruz,31422.0,41.4,57,21
+Hinds,Hillary Clinton,31386.0,27.4,27,70
+Genesee,Hillary Clinton,31284.0,18.9,75,20
+Kane,Bernie Sanders,31085.0,31.7,87,6
+Rockingham,Bernie Sanders,31080.0,37.2,95,0
+Buncombe,Bernie Sanders,30913.0,33.8,89,6
+Howard,Hillary Clinton,30873.0,60.0,60,18
+Utah,Ted Cruz,30637.0,36.5,93,0
+St. Charles,Donald Trump,30489.0,35.1,90,4
+Collier,Donald Trump,30071.0,31.7,89,7
+Allen,Ted Cruz,29963.0,26.3,80,12
+Passaic,Hillary Clinton,29538.0,25.6,75,14
+Mercer,Hillary Clinton,29505.0,38.8,65,21
+Mobile,Hillary Clinton,28927.0,20.7,60,35
+Berks,Donald Trump,28719.0,22.3,88,6
+Luzerne,Donald Trump,28660.0,21.0,91,4
+Butler,John Kasich,28606.0,27.4,86,8
+Henrico,Hillary Clinton,28121.0,39.7,59,30
+Clackamas,Bernie Sanders,27969.0,31.8,90,1
+Tulsa,Ted Cruz,27829.0,29.7,73,10
+Leon,Hillary Clinton,27333.0,44.2,62,31
+Marin,Hillary Clinton,27238.0,54.6,86,2
+Greene,Ted Cruz,26784.0,28.3,91,3
+Charleston,Hillary Clinton,26535.0,39.4,67,28
+Horry,Donald Trump,26445.0,22.7,82,13
+Prince William,Hillary Clinton,26439.0,38.1,64,21
+Manatee,Donald Trump,26320.0,26.6,86,9
+Seminole,Donald Trump,25763.0,35.0,80,12
+Placer,Donald Trump,25700.0,35.1,85,1
+Brown,Ted Cruz,25612.0,26.8,88,2
+Arlington,Hillary Clinton,25561.0,71.7,76,9
+Santa Cruz,Bernie Sanders,25171.0,37.0,87,1
+Clayton,Hillary Clinton,25130.0,18.0,23,68
+San Joaquin,Hillary Clinton,25118.0,18.1,68,8
+Greenville,Donald Trump,24913.0,31.2,76,18
+Forsyth,Hillary Clinton,24446.0,31.9,67,27
+St. Johns,Donald Trump,24205.0,41.4,89,5
+Williamson,Ted Cruz,23880.0,38.0,83,6
+Ottawa,Ted Cruz,23862.0,30.0,92,1
+Madison,Donald Trump,23791.0,38.5,69,24
+Douglas,Donald Trump,23754.0,36.4,81,11
+Baldwin,Donald Trump,23618.0,27.7,87,9
+Santa Barbara,Hillary Clinton,23543.0,31.3,85,2
+Lackawanna,Hillary Clinton,22971.0,25.7,92,3
+Ingham,Bernie Sanders,22909.0,36.5,77,12
+Warren,John Kasich,22870.0,37.9,90,3
+Cumberland,Hillary Clinton,22744.0,22.7,53,37
+Chesterfield,Hillary Clinton,22674.0,36.3,69,23
+Smith,Ted Cruz,21804.0,24.5,78,17
+Harford,Donald Trump,21771.0,32.7,80,13
+Lorain,John Kasich,21544.0,22.2,86,8
+Dauphin,Donald Trump,21253.0,28.5,74,18
+Loudoun,Hillary Clinton,21171.0,57.9,70,7
+Mahoning,Hillary Clinton,21000.0,20.8,80,15
+St. Clair,Hillary Clinton,20987.0,25.3,65,30
+Knox,Donald Trump,20985.0,34.3,86,9
+Lehigh,Donald Trump,20891.0,28.1,84,8
+Escambia,Donald Trump,20856.0,23.7,69,22
+Champaign,Bernie Sanders,20581.0,42.4,73,12
+Albany,Bernie Sanders,20422.0,38.8,77,13
+Onondaga,Hillary Clinton,20397.0,33.1,80,11
+Cameron,Hillary Clinton,20326.0,15.4,97,0
+Ada,Ted Cruz,20156.0,36.0,92,1
+Kalamazoo,Bernie Sanders,20146.0,34.0,82,11
+Fayette,Hillary Clinton,20014.0,40.1,78,15
+Brazoria,Ted Cruz,19993.0,27.5,77,13
+Chatham,Hillary Clinton,19898.0,31.3,54,40
+Somerset,Hillary Clinton,19667.0,51.1,71,9
+Clay,Donald Trump,19374.0,24.0,82,10
+San Luis Obispo,Donald Trump,19313.0,31.5,89,2
+Northampton,Donald Trump,19285.0,26.6,88,6
+Lubbock,Ted Cruz,19163.0,27.9,87,7
+St. Joseph,Donald Trump,19059.0,26.5,81,13
+Racine,Ted Cruz,18698.0,23.0,84,11
+Outagamie,Ted Cruz,18621.0,26.4,91,1
+Medina,John Kasich,18572.0,29.6,95,1
+Webb,Hillary Clinton,18559.0,17.2,97,0
+Hendricks,Donald Trump,18555.0,32.2,89,6
+Cherokee,Donald Trump,18460.0,34.2,89,6
+St. Lucie,Donald Trump,18350.0,19.5,75,20
+Merrimack,Bernie Sanders,18076.0,33.3,95,1
+Gloucester,Hillary Clinton,17954.0,28.4,83,10
+Yellowstone,Donald Trump,17925.0,28.7,91,0
+Trumbull,Hillary Clinton,17903.0,17.0,88,8
+Winnebago,Bernie Sanders,17818.0,25.5,93,2
+Sussex,Donald Trump,17794.0,22.2,82,12
+Okaloosa,Donald Trump,17770.0,27.4,81,10
+Sumter,Donald Trump,17769.0,25.2,89,8
+Alachua,Hillary Clinton,17733.0,40.5,70,20
+El Dorado,Donald Trump,17651.0,32.0,89,1
+Davis,Ted Cruz,17528.0,34.1,92,1
+Galveston,Ted Cruz,17483.0,28.5,80,13
+Licking,John Kasich,17357.0,21.9,92,3
+Rock,Bernie Sanders,17337.0,19.4,90,5
+Johnson,Donald Trump,17218.0,26.8,93,1
+Clermont,Donald Trump,17186.0,25.6,95,1
+Monterey,Hillary Clinton,17126.0,23.0,82,3
+Yavapai,Donald Trump,17005.0,24.2,93,0
+Rockland,Hillary Clinton,16966.0,40.4,77,13
+Ozaukee,Ted Cruz,16919.0,44.9,94,1
+Schuylkill,Donald Trump,16800.0,14.3,94,3
+Thurston,Donald Trump,16639.0,32.3,82,3
+Carroll,Donald Trump,16534.0,32.7,92,3
+Whatcom,Donald Trump,16533.0,31.9,87,1
+Charlotte,Donald Trump,16525.0,21.2,90,6
+McHenry,Donald Trump,16514.0,32.4,93,1
+Osceola,Hillary Clinton,16512.0,17.6,80,13
+Cleveland,Bernie Sanders,16428.0,31.4,80,4
+Lexington,Donald Trump,16361.0,28.7,80,15
+Kitsap,Donald Trump,16346.0,29.5,83,2
+Richmond,Hillary Clinton,16269.0,20.5,39,55
+Elkhart,Ted Cruz,16204.0,18.2,89,6
+Porter,Donald Trump,16194.0,25.4,92,3
+Santa Fe,Hillary Clinton,16087.0,39.7,91,1
+Martin,Donald Trump,16065.0,29.9,90,5
+Santa Rosa,Donald Trump,16044.0,25.9,87,6
+Strafford,Bernie Sanders,15865.0,31.8,93,1
+Butte,Donald Trump,15695.0,24.4,86,1
+Nueces,Hillary Clinton,15662.0,20.0,91,4
+Henry,Hillary Clinton,15639.0,26.1,53,40
+Sheboygan,Ted Cruz,15545.0,22.4,91,1
+Hernando,Donald Trump,15479.0,15.5,90,5
+Fairfield,John Kasich,15478.0,26.0,89,7
+Stanislaus,Donald Trump,15390.0,16.4,84,3
+Livingston,Donald Trump,15359.0,32.9,96,0
+Tulare,Donald Trump,15334.0,13.3,88,2
+Spartanburg,Donald Trump,15249.0,21.3,74,21
+Citrus,Donald Trump,15232.0,16.6,93,3
+La Crosse,Bernie Sanders,15139.0,29.9,91,1
+Charles,Hillary Clinton,15132.0,26.7,48,43
+Frederick,Donald Trump,15076.0,38.2,82,9
+Boone,Bernie Sanders,15076.0,47.3,82,9
+Benton,Donald Trump,14943.0,28.9,91,1
+Yakima,Donald Trump,14872.0,15.5,88,1
+Shasta,Donald Trump,14822.0,18.8,88,1
+Denver,Bernie Sanders,14624.0,42.9,80,10
+Kenosha,Bernie Sanders,14612.0,23.2,87,7
+Vanderburgh,Donald Trump,14544.0,22.6,86,9
+Bay,Donald Trump,14426.0,21.1,82,11
+McLennan,Ted Cruz,14285.0,21.7,80,15
+Deschutes,Donald Trump,14264.0,31.0,94,0
+Grafton,Bernie Sanders,14258.0,37.7,93,1
+Mohave,Donald Trump,14154.0,11.9,92,1
+Bell,Ted Cruz,13994.0,21.7,67,22
+Kanawha,Donald Trump,13936.0,25.0,88,7
+Rankin,Donald Trump,13729.0,28.5,77,20
+Indian River,Donald Trump,13678.0,26.6,87,9
+Lebanon,Donald Trump,13490.0,19.4,93,3
+Marathon,Ted Cruz,13414.0,22.2,91,0
+Missoula,Bernie Sanders,13271.0,39.1,92,0
+Humboldt,Bernie Sanders,13245.0,27.5,84,1
+Rutherford,Donald Trump,13229.0,28.3,79,14
+McLean,Ted Cruz,13085.0,42.8,84,7
+Eau Claire,Bernie Sanders,13058.0,31.0,92,1
+Comal,Ted Cruz,13004.0,33.3,94,2
+Beaver,Hillary Clinton,12963.0,21.9,91,6
+Bibb,Hillary Clinton,12944.0,22.5,42,53
+Lycoming,Donald Trump,12898.0,18.8,92,4
+Parker,Ted Cruz,12883.0,25.0,95,1
+Blair,Donald Trump,12870.0,18.4,95,1
+Iredell,Donald Trump,12861.0,23.9,83,12
+Muscogee,Hillary Clinton,12801.0,22.6,47,46
+Fond du Lac,Ted Cruz,12750.0,20.0,95,1
+New Hanover,Donald Trump,12631.0,36.6,81,14
+Randall,Ted Cruz,12593.0,30.2,92,3
+Yolo,Hillary Clinton,12567.0,37.9,75,3
+Harrison,Donald Trump,12555.0,20.7,69,24
+Ellis,Ted Cruz,12546.0,20.7,87,9
+Hall,Donald Trump,12536.0,22.8,87,8
+Cheshire,Bernie Sanders,12471.0,30.4,95,0
+Hunterdon,Donald Trump,12450.0,47.6,92,2
+Dutchess,Donald Trump,12447.0,32.9,82,11
+Saginaw,Hillary Clinton,12348.0,19.1,76,19
+DeSoto,Ted Cruz,12300.0,21.6,71,24
+Sangamon,Ted Cruz,12261.0,32.5,83,12
+Pinal,Donald Trump,12182.0,18.0,83,4
+Tuscaloosa,Hillary Clinton,12136.0,27.0,66,31
+Worcester,Hillary Clinton,12132.0,33.8,87,5
+Tazewell,Ted Cruz,12085.0,23.6,96,1
+Brazos,Ted Cruz,12049.0,38.8,80,11
+Geauga,John Kasich,12034.0,35.9,96,1
+Kootenai,Ted Cruz,11924.0,23.3,94,0
+Atlantic,Donald Trump,11921.0,24.2,71,17
+Pitt,Hillary Clinton,11856.0,28.1,60,34
+Orangeburg,Hillary Clinton,11819.0,18.6,34,62
+Brunswick,Donald Trump,11584.0,25.1,85,11
+Ulster,Bernie Sanders,11572.0,29.9,88,6
+Gaston,Donald Trump,11528.0,18.0,80,16
+Honolulu,Bernie Sanders,11458.0,32.1,23,3
+Peoria,Hillary Clinton,11341.0,28.9,74,18
+Cabarrus,Donald Trump,11300.0,25.1,77,17
+Saratoga,Donald Trump,11204.0,37.1,93,1
+Canyon,Ted Cruz,11164.0,16.8,93,0
+Boulder,Bernie Sanders,11142.0,58.3,90,1
+Jasper,Ted Cruz,11113.0,20.2,91,2
+Miami,John Kasich,11050.0,19.7,94,2
+Catawba,Donald Trump,10991.0,21.0,84,8
+Wood,John Kasich,10968.0,29.5,93,2
+Anderson,Donald Trump,10953.0,19.3,80,16
+Niagara,Donald Trump,10940.0,22.2,88,7
+Portage,John Kasich,10921.0,25.1,91,4
+Morgan,Donald Trump,10909.0,19.9,83,12
+Oneida,Donald Trump,10832.0,22.4,87,6
+Johnston,Ted Cruz,10826.0,20.4,80,16
+Cambria,Donald Trump,10795.0,18.3,94,3
+Walworth,Ted Cruz,10719.0,26.2,96,1
+Flathead,Donald Trump,10642.0,28.4,95,0
+Cullman,Donald Trump,10618.0,14.8,96,1
+Christian,Ted Cruz,10586.0,25.9,96,0
+Midland,Ted Cruz,10474.0,24.4,88,6
+Dodge,Ted Cruz,10431.0,15.8,94,3
+Josephine,Donald Trump,10325.0,17.0,93,0
+Tippecanoe,Donald Trump,10296.0,35.7,85,4
+Centre,Bernie Sanders,10269.0,40.4,88,3
+Rock Island,Hillary Clinton,10216.0,21.8,84,9
+Taylor,Ted Cruz,10160.0,24.4,86,7
+Muskegon,Bernie Sanders,10062.0,17.2,81,14
+Providence,Bernie Sanders,10006.0,26.4,79,11
+Paulding,Donald Trump,10002.0,23.4,78,18
+Beaufort,Hillary Clinton,9945.0,37.6,77,19
+Adams,Donald Trump,9754.0,20.4,95,1
+New Haven,Hillary Clinton,9710.0,32.9,78,14
+Sumner,Donald Trump,9708.0,23.7,89,7
+Flagler,Donald Trump,9684.0,23.3,83,11
+Coweta,Donald Trump,9593.0,26.9,77,18
+Hancock,Donald Trump,9520.0,26.3,95,2
+LaPorte,Donald Trump,9494.0,17.3,85,11
+Berkeley,Hillary Clinton,9471.0,21.3,68,25
+Sarpy,Donald Trump,9459.0,36.2,89,4
+Florence,Hillary Clinton,9411.0,21.3,54,42
+Rowan,Donald Trump,9369.0,17.0,80,16
+Manitowoc,Ted Cruz,9320.0,18.7,94,0
+Tompkins,Bernie Sanders,9298.0,49.3,81,4
+Guadalupe,Ted Cruz,9283.0,24.6,86,7
+Columbia,Donald Trump,9177.0,34.1,75,16
+Broome,Bernie Sanders,9176.0,26.1,87,5
+Marshall,Donald Trump,9115.0,15.2,93,2
+Randolph,Donald Trump,9108.0,13.8,89,6
+Linn,Donald Trump,9085.0,16.9,93,0
+Aiken,Donald Trump,9027.0,24.0,71,25
+Calhoun,Donald Trump,8960.0,16.1,75,21
+Dougherty,Hillary Clinton,8891.0,17.8,29,68
+Columbiana,Donald Trump,8823.0,12.6,95,2
+Kosciusko,Donald Trump,8748.0,20.3,96,1
+Cowlitz,Donald Trump,8727.0,15.4,91,0
+Sullivan,Donald Trump,8718.0,20.5,95,2
+Etowah,Donald Trump,8657.0,14.8,81,15
+Grayson,Ted Cruz,8647.0,19.6,88,6
+Hanover,Donald Trump,8586.0,35.5,86,9
+Wilson,Donald Trump,8570.0,26.0,89,6
+Nash,Hillary Clinton,8554.0,19.2,56,39
+Vigo,Donald Trump,8539.0,21.2,88,7
+Elmore,Donald Trump,8525.0,21.0,76,21
+Lewis,Donald Trump,8513.0,14.0,92,0
+Nevada,Bernie Sanders,8472.0,32.3,93,0
+Robeson,Hillary Clinton,8457.0,12.5,32,24
+Klamath,Donald Trump,8451.0,19.7,89,0
+Walker,Donald Trump,8394.0,10.5,91,6
+Gregg,Ted Cruz,8363.0,19.9,75,20
+Onslow,Donald Trump,8343.0,18.0,76,15
+Cape May,Donald Trump,8338.0,28.7,91,5
+Gallatin,Donald Trump,8313.0,46.0,95,0
+Henderson,Ted Cruz,8301.0,27.7,93,3
+Albemarle,Hillary Clinton,8284.0,52.2,82,9
+Bartow,Donald Trump,8281.0,15.9,85,10
+Hays,Ted Cruz,8254.0,36.7,90,4
+Madera,Donald Trump,8247.0,13.6,86,4
+Limestone,Donald Trump,8198.0,22.7,82,13
+Houston,Donald Trump,8171.0,19.7,70,26
+Pennington,Donald Trump,8162.0,27.8,83,1
+Cascade,Donald Trump,8129.0,24.6,88,1
+Canadian,Ted Cruz,8105.0,25.3,84,2
+Monongalia,Bernie Sanders,8096.0,38.1,90,3
+Grand Traverse,Bernie Sanders,8091.0,30.4,94,1
+Northumberland,Donald Trump,8087.0,14.0,95,2
+Kaufman,Ted Cruz,8027.0,17.6,85,10
+Blount,Donald Trump,8009.0,20.8,94,3
+Rockdale,Hillary Clinton,7930.0,26.0,44,51
+Bartholomew,Donald Trump,7918.0,26.5,90,2
+Walton,Donald Trump,7910.0,18.4,79,17
+Clearfield,Donald Trump,7862.0,13.5,95,3
+Berrien,Donald Trump,7817.0,24.2,79,15
+Bonneville,Ted Cruz,7794.0,26.0,94,0
+Grant,Donald Trump,7778.0,14.6,92,1
+Sevier,Donald Trump,7686.0,15.0,95,1
+Cass,Ted Cruz,7671.0,23.3,92,4
+Indiana,Donald Trump,7585.0,21.9,94,2
+Armstrong,Donald Trump,7578.0,14.6,97,0
+Allegan,Ted Cruz,7530.0,20.2,95,1
+Saline,Ted Cruz,7507.0,23.4,90,6
+Lauderdale,Donald Trump,7502.0,21.1,86,10
+Kendall,Bernie Sanders,7482.0,34.2,87,6
+Highlands,Donald Trump,7480.0,14.9,85,10
+Crawford,Donald Trump,7471.0,18.7,96,1
+Floyd,Donald Trump,7456.0,22.6,91,5
+Warrick,Donald Trump,7450.0,27.2,94,1
+Sandoval,Hillary Clinton,7448.0,28.3,79,2
+Lapeer,Donald Trump,7446.0,17.0,96,1
+Gadsden,Hillary Clinton,7446.0,14.9,42,55
+Skagit,Donald Trump,7444.0,23.6,90,0
+Hartford,Hillary Clinton,7413.0,34.9,76,15
+Alamance,Hillary Clinton,7374.0,21.7,75,19
+Napa,Hillary Clinton,7370.0,31.3,84,2
+Cecil,Donald Trump,7348.0,22.2,89,6
+Moore,Donald Trump,7347.0,31.3,82,13
+Stafford,Donald Trump,7339.0,36.2,74,18
+Cape Girardeau,Ted Cruz,7332.0,27.4,88,7
+Raleigh,Donald Trump,7325.0,17.0,88,8
+Newton,Hillary Clinton,7269.0,19.4,53,43
+Hunt,Ted Cruz,7249.0,16.6,87,8
+Ector,Ted Cruz,7232.0,13.5,91,4
+Tom Green,Ted Cruz,7231.0,21.6,90,4
+Rockwall,Ted Cruz,7202.0,36.5,88,6
+Sauk,Bernie Sanders,7195.0,21.0,95,0
+Cache,Ted Cruz,7172.0,36.9,93,0
+Merced,Hillary Clinton,7169.0,12.6,82,4
+Pickens,Donald Trump,7136.0,23.0,89,6
+Clarke,Hillary Clinton,7089.0,39.5,65,27
+Carteret,Donald Trump,7077.0,23.9,89,6
+Weber,Ted Cruz,7058.0,22.7,92,1
+Bowie,Ted Cruz,7057.0,19.0,71,24
+Kings,Donald Trump,7046.0,12.9,81,7
+Wichita,Ted Cruz,7008.0,20.1,83,10
+Eaton,Bernie Sanders,7007.0,24.6,88,7
+Wicomico,Donald Trump,6998.0,26.3,68,25
+Lawrence,Donald Trump,6964.0,19.6,93,4
+LaSalle,Donald Trump,6950.0,15.9,95,2
+Dorchester,Donald Trump,6949.0,24.5,68,25
+Coconino,Bernie Sanders,6941.0,31.1,66,1
+Island,Donald Trump,6930.0,31.7,86,2
+Starr,Hillary Clinton,6918.0,8.6,98,0
+St. Croix,Ted Cruz,6892.0,33.0,96,0
+Angelina,Ted Cruz,6875.0,15.0,81,15
+Schenectady,Bernie Sanders,6862.0,29.0,79,11
+Spotsylvania,Donald Trump,6858.0,28.2,77,16
+Washoe,Donald Trump,6850.0,27.3,85,2
+Yamhill,Donald Trump,6843.0,22.5,92,1
+Clallam,Donald Trump,6715.0,24.2,87,1
+Larimer,Bernie Sanders,6664.0,43.8,93,1
+Macon,Donald Trump,6655.0,22.3,78,17
+Rensselaer,Bernie Sanders,6649.0,28.6,87,7
+Dearborn,Donald Trump,6617.0,17.6,97,0
+Muskingum,John Kasich,6599.0,14.2,92,4
+St. Mary's,Donald Trump,6576.0,29.5,79,14
+Bedford,Donald Trump,6540.0,12.6,97,0
+Bradford,Donald Trump,6501.0,17.1,97,0
+Edgecombe,Hillary Clinton,6411.0,10.5,40,57
+Kankakee,Donald Trump,6403.0,17.1,81,15
+Putnam,Donald Trump,6395.0,24.0,96,1
+Jones,Donald Trump,6388.0,16.8,68,29
+Calvert,Donald Trump,6360.0,30.0,81,13
+Hardin,Ted Cruz,6354.0,15.6,91,5
+Cochise,Donald Trump,6339.0,22.5,87,4
+Talladega,Donald Trump,6304.0,13.0,65,32
+Lincoln,Donald Trump,6293.0,19.4,91,5
+Ravalli,Donald Trump,6281.0,24.5,95,0
+Allegany,Donald Trump,6272.0,16.8,88,8
+Faulkner,Ted Cruz,6228.0,27.2,84,11
+Halifax,Hillary Clinton,6224.0,11.8,40,53
+Lewis and Clark,Donald Trump,6194.0,37.5,94,0
+Cole,Ted Cruz,6159.0,30.8,84,11
+Oswego,Donald Trump,6151.0,17.2,96,1
+Calumet,Ted Cruz,6139.0,27.6,95,0
+Ashtabula,Donald Trump,6127.0,12.6,93,3
+Bradley,Donald Trump,6103.0,18.5,91,4
+Arapahoe,Bernie Sanders,6086.0,38.8,78,10
+Sebastian,Donald Trump,6030.0,19.2,82,6
+Tuscarawas,Donald Trump,6025.0,15.2,96,0
+Minnehaha,Hillary Clinton,6018.0,29.2,88,4
+Belknap,Bernie Sanders,5990.0,28.0,96,0
+Cabell,Donald Trump,5977.0,25.8,91,5
+Carbon,Donald Trump,5977.0,15.1,96,1
+Coos,Donald Trump,5961.0,18.0,90,0
+Steuben,Donald Trump,5957.0,20.8,95,1
+Van Zandt,Ted Cruz,5954.0,13.5,93,3
+Hood,Ted Cruz,5948.0,24.1,96,0
+Whitfield,Donald Trump,5945.0,14.0,90,4
+Wilkes,Donald Trump,5889.0,12.5,93,4
+Rogers,Ted Cruz,5850.0,23.0,75,1
+Chippewa,Donald Trump,5832.0,18.6,95,1
+Watauga,Bernie Sanders,5811.0,37.9,95,1
+Liberty,Ted Cruz,5805.0,8.8,85,10
+Platte,Ted Cruz,5798.0,39.2,87,6
+James City,Marco Rubio,5780.0,45.8,80,13
+Victoria,Ted Cruz,5750.0,16.3,89,6
+San Juan,Donald Trump,5749.0,15.2,57,0
+Imperial,Hillary Clinton,5743.0,13.3,89,3
+Scioto,Donald Trump,5729.0,14.2,94,2
+Chelan,Donald Trump,5717.0,23.9,93,0
+Athens,Bernie Sanders,5663.0,28.2,91,2
+Roanoke,Donald Trump,5650.0,33.1,89,5
+Craven,Donald Trump,5608.0,21.0,72,21
+Hawaii,Bernie Sanders,5605.0,25.6,34,0
+Caldwell,Donald Trump,5599.0,12.5,92,5
+Garland,Donald Trump,5538.0,20.9,87,8
+Marquette,Bernie Sanders,5530.0,29.1,93,1
+Glynn,Donald Trump,5516.0,26.1,69,26
+Wise,Ted Cruz,5513.0,16.1,95,1
+Mason,Donald Trump,5491.0,17.3,88,1
+Darke,Donald Trump,5437.0,11.9,97,0
+Perry,Donald Trump,5424.0,15.5,97,0
+Potter,Ted Cruz,5400.0,15.6,81,10
+Autauga,Donald Trump,5387.0,20.9,77,18
+Belmont,Donald Trump,5313.0,14.4,93,4
+Chilton,Donald Trump,5273.0,12.9,87,10
+Huntingdon,Donald Trump,5230.0,13.5,92,5
+Nacogdoches,Ted Cruz,5229.0,24.3,77,18
+Stanly,Donald Trump,5202.0,16.0,84,11
+Lamar,Donald Trump,5197.0,33.1,76,20
+Queen Anne's,Donald Trump,5195.0,33.2,89,6
+Waupaca,Ted Cruz,5194.0,16.6,97,0
+Lowndes,Donald Trump,5194.0,23.1,59,36
+Daviess,Bernie Sanders,5188.0,18.8,91,5
+Pike,Donald Trump,5187.0,22.5,90,6
+Lenawee,Donald Trump,5167.0,19.3,94,2
+Kenton,Hillary Clinton,5146.0,29.1,91,4
+Ashland,John Kasich,5139.0,19.3,97,0
+Augusta,Donald Trump,5117.0,19.9,93,4
+Woodford,Ted Cruz,5091.0,27.6,97,0
+Taney,Donald Trump,5086.0,18.6,94,1
+Stevens,Donald Trump,5075.0,18.6,89,0
+Umatilla,Donald Trump,5065.0,15.5,90,1
+Sandusky,John Kasich,5064.0,13.7,93,3
+Susquehanna,Donald Trump,5027.0,16.5,97,0
+Vermilion,Donald Trump,5021.0,13.9,83,13
+Preble,Donald Trump,5019.0,11.3,97,0
+Auglaize,John Kasich,4998.0,17.1,97,0
+Plymouth,Bernie Sanders,4997.0,33.5,86,10
+Darlington,Hillary Clinton,4988.0,17.0,56,41
+Burke,Donald Trump,4985.0,16.6,86,6
+Tuolumne,Donald Trump,4949.0,19.5,90,2
+Harnett,Donald Trump,4943.0,18.5,72,21
+Georgetown,Hillary Clinton,4931.0,22.7,65,32
+Ross,John Kasich,4918.0,13.7,90,6
+Rio Arriba,Hillary Clinton,4915.0,16.4,78,0
+Calaveras,Donald Trump,4902.0,21.2,91,1
+Fauquier,Donald Trump,4888.0,33.2,87,8
+Pickaway,John Kasich,4885.0,16.1,94,3
+Rusk,Ted Cruz,4884.0,13.8,78,17
+Kerr,Ted Cruz,4846.0,28.2,94,2
+Venango,Donald Trump,4808.0,15.4,97,1
+McKinley,Hillary Clinton,4761.0,11.2,18,1
+Lenoir,Hillary Clinton,4731.0,14.0,56,41
+Twin Falls,Ted Cruz,4717.0,16.3,94,0
+Sutter,Donald Trump,4697.0,18.7,74,2
+Granville,Hillary Clinton,4693.0,16.4,64,32
+Dubois,Donald Trump,4692.0,18.9,97,0
+Buchanan,Donald Trump,4691.0,20.1,89,6
+Hamblen,Donald Trump,4690.0,16.0,91,4
+Walla Walla,Donald Trump,4689.0,26.0,92,2
+Jim Wells,Hillary Clinton,4688.0,11.1,96,1
+Tallapoosa,Donald Trump,4658.0,16.3,70,27
+Maury,Donald Trump,4655.0,17.4,84,12
+Mendocino,Bernie Sanders,4654.0,22.0,86,1
+Barrow,Donald Trump,4653.0,17.1,81,11
+Chautauqua,Donald Trump,4648.0,20.7,93,2
+Marinette,Donald Trump,4633.0,13.6,97,0
+Williamsburg,Hillary Clinton,4609.0,12.2,33,65
+Covington,Donald Trump,4608.0,14.2,84,13
+Grays Harbor,Donald Trump,4598.0,14.1,87,1
+Seneca,John Kasich,4596.0,15.3,94,2
+Pearl River,Donald Trump,4562.0,13.2,84,12
+Vance,Hillary Clinton,4561.0,11.4,46,50
+Clinton,Bernie Sanders,4524.0,28.2,94,1
+Wagoner,Ted Cruz,4459.0,21.6,76,3
+Shiawassee,Bernie Sanders,4452.0,14.2,96,0
+Apache,Hillary Clinton,4450.0,10.4,23,0
+Catoosa,Donald Trump,4449.0,17.5,93,2
+Hawkins,Donald Trump,4426.0,12.7,96,1
+Oconee,Donald Trump,4424.0,21.7,89,7
+Noble,Donald Trump,4422.0,13.2,97,0
+Tioga,Donald Trump,4421.0,19.1,97,0
+Maui,Bernie Sanders,4419.0,25.7,35,0
+Navajo,Hillary Clinton,4415.0,14.9,51,1
+Oconto,Donald Trump,4409.0,14.9,96,0
+Bannock,Ted Cruz,4404.0,26.8,91,0
+White,Ted Cruz,4395.0,18.1,92,4
+Yuma,Donald Trump,4390.0,14.3,91,2
+Russell,Hillary Clinton,4381.0,16.0,53,42
+Green,Bernie Sanders,4359.0,20.6,97,0
+Upshur,Ted Cruz,4358.0,13.3,87,8
+Maverick,Hillary Clinton,4342.0,12.2,96,0
+Gordon,Donald Trump,4339.0,14.2,92,4
+Taos,Bernie Sanders,4325.0,29.5,88,0
+Mifflin,Donald Trump,4310.0,11.5,97,0
+Ogle,Ted Cruz,4307.0,19.9,96,1
+Coffee,Donald Trump,4304.0,22.5,76,17
+Dunn,Bernie Sanders,4272.0,24.7,94,0
+Shawano,Donald Trump,4269.0,15.3,88,0
+Forrest,Donald Trump,4267.0,27.0,60,37
+Carter,Donald Trump,4266.0,15.8,96,1
+Spalding,Donald Trump,4257.0,14.8,63,33
+Gibson,Donald Trump,4237.0,16.1,95,2
+Howell,Donald Trump,4230.0,15.4,96,0
+Clarion,Donald Trump,4224.0,18.5,97,1
+Barron,Donald Trump,4217.0,16.2,96,1
+Surry,Donald Trump,4213.0,15.0,93,4
+Bastrop,Ted Cruz,4202.0,16.3,87,8
+Loudon,Donald Trump,4198.0,25.2,95,1
+Pittsylvania,Donald Trump,4198.0,13.7,76,21
+Preston,Donald Trump,4187.0,12.6,97,1
+Dale,Donald Trump,4151.0,17.0,75,19
+Scott,Bernie Sanders,4144.0,31.6,86,7
+Cooke,Ted Cruz,4143.0,19.5,92,3
+Troup,Donald Trump,4140.0,18.6,60,35
+Webster,Ted Cruz,4124.0,15.0,96,1
+Ontario,Donald Trump,4122.0,31.7,94,2
+Craighead,Ted Cruz,4108.0,24.4,82,14
+Huntington,Donald Trump,4100.0,16.9,97,0
+Silver Bow,Hillary Clinton,4089.0,22.2,94,0
+Robertson,Donald Trump,4077.0,17.1,89,7
+Logan,Donald Trump,4064.0,14.8,95,1
+Whitley,Ted Cruz,4064.0,16.7,97,0
+St. Francois,Donald Trump,4061.0,14.3,93,4
+Pender,Donald Trump,4033.0,21.7,79,16
+Lonoke,Ted Cruz,4028.0,18.2,90,6
+Burnet,Ted Cruz,4026.0,21.9,94,2
+Isabella,Bernie Sanders,4024.0,25.3,88,2
+Barnstable,Bernie Sanders,4020.0,39.1,93,2
+Huron,John Kasich,4019.0,13.1,96,1
+Hill,Ted Cruz,4003.0,14.8,90,6
+Chemung,Donald Trump,3982.0,21.5,88,6
+Defiance,John Kasich,3956.0,16.5,95,2
+Herkimer,Donald Trump,3955.0,20.5,96,1
+Williams,John Kasich,3943.0,12.8,96,1
+Tehama,Donald Trump,3940.0,13.5,90,1
+Wabash,Donald Trump,3932.0,17.0,96,0
+Stone,Donald Trump,3928.0,15.2,96,0
+Colbert,Hillary Clinton,3879.0,17.7,80,16
+Ohio,Donald Trump,3875.0,29.1,93,3
+Haywood,Bernie Sanders,3873.0,23.1,96,1
+Davie,Donald Trump,3847.0,24.9,90,6
+McKean,Donald Trump,3845.0,15.1,95,2
+Highland,Donald Trump,3831.0,11.4,96,1
+Payne,Bernie Sanders,3829.0,35.9,80,3
+Wells,Ted Cruz,3826.0,15.7,97,0
+Creek,Ted Cruz,3812.0,15.3,80,2
+Comanche,Bernie Sanders,3804.0,19.9,66,17
+Baxter,Donald Trump,3798.0,16.5,96,0
+Sampson,Hillary Clinton,3790.0,12.6,67,27
+Stokes,Donald Trump,3776.0,13.4,93,4
+Chambers,Ted Cruz,3758.0,18.0,87,9
+Tuscola,Donald Trump,3750.0,12.7,96,1
+Buffalo,Donald Trump,3748.0,31.6,95,1
+Levy,Donald Trump,3745.0,11.1,87,9
+Snyder,Donald Trump,3745.0,16.7,97,1
+Kershaw,Hillary Clinton,3743.0,19.3,72,25
+Ripley,Donald Trump,3694.0,15.9,97,0
+Van Buren,Bernie Sanders,3656.0,17.9,91,4
+Effingham,Donald Trump,3648.0,16.8,82,14
+Black Hawk,Bernie Sanders,3647.0,25.3,86,9
+Roane,Donald Trump,3634.0,17.3,94,2
+Columbus,Hillary Clinton,3628.0,12.2,63,30
+Grundy,Donald Trump,3625.0,20.2,96,1
+Tipton,Donald Trump,3618.0,15.1,78,18
+Chaves,Donald Trump,3612.0,18.4,92,2
+Amador,Donald Trump,3605.0,19.3,90,2
+McMinn,Donald Trump,3604.0,14.3,92,4
+Marengo,Hillary Clinton,3590.0,17.4,47,51
+Greenwood,Hillary Clinton,3588.0,22.1,65,32
+Siskiyou,Donald Trump,3573.0,23.9,87,1
+Clarendon,Hillary Clinton,3564.0,13.0,49,48
+Garrett,Donald Trump,3564.0,18.3,97,1
+Newaygo,Ted Cruz,3557.0,12.9,95,1
+Macoupin,Bernie Sanders,3552.0,15.9,97,1
+Wyoming,Donald Trump,3547.0,17.4,97,0
+McCracken,Bernie Sanders,3541.0,22.5,85,10
+Hoke,Hillary Clinton,3528.0,17.2,50,34
+Muskogee,Bernie Sanders,3515.0,17.9,61,11
+Cattaraugus,Donald Trump,3503.0,17.2,92,1
+Mineral,Donald Trump,3481.0,13.2,94,3
+Barry,Donald Trump,3478.0,17.7,97,0
+Vernon,Bernie Sanders,3476.0,19.5,97,0
+Bingham,Ted Cruz,3471.0,17.3,89,0
+Bladen,Hillary Clinton,3442.0,10.5,60,34
+Morrow,John Kasich,3440.0,14.1,97,0
+Yadkin,Donald Trump,3436.0,13.1,94,3
+Phelps,Donald Trump,3425.0,27.2,90,2
+Gillespie,Ted Cruz,3421.0,29.2,96,0
+San Miguel,Hillary Clinton,3418.0,19.6,92,1
+Door,Bernie Sanders,3417.0,29.0,97,0
+Eddy,Donald Trump,3409.0,16.7,93,1
+Pottawatomie,Bernie Sanders,3400.0,17.6,76,3
+Campbell,Donald Trump,3399.0,17.1,82,14
+Waller,Ted Cruz,3391.0,19.0,70,25
+Crittenden,Hillary Clinton,3379.0,13.9,45,51
+Copiah,Hillary Clinton,3373.0,13.5,47,51
+Navarro,Ted Cruz,3372.0,16.5,81,14
+Jennings,Donald Trump,3361.0,9.6,97,0
+Winston,Donald Trump,3352.0,10.4,96,1
+Pettis,Donald Trump,3343.0,15.2,92,3
+Wilcox,Hillary Clinton,3337.0,11.1,28,71
+Kittitas,Donald Trump,3337.0,33.6,91,1
+Clatsop,Bernie Sanders,3334.0,23.2,93,0
+Coryell,Ted Cruz,3327.0,15.1,74,17
+Laurens,Donald Trump,3321.0,14.5,71,26
+Decatur,Donald Trump,3319.0,13.7,97,0
+Box Elder,Ted Cruz,3314.0,21.2,95,0
+Gilmer,Donald Trump,3314.0,16.4,96,0
+Holmes,Hillary Clinton,3301.0,12.7,16,82
+Habersham,Donald Trump,3289.0,17.1,90,4
+Erath,Ted Cruz,3286.0,24.3,94,1
+Sanilac,Donald Trump,3279.0,11.4,97,0
+Callaway,Ted Cruz,3261.0,21.1,91,4
+Otero,Donald Trump,3256.0,16.6,83,4
+Vilas,Donald Trump,3241.0,24.1,86,0
+Wharton,Ted Cruz,3229.0,14.6,83,14
+Hopkins,Ted Cruz,3213.0,15.7,89,7
+Yuba,Donald Trump,3210.0,13.7,79,4
+Bullitt,Bernie Sanders,3210.0,12.7,96,1
+Austin,Ted Cruz,3201.0,18.6,87,9
+Cocke,Donald Trump,3200.0,9.5,95,2
+Iowa,Bernie Sanders,3198.0,21.7,97,0
+Posey,Donald Trump,3159.0,20.5,97,1
+Coles,Donald Trump,3156.0,24.2,93,4
+Bonner,Ted Cruz,3132.0,21.1,95,0
+Valencia,Hillary Clinton,3123.0,16.6,89,1
+Lea,Donald Trump,3112.0,13.3,91,4
+Bulloch,Donald Trump,3111.0,27.7,67,29
+Geneva,Donald Trump,3106.0,10.4,87,9
+Talbot,Donald Trump,3104.0,33.3,83,13
+Whiteside,Bernie Sanders,3102.0,16.2,95,1
+Murray,Donald Trump,3084.0,9.6,95,1
+Pope,Donald Trump,3073.0,20.7,92,3
+Gila,Donald Trump,3065.0,16.1,80,0
+Panola,Hillary Clinton,3061.0,14.3,48,49
+Hillsdale,Donald Trump,3060.0,15.3,97,0
+Crook,Donald Trump,3051.0,14.5,95,0
+Montcalm,Donald Trump,3051.0,13.4,95,2
+San Patricio,Ted Cruz,3047.0,14.7,94,2
+Stephenson,Ted Cruz,3038.0,17.9,86,9
+Duplin,Hillary Clinton,3036.0,10.4,70,26
+Bolivar,Hillary Clinton,3029.0,21.2,33,64
+Guernsey,Donald Trump,3029.0,12.9,95,1
+Pittsburg,Bernie Sanders,3026.0,15.3,73,3
+Stoddard,Donald Trump,3024.0,13.3,97,1
+Cayuga,Donald Trump,3024.0,19.6,92,4
+Grady,Ted Cruz,3020.0,16.8,86,2
+Greenbrier,Donald Trump,3005.0,17.1,94,2
+Fannin,Donald Trump,3001.0,14.4,96,0
+Salem,Donald Trump,2994.0,20.4,81,14
+Colquitt,Donald Trump,2967.0,13.1,73,23
+Person,Hillary Clinton,2954.0,14.7,69,27
+Curry,Donald Trump,2936.0,20.7,92,0
+Colleton,Hillary Clinton,2932.0,14.7,58,38
+Hertford,Hillary Clinton,2926.0,15.4,36,59
+Alcorn,Donald Trump,2901.0,17.4,85,12
+Gallia,Donald Trump,2900.0,15.2,94,2
+Humphreys,Hillary Clinton,2894.0,10.9,23,75
+Suwannee,Donald Trump,2844.0,9.8,83,13
+Iroquois,Donald Trump,2836.0,14.6,96,1
+Alexander,Ted Cruz,2830.0,11.7,91,5
+Okanogan,Donald Trump,2828.0,16.5,82,0
+Haralson,Donald Trump,2818.0,14.1,92,5
+Palo Pinto,Ted Cruz,2813.0,15.1,94,2
+Ionia,Bernie Sanders,2812.0,14.0,92,4
+Garfield,Ted Cruz,2798.0,21.7,85,3
+Juneau,Donald Trump,2780.0,12.4,94,2
+Coshocton,Donald Trump,2747.0,12.3,96,1
+Fountain,Donald Trump,2742.0,11.9,97,0
+Miller,Ted Cruz,2741.0,13.9,71,25
+Story,Bernie Sanders,2737.0,47.7,88,2
+Dickson,Donald Trump,2730.0,14.2,92,4
+Oldham,Hillary Clinton,2730.0,40.1,91,4
+Tift,Donald Trump,2697.0,16.0,66,30
+Phillips,Hillary Clinton,2696.0,12.0,36,61
+Van Wert,John Kasich,2688.0,15.4,97,1
+Owen,Donald Trump,2679.0,11.0,97,0
+Scotland,Hillary Clinton,2671.0,14.3,46,39
+Texas,Donald Trump,2659.0,12.0,93,3
+Barren,Bernie Sanders,2653.0,14.7,93,4
+Dare,Donald Trump,2650.0,30.6,94,3
+Thomas,Donald Trump,2649.0,18.1,60,36
+Dawson,Donald Trump,2649.0,24.4,96,0
+Elk,Donald Trump,2647.0,14.9,98,0
+Graves,Bernie Sanders,2631.0,16.9,92,4
+Otsego,Bernie Sanders,2623.0,26.8,94,2
+Culpeper,Donald Trump,2620.0,22.6,78,15
+Bayfield,Bernie Sanders,2604.0,28.5,86,0
+Emmet,Bernie Sanders,2589.0,31.8,92,0
+Plumas,Donald Trump,2588.0,22.6,90,1
+Wexford,Donald Trump,2578.0,16.8,96,0
+LaGrange,Donald Trump,2571.0,10.3,98,0
+Barbour,Hillary Clinton,2567.0,13.4,50,47
+McDowell,Donald Trump,2552.0,13.9,92,4
+Malheur,Donald Trump,2543.0,13.1,92,1
+Orleans,Donald Trump,2532.0,16.4,90,6
+Cheatham,Donald Trump,2530.0,18.9,95,1
+Cleburne,Donald Trump,2530.0,16.8,97,0
+Hood River,Bernie Sanders,2527.0,30.5,94,0
+Lafayette,Donald Trump,2521.0,37.2,72,23
+Caroline,Donald Trump,2521.0,15.0,81,14
+Powhatan,Donald Trump,2509.0,27.6,85,12
+Lassen,Donald Trump,2508.0,13.1,81,8
+Dubuque,Hillary Clinton,2504.0,27.1,93,3
+Pontotoc,Ted Cruz,2498.0,12.0,82,15
+Isle of Wight,Donald Trump,2497.0,25.5,72,23
+McClain,Ted Cruz,2484.0,20.4,86,0
+Kewaunee,Ted Cruz,2481.0,13.5,97,0
+Pasquotank,Hillary Clinton,2471.0,20.1,58,37
+Starke,Donald Trump,2456.0,12.3,97,0
+Branch,Donald Trump,2455.0,13.4,95,2
+Lumpkin,Donald Trump,2453.0,25.4,94,1
+Bullock,Hillary Clinton,2451.0,12.5,26,70
+Trempealeau,Bernie Sanders,2429.0,17.5,97,0
+Stephens,Ted Cruz,2428.0,17.4,86,2
+Hale,Hillary Clinton,2426.0,12.8,40,58
+Mingo,Bernie Sanders,2425.0,10.7,96,1
+Simpson,Donald Trump,2420.0,14.7,62,35
+Hutchinson,Ted Cruz,2418.0,13.5,92,3
+Tooele,Ted Cruz,2412.0,20.4,94,0
+Langlade,Donald Trump,2407.0,13.2,96,0
+Dyer,Donald Trump,2400.0,18.1,82,14
+Shenandoah,Donald Trump,2400.0,19.8,94,2
+Scotts Bluff,Donald Trump,2397.0,20.0,93,0
+Nelson,Hillary Clinton,2395.0,16.6,92,5
+Waushara,Donald Trump,2391.0,14.3,95,2
+Osage,Hillary Clinton,2390.0,16.1,66,11
+Juniata,Donald Trump,2390.0,11.8,97,0
+Oktibbeha,Hillary Clinton,2389.0,42.6,58,37
+Chenango,Donald Trump,2384.0,17.1,96,1
+Meigs,Donald Trump,2378.0,12.2,97,0
+Currituck,Donald Trump,2368.0,18.4,90,6
+Rush,Donald Trump,2362.0,15.1,97,1
+Leelanau,Bernie Sanders,2359.0,39.2,93,0
+Spencer,Donald Trump,2350.0,15.5,97,0
+Rhea,Donald Trump,2339.0,12.6,95,2
+San Jacinto,Ted Cruz,2333.0,12.0,86,10
+Atascosa,Ted Cruz,2333.0,14.1,95,1
+Sunflower,Hillary Clinton,2332.0,13.0,25,73
+Baker,Donald Trump,2330.0,20.9,95,0
+Rutland,Bernie Sanders,2318.0,28.0,97,0
+Laurel,Donald Trump,2313.0,12.6,97,0
+Anson,Hillary Clinton,2307.0,10.2,48,48
+Coahoma,Hillary Clinton,2301.0,17.5,23,74
+Klickitat,Donald Trump,2289.0,19.5,92,0
+Iron,Ted Cruz,2287.0,26.4,93,0
+Asotin,Donald Trump,2270.0,17.8,94,0
+Bandera,Ted Cruz,2268.0,21.9,96,0
+Boyd,Bernie Sanders,2262.0,16.3,94,3
+Roscommon,Donald Trump,2257.0,12.9,96,0
+Neshoba,Donald Trump,2249.0,12.6,60,21
+George,Donald Trump,2245.0,10.3,89,8
+Calloway,Bernie Sanders,2239.0,27.7,91,4
+Eastland,Ted Cruz,2221.0,16.0,94,2
+Bryan,Donald Trump,2214.0,30.6,78,15
+Nicholas,Donald Trump,2210.0,14.1,97,0
+Gray,Ted Cruz,2210.0,13.5,90,5
+Grimes,Ted Cruz,2207.0,11.1,80,16
+Tillamook,Bernie Sanders,2207.0,20.7,94,0
+Freestone,Ted Cruz,2204.0,11.7,79,16
+Meade,Donald Trump,2204.0,19.6,91,1
+Yazoo,Hillary Clinton,2203.0,11.9,40,57
+Okeechobee,Donald Trump,2202.0,10.2,87,8
+Jay,Donald Trump,2194.0,10.0,98,0
+Kay,Ted Cruz,2190.0,19.5,81,2
+Botetourt,Donald Trump,2185.0,24.9,94,3
+Bureau,Donald Trump,2185.0,17.4,96,0
+Montague,Ted Cruz,2163.0,16.6,96,0
+Llano,Ted Cruz,2161.0,25.4,96,1
+Green Lake,Ted Cruz,2146.0,16.6,97,0
+Uintah,Ted Cruz,2144.0,16.2,88,0
+Mayes,Bernie Sanders,2144.0,15.3,67,0
+Transylvania,Ted Cruz,2139.0,27.6,93,4
+Latah,Ted Cruz,2134.0,44.1,93,1
+Marlboro,Hillary Clinton,2132.0,8.7,42,51
+Bosque,Ted Cruz,2132.0,15.4,95,2
+Hampshire,Donald Trump,2125.0,8.2,97,1
+Bennington,Bernie Sanders,2121.0,32.3,96,1
+Newberry,Hillary Clinton,2118.0,18.9,65,31
+Jessamine,Bernie Sanders,2113.0,27.4,93,3
+Mecosta,Donald Trump,2113.0,21.6,93,3
+Matagorda,Ted Cruz,2109.0,14.5,83,11
+Ouachita,Hillary Clinton,2095.0,15.5,57,40
+Cassia,Ted Cruz,2095.0,15.6,95,0
+Louisa,Donald Trump,2094.0,18.8,80,16
+Leflore,Hillary Clinton,2094.0,19.0,25,72
+Aransas,Donald Trump,2091.0,21.7,92,2
+Cheboygan,Donald Trump,2089.0,16.3,93,0
+Independence,Donald Trump,2077.0,14.4,94,2
+Hockley,Ted Cruz,2073.0,17.4,92,4
+Willacy,Hillary Clinton,2072.0,8.8,95,2
+Whitman,Donald Trump,2071.0,48.9,85,2
+Accomack,Donald Trump,2068.0,17.2,68,28
+Bertie,Hillary Clinton,2065.0,10.6,36,61
+Kauai,Bernie Sanders,2049.0,25.1,33,0
+Houghton,Bernie Sanders,2039.0,28.9,93,0
+Pacific,Donald Trump,2038.0,17.8,89,1
+Sawyer,Donald Trump,2034.0,22.0,78,0
+Tate,Ted Cruz,2034.0,15.4,66,31
+Tyler,Ted Cruz,2032.0,11.8,86,11
+Conecuh,Hillary Clinton,2031.0,8.8,52,46
+Claiborne,Donald Trump,2022.0,13.3,96,1
+San Benito,Hillary Clinton,2022.0,18.2,88,1
+Mississippi,Hillary Clinton,2017.0,13.0,62,34
+Hocking,Donald Trump,2007.0,12.7,97,0
+Ware,Donald Trump,1998.0,13.9,67,29
+Clare,Donald Trump,1996.0,11.1,96,0
+Parke,Donald Trump,1996.0,13.7,95,2
+Ashe,Donald Trump,1993.0,19.5,97,1
+Sanders,Donald Trump,1992.0,16.7,91,0
+Prince George,Hillary Clinton,1992.0,17.9,61,32
+Fergus,Donald Trump,1975.0,25.5,95,0
+Iosco,Donald Trump,1973.0,14.0,96,0
+Antrim,Donald Trump,1969.0,23.8,96,0
+Zapata,Hillary Clinton,1969.0,8.5,98,0
+Brooke,Bernie Sanders,1966.0,17.0,96,1
+Colorado,Ted Cruz,1956.0,16.9,83,13
+Delta,Donald Trump,1954.0,18.2,94,0
+Tippah,Donald Trump,1951.0,10.3,81,16
+Young,Ted Cruz,1945.0,16.7,95,1
+Mariposa,Donald Trump,1940.0,21.3,90,1
+Dinwiddie,Hillary Clinton,1935.0,12.8,64,32
+Hampton,Hillary Clinton,1930.0,11.4,43,53
+Pend Oreille,Donald Trump,1928.0,17.8,91,0
+Washburn,Donald Trump,1926.0,20.3,96,0
+Woodbury,Bernie Sanders,1920.0,20.3,88,2
+Upson,Donald Trump,1910.0,11.4,69,28
+Giles,Donald Trump,1910.0,14.6,86,10
+Obion,Donald Trump,1908.0,14.2,87,10
+Itawamba,Donald Trump,1905.0,13.5,91,6
+Goochland,Marco Rubio,1903.0,38.0,79,17
+Jersey,Donald Trump,1902.0,16.2,97,0
+Park,Donald Trump,1901.0,33.6,96,0
+Wyandot,John Kasich,1896.0,12.0,97,0
+Worth,Donald Trump,1890.0,8.1,69,28
+Titus,Ted Cruz,1890.0,13.8,84,10
+Charlevoix,Donald Trump,1886.0,27.0,95,0
+Milam,Ted Cruz,1885.0,14.4,86,10
+Alpena,Donald Trump,1885.0,16.0,97,0
+Butts,Donald Trump,1884.0,8.4,70,27
+Okmulgee,Bernie Sanders,1882.0,13.9,65,8
+Cortland,Bernie Sanders,1878.0,23.5,94,1
+Wright,Donald Trump,1874.0,11.1,96,0
+Wythe,Donald Trump,1873.0,15.0,95,2
+Sequoyah,Bernie Sanders,1872.0,13.3,66,2
+Frio,Hillary Clinton,1864.0,6.5,92,3
+Gilchrist,Donald Trump,1860.0,11.1,91,5
+Hart,Donald Trump,1858.0,15.5,78,18
+Piatt,Ted Cruz,1855.0,26.5,97,0
+Tishomingo,Donald Trump,1854.0,11.3,95,2
+McNairy,Donald Trump,1822.0,11.6,91,6
+Unicoi,Donald Trump,1813.0,12.9,98,0
+Gratiot,Bernie Sanders,1812.0,14.0,91,5
+Banks,Donald Trump,1806.0,11.6,93,2
+Dimmit,Hillary Clinton,1804.0,9.2,96,1
+Wasco,Bernie Sanders,1795.0,20.1,91,0
+Letcher,Bernie Sanders,1788.0,11.5,98,0
+Avery,Donald Trump,1785.0,20.4,93,4
+Dunklin,Donald Trump,1781.0,11.4,87,10
+Val Verde,Hillary Clinton,1777.0,15.3,95,2
+Amherst,Donald Trump,1777.0,17.4,77,19
+Mitchell,Donald Trump,1775.0,16.9,96,0
+Gladwin,Donald Trump,1774.0,11.8,97,0
+Choctaw,Hillary Clinton,1772.0,11.8,56,42
+Saunders,Donald Trump,1772.0,24.4,97,0
+Grainger,Donald Trump,1767.0,10.5,97,0
+Weakley,Donald Trump,1764.0,20.1,88,8
+Conway,Hillary Clinton,1755.0,14.7,85,11
+Vermillion,Donald Trump,1748.0,13.0,98,0
+Montour,Donald Trump,1744.0,26.8,94,1
+Smyth,Donald Trump,1744.0,15.0,95,2
+Wetzel,Bernie Sanders,1744.0,10.2,98,0
+Ritchie,Donald Trump,1740.0,10.6,98,0
+Uvalde,Hillary Clinton,1740.0,14.5,96,1
+Kleberg,Hillary Clinton,1738.0,23.6,90,4
+Rabun,Donald Trump,1732.0,26.6,95,1
+Grenada,Donald Trump,1727.0,14.7,56,42
+Kalkaska,Donald Trump,1724.0,12.1,96,0
+Hardeman,Hillary Clinton,1721.0,9.8,56,41
+Breathitt,Bernie Sanders,1716.0,9.8,97,0
+Bamberg,Hillary Clinton,1715.0,17.5,37,61
+Burleson,Ted Cruz,1711.0,11.6,84,13
+Dickinson,Donald Trump,1708.0,20.0,96,0
+Lampasas,Ted Cruz,1705.0,19.8,90,4
+Caswell,Hillary Clinton,1701.0,9.0,64,33
+Glenn,Donald Trump,1699.0,14.6,90,1
+Oceana,Ted Cruz,1698.0,15.0,95,0
+Gonzales,Ted Cruz,1698.0,14.5,89,7
+Callahan,Ted Cruz,1689.0,14.7,95,1
+Dent,Donald Trump,1688.0,11.4,95,0
+Peach,Hillary Clinton,1675.0,19.2,51,45
+Chattooga,Donald Trump,1674.0,7.7,86,10
+Price,Donald Trump,1673.0,15.3,96,0
+Wakulla,Donald Trump,1664.0,17.2,81,15
+Stillwater,Donald Trump,1658.0,22.1,96,0
+Greenup,Bernie Sanders,1655.0,15.7,97,1
+Benzie,Bernie Sanders,1650.0,24.9,96,0
+Boyle,Hillary Clinton,1648.0,22.8,88,7
+Weld,Bernie Sanders,1647.0,25.9,93,1
+Manistee,Bernie Sanders,1646.0,19.1,92,3
+Audrain,Ted Cruz,1642.0,13.1,90,6
+Muhlenberg,Bernie Sanders,1632.0,11.3,93,5
+Burnett,Donald Trump,1628.0,16.7,91,0
+Beaverhead,Donald Trump,1626.0,27.2,95,0
+New Kent,Donald Trump,1626.0,23.2,81,13
+Dillon,Hillary Clinton,1615.0,8.2,48,46
+Leake,Hillary Clinton,1614.0,10.7,50,41
+Ogemaw,Donald Trump,1612.0,11.3,96,0
+Hughes,Donald Trump,1606.0,32.0,84,1
+Graham,Ted Cruz,1606.0,12.3,81,2
+Brooks,Hillary Clinton,1603.0,10.8,96,1
+McDonough,Donald Trump,1599.0,33.3,90,5
+Prentiss,Donald Trump,1597.0,11.4,84,14
+Hot Spring,Donald Trump,1597.0,12.3,85,11
+Cibola,Hillary Clinton,1586.0,10.4,54,1
+Nez Perce,Ted Cruz,1583.0,21.1,90,0
+Overton,Donald Trump,1582.0,12.6,97,0
+McDonald,Donald Trump,1580.0,10.5,89,1
+Pottawattamie,Bernie Sanders,1573.0,19.1,95,1
+Ray,Donald Trump,1565.0,13.9,95,1
+Edgar,Donald Trump,1562.0,18.2,98,0
+Barton,Ted Cruz,1560.0,16.9,94,0
+Barnwell,Hillary Clinton,1560.0,11.2,53,44
+Zavala,Hillary Clinton,1557.0,9.4,96,1
+Newport,Bernie Sanders,1552.0,44.7,90,4
+Caddo,Bernie Sanders,1543.0,13.7,65,3
+Del Norte,Donald Trump,1536.0,14.0,78,3
+Wasatch,Ted Cruz,1529.0,33.4,95,0
+Sioux,Ted Cruz,1524.0,23.4,96,1
+Attala,Hillary Clinton,1519.0,16.0,56,42
+Toombs,Donald Trump,1513.0,15.2,70,26
+Adair,Donald Trump,1512.0,13.9,95,3
+Bee,Ted Cruz,1509.0,8.2,88,8
+Garvin,Bernie Sanders,1505.0,15.4,82,2
+Abbeville,Hillary Clinton,1501.0,12.2,69,28
+Crenshaw,Donald Trump,1496.0,12.7,72,24
+Custer,Ted Cruz,1491.0,27.8,84,3
+Emanuel,Donald Trump,1489.0,11.6,63,34
+Edgefield,Hillary Clinton,1474.0,17.2,60,36
+Codington,Donald Trump,1473.0,21.9,94,0
+La Plata,Bernie Sanders,1466.0,41.4,89,0
+Meriwether,Hillary Clinton,1463.0,8.9,58,39
+Andrew,Donald Trump,1457.0,22.0,97,0
+King George,Donald Trump,1437.0,31.1,77,17
+Trinity,Ted Cruz,1435.0,9.9,87,9
+Fremont,Ted Cruz,1434.0,19.7,96,0
+Gasconade,Donald Trump,1429.0,15.4,97,0
+Los Alamos,Hillary Clinton,1424.0,63.4,89,0
+Jim Hogg,Hillary Clinton,1421.0,10.9,97,0
+Schoharie,Donald Trump,1419.0,19.3,96,1
+Fentress,Donald Trump,1418.0,11.1,98,0
+Inyo,Donald Trump,1414.0,21.4,81,1
+Gage,Donald Trump,1407.0,20.0,96,0
+Cedar,Ted Cruz,1404.0,14.6,96,0
+Lyon,Donald Trump,1399.0,16.7,90,1
+Chickasaw,Hillary Clinton,1398.0,10.0,54,43
+Noxubee,Hillary Clinton,1397.0,11.2,26,71
+Elbert,Donald Trump,1394.0,11.3,68,29
+Gem,Ted Cruz,1391.0,15.8,95,0
+Yancey,Bernie Sanders,1386.0,17.9,96,1
+Blanco,Ted Cruz,1379.0,26.8,95,1
+Page,Donald Trump,1377.0,11.4,96,2
+New Madrid,Donald Trump,1376.0,12.3,81,15
+Ashley,Hillary Clinton,1375.0,12.2,71,25
+Moniteau,Ted Cruz,1374.0,18.1,93,4
+Chicot,Hillary Clinton,1370.0,12.6,43,54
+Cooper,Ted Cruz,1369.0,18.4,89,7
+Prince Edward,Hillary Clinton,1366.0,21.9,64,32
+Payette,Ted Cruz,1364.0,16.4,94,0
+Nolan,Ted Cruz,1361.0,12.5,91,5
+Towns,Donald Trump,1356.0,22.7,96,1
+Fluvanna,Hillary Clinton,1355.0,28.8,81,15
+Andrews,Ted Cruz,1349.0,14.2,93,2
+New London,Bernie Sanders,1343.0,31.3,83,6
+Desha,Hillary Clinton,1342.0,12.7,50,47
+Duchesne,Ted Cruz,1342.0,16.0,91,0
+Colusa,Donald Trump,1342.0,13.8,91,1
+Tallahatchie,Hillary Clinton,1341.0,8.5,41,56
+Massac,Donald Trump,1341.0,16.7,91,5
+Harney,Donald Trump,1335.0,15.6,92,0
+Hickman,Donald Trump,1325.0,12.0,92,5
+Braxton,Bernie Sanders,1321.0,11.2,97,0
+Moultrie,Ted Cruz,1321.0,14.1,98,0
+McCurtain,Bernie Sanders,1314.0,13.9,67,8
+Bates,Donald Trump,1306.0,11.9,96,1
+Menominee,Donald Trump,1304.0,14.4,94,0
+Bristol,Bernie Sanders,1302.0,43.7,95,1
+Holt,Donald Trump,1302.0,19.0,98,0
+Yates,Donald Trump,1296.0,23.2,97,1
+Hendry,Donald Trump,1290.0,9.9,82,13
+Appling,Donald Trump,1290.0,12.8,77,19
+McDuffie,Donald Trump,1288.0,13.7,56,40
+Sanpete,Ted Cruz,1282.0,20.8,94,1
+Ford,Ted Cruz,1281.0,16.3,97,1
+Gaines,Ted Cruz,1274.0,11.9,94,2
+Bollinger,Donald Trump,1272.0,10.9,97,0
+Wilkinson,Hillary Clinton,1269.0,11.8,28,70
+Nodaway,Donald Trump,1268.0,23.4,94,2
+Scurry,Ted Cruz,1265.0,14.4,91,5
+McIntosh,Bernie Sanders,1261.0,13.0,70,3
+Pueblo,Hillary Clinton,1260.0,21.5,90,2
+Otoe,Donald Trump,1255.0,23.2,96,0
+Keith,Donald Trump,1253.0,20.4,96,0
+Drew,Hillary Clinton,1250.0,19.1,69,28
+Valley,Donald Trump,1250.0,17.1,87,0
+Saluda,Donald Trump,1248.0,12.4,69,26
+Wallowa,Donald Trump,1245.0,24.0,95,0
+Cannon,Donald Trump,1244.0,13.0,96,1
+Sharp,Donald Trump,1241.0,11.0,95,0
+Woodward,Ted Cruz,1235.0,17.8,91,2
+Coosa,Donald Trump,1233.0,9.8,66,31
+Oglethorpe,Donald Trump,1230.0,18.0,79,17
+Cook,Donald Trump,1229.0,12.4,69,27
+Doddridge,Donald Trump,1222.0,12.4,96,1
+Missaukee,Donald Trump,1221.0,13.0,96,0
+Cherry,Donald Trump,1220.0,21.3,90,0
+Sabine,Donald Trump,1215.0,13.4,89,7
+Archer,Ted Cruz,1215.0,20.0,95,1
+Yalobusha,Hillary Clinton,1214.0,13.2,59,38
+Amite,Hillary Clinton,1212.0,11.6,57,40
+Somervell,Ted Cruz,1206.0,29.0,94,1
+Crisp,Donald Trump,1204.0,15.5,53,43
+Southampton,Hillary Clinton,1199.0,13.6,61,36
+Box Butte,Donald Trump,1188.0,17.6,92,0
+Patrick,Donald Trump,1182.0,10.7,92,5
+Red Willow,Donald Trump,1178.0,19.5,96,0
+Windham,Bernie Sanders,1171.0,22.3,92,2
+Jerome,Ted Cruz,1164.0,13.4,94,0
+Minidoka,Ted Cruz,1163.0,9.9,94,0
+Brantley,Donald Trump,1161.0,6.4,94,3
+Pemiscot,Donald Trump,1155.0,10.0,71,26
+Rockbridge,Donald Trump,1154.0,23.2,94,2
+Dade,Donald Trump,1151.0,17.0,95,1
+Falls,Ted Cruz,1150.0,10.7,71,24
+Coleman,Ted Cruz,1149.0,15.0,93,2
+Walthall,Donald Trump,1143.0,12.6,54,43
+Arenac,Donald Trump,1141.0,11.4,96,0
+Runnels,Ted Cruz,1132.0,14.9,93,2
+King William,Donald Trump,1131.0,19.2,77,17
+Cheyenne,Donald Trump,1130.0,25.3,95,0
+Reeves,Hillary Clinton,1128.0,10.5,91,5
+Luna,Donald Trump,1123.0,13.8,93,1
+Lamb,Ted Cruz,1121.0,14.0,91,5
+Hardy,Donald Trump,1119.0,9.5,94,3
+Knott,Bernie Sanders,1114.0,13.0,98,0
+Hardee,Donald Trump,1113.0,8.8,88,7
+Alcona,Donald Trump,1111.0,13.0,97,0
+Forest,Donald Trump,1110.0,12.2,81,1
+Bourbon,Hillary Clinton,1109.0,15.8,91,6
+Cerro Gordo,Bernie Sanders,1108.0,21.0,95,1
+Rains,Ted Cruz,1105.0,11.0,93,2
+Dixie,Donald Trump,1103.0,8.4,88,9
+Bond,Donald Trump,1102.0,19.1,90,6
+Ozark,Donald Trump,1099.0,12.5,97,0
+Mesa,Bernie Sanders,1095.0,25.7,94,1
+Harlan,Bernie Sanders,1092.0,10.6,95,2
+Tattnall,Donald Trump,1089.0,11.6,68,29
+Big Horn,Donald Trump,1087.0,15.5,31,0
+Live Oak,Ted Cruz,1081.0,14.3,92,4
+Ste. Genevieve,Donald Trump,1080.0,10.7,96,0
+Skamania,Donald Trump,1078.0,20.8,93,0
+Glacier,Bernie Sanders,1074.0,18.4,33,0
+Arkansas,Donald Trump,1073.0,12.4,72,24
+Jeff Davis,Donald Trump,1071.0,9.6,82,15
+Heard,Donald Trump,1068.0,8.2,86,10
+Carson City,Donald Trump,1066.0,20.1,89,2
+Des Moines,Bernie Sanders,1066.0,18.9,90,5
+Menard,Ted Cruz,1064.0,22.1,97,1
+Summers,Bernie Sanders,1060.0,12.7,92,5
+Amelia,Donald Trump,1055.0,14.0,74,21
+Nantucket,Bernie Sanders,1051.0,44.0,88,8
+Socorro,Hillary Clinton,1050.0,19.4,81,1
+Red River,Ted Cruz,1048.0,14.5,79,17
+Montmorency,Donald Trump,1046.0,9.9,97,0
+Sequatchie,Donald Trump,1046.0,13.5,97,0
+Elko,Ted Cruz,1039.0,16.4,88,1
+Gulf,Donald Trump,1038.0,13.6,78,19
+Poinsett,Donald Trump,1036.0,8.6,89,8
+Appomattox,Donald Trump,1033.0,15.0,77,19
+Musselshell,Donald Trump,1032.0,13.6,95,0
+Casey,Donald Trump,1029.0,8.4,97,0
+Vinton,Donald Trump,1023.0,8.5,97,0
+Allendale,Hillary Clinton,1022.0,15.0,25,72
+Ben Hill,Donald Trump,1020.0,9.8,61,35
+Modoc,Donald Trump,1019.0,18.7,88,1
+Blackford,Donald Trump,1019.0,9.8,97,0
+Torrance,Donald Trump,1016.0,14.7,90,2
+Sierra,Donald Trump,1013.0,21.1,93,0
+Broomfield,Bernie Sanders,1010.0,47.5,88,1
+Bledsoe,Donald Trump,1009.0,9.3,92,6
+Kemper,Hillary Clinton,1008.0,10.4,35,60
+Broadwater,Donald Trump,1001.0,19.4,96,0
+Pamlico,Donald Trump,999.0,18.7,77,20
+Crockett,Donald Trump,995.0,11.9,83,13
+Deaf Smith,Ted Cruz,993.0,15.6,94,2
+Mora,Hillary Clinton,986.0,9.5,93,1
+Quitman,Hillary Clinton,986.0,13.7,29,69
+Deer Lodge,Hillary Clinton,986.0,18.1,93,0
+Nye,Donald Trump,980.0,12.3,90,2
+Chowan,Hillary Clinton,974.0,20.1,63,34
+McCormick,Hillary Clinton,973.0,18.2,49,48
+Cross,Donald Trump,972.0,11.4,74,22
+Muscatine,Bernie Sanders,972.0,16.2,94,2
+Roosevelt,Donald Trump,966.0,21.1,91,2
+Ralls,Donald Trump,961.0,13.3,96,1
+Rosebud,Donald Trump,959.0,22.3,59,0
+Kingfisher,Ted Cruz,958.0,18.2,91,1
+Maries,Donald Trump,958.0,16.5,97,0
+Norfolk,Bernie Sanders,956.0,49.2,80,6
+Brookings,Hillary Clinton,955.0,40.2,93,1
+Stewart,Donald Trump,953.0,11.7,94,1
+Colfax,Hillary Clinton,949.0,19.8,93,0
+Ferry,Donald Trump,949.0,16.1,76,0
+Jack,Ted Cruz,943.0,10.7,93,4
+Oregon,Donald Trump,941.0,9.8,95,0
+La Paz,Donald Trump,940.0,9.3,77,1
+Searcy,Donald Trump,939.0,12.0,95,0
+Schuyler,Donald Trump,938.0,16.9,96,1
+Seward,Donald Trump,935.0,26.1,97,0
+Bleckley,Donald Trump,935.0,14.9,70,26
+Pondera,Donald Trump,930.0,20.5,82,0
+Ochiltree,Ted Cruz,928.0,15.3,95,1
+Craig,Bernie Sanders,926.0,12.5,66,3
+Wilbarger,Ted Cruz,923.0,16.5,86,8
+Fall River,Donald Trump,923.0,22.4,87,1
+Mono,Bernie Sanders,917.0,29.8,91,0
+Hempstead,Ted Cruz,917.0,14.1,66,29
+San Augustine,Ted Cruz,916.0,12.4,74,22
+Presque Isle,Donald Trump,916.0,16.3,97,0
+Dickenson,Donald Trump,911.0,10.5,98,0
+Yell,Donald Trump,911.0,9.4,93,2
+McCulloch,Ted Cruz,906.0,15.0,94,2
+Tunica,Hillary Clinton,904.0,15.4,22,75
+Bacon,Donald Trump,904.0,12.1,81,16
+Boundary,Ted Cruz,901.0,15.4,94,0
+Beckham,Ted Cruz,900.0,16.4,88,4
+Candler,Donald Trump,897.0,14.6,73,24
+Teton,Donald Trump,882.0,24.5,96,0
+Terry,Ted Cruz,879.0,15.5,91,5
+Breckinridge,Hillary Clinton,877.0,9.4,95,2
+Izard,Donald Trump,873.0,11.7,95,1
+Irwin,Donald Trump,869.0,10.3,71,26
+Edwards,Donald Trump,867.0,10.5,97,0
+Chouteau,Donald Trump,865.0,22.9,77,0
+Gooding,Ted Cruz,863.0,12.1,94,0
+Camp,Ted Cruz,863.0,15.2,78,16
+Charles City,Hillary Clinton,863.0,13.9,42,47
+Toole,Donald Trump,863.0,14.6,91,0
+Woodruff,Hillary Clinton,862.0,10.1,70,26
+Switzerland,Donald Trump,858.0,9.9,97,0
+Mackinac,Donald Trump,856.0,18.5,75,1
+Pleasants,Donald Trump,855.0,10.5,97,1
+Carson,Ted Cruz,854.0,21.5,95,0
+Latimer,Bernie Sanders,852.0,13.8,68,1
+Pocahontas,Donald Trump,833.0,16.4,97,1
+Greensville,Hillary Clinton,832.0,7.2,38,59
+Swain,Bernie Sanders,831.0,16.3,65,1
+Dawes,Donald Trump,831.0,40.6,89,1
+Buckingham,Donald Trump,830.0,11.9,62,34
+Nottoway,Hillary Clinton,829.0,12.0,57,39
+Dakota,Donald Trump,819.0,11.1,86,4
+Twiggs,Hillary Clinton,818.0,10.8,57,40
+Powell,Donald Trump,818.0,17.8,92,1
+Wapello,Hillary Clinton,817.0,16.2,94,2
+Pecos,Hillary Clinton,816.0,12.7,92,4
+Major,Ted Cruz,816.0,16.6,92,0
+Sheridan,Donald Trump,809.0,22.6,85,0
+Davison,Donald Trump,808.0,26.1,94,1
+Shannon,Donald Trump,808.0,11.2,95,0
+Tolland,Bernie Sanders,806.0,36.9,90,3
+Fleming,Bernie Sanders,806.0,12.8,97,1
+Terrell,Hillary Clinton,804.0,8.7,37,60
+Screven,Donald Trump,801.0,13.0,56,41
+Gogebic,Bernie Sanders,790.0,18.3,90,4
+Alleghany,Donald Trump,790.0,18.3,95,1
+Tucker,Donald Trump,787.0,15.4,98,0
+Cuming,Donald Trump,783.0,17.5,97,0
+Wheeler,Ted Cruz,781.0,18.4,93,2
+Presidio,Hillary Clinton,776.0,23.6,94,1
+Merrick,Donald Trump,775.0,17.0,96,0
+Antelope,Donald Trump,772.0,16.7,98,0
+Brewster,Bernie Sanders,771.0,36.1,93,1
+Millard,Ted Cruz,771.0,19.0,95,0
+Mathews,Donald Trump,762.0,27.2,87,9
+Pawnee,Bernie Sanders,762.0,17.0,79,0
+Early,Donald Trump,760.0,12.9,48,49
+Lemhi,Donald Trump,757.0,23.8,95,0
+Haskell,Bernie Sanders,752.0,11.4,75,0
+Gates,Hillary Clinton,749.0,11.6,63,33
+Goliad,Ted Cruz,747.0,14.2,92,5
+Rockcastle,Donald Trump,743.0,10.9,98,0
+Ward,Ted Cruz,742.0,12.5,90,4
+Lunenburg,Hillary Clinton,738.0,11.9,63,34
+Dooly,Hillary Clinton,737.0,10.1,47,50
+Fallon,Donald Trump,734.0,16.1,97,0
+Parmer,Ted Cruz,728.0,16.2,94,1
+Perquimans,Donald Trump,726.0,18.4,73,24
+McCreary,Donald Trump,725.0,7.3,91,5
+Atoka,Bernie Sanders,723.0,14.2,74,4
+Little River,Hillary Clinton,721.0,10.6,75,19
+Karnes,Hillary Clinton,719.0,11.2,89,8
+Owyhee,Ted Cruz,717.0,8.2,91,0
+Trigg,Bernie Sanders,715.0,18.4,89,7
+Windsor,Bernie Sanders,709.0,34.0,96,0
+San Saba,Ted Cruz,707.0,13.1,94,2
+Sweet Grass,Donald Trump,707.0,27.1,96,0
+Yankton,Hillary Clinton,706.0,26.4,92,1
+Oscoda,Donald Trump,705.0,10.4,97,0
+Washita,Bernie Sanders,700.0,18.0,91,1
+Richardson,Donald Trump,699.0,18.8,93,0
+Morrill,Donald Trump,695.0,18.3,95,0
+Quay,Donald Trump,695.0,13.2,92,1
+Boise,Donald Trump,691.0,24.1,95,0
+Yoakum,Ted Cruz,685.0,15.0,95,1
+Hansford,Ted Cruz,682.0,21.8,96,1
+Lynn,Ted Cruz,678.0,17.7,93,2
+Benewah,Ted Cruz,671.0,13.4,86,0
+Mahaska,Ted Cruz,669.0,21.5,95,1
+Pushmataha,Bernie Sanders,667.0,11.6,75,1
+Ballard,Bernie Sanders,659.0,13.1,94,3
+Turner,Donald Trump,652.0,9.8,58,39
+Juab,Ted Cruz,647.0,14.6,96,0
+Reynolds,Donald Trump,647.0,6.7,95,0
+Sharkey,Hillary Clinton,645.0,21.1,29,69
+Bear Lake,Ted Cruz,643.0,16.1,97,0
+Bath,Bernie Sanders,641.0,12.0,96,1
+Bremer,Hillary Clinton,640.0,28.3,97,1
+Grand,Bernie Sanders,636.0,25.2,91,0
+Long,Donald Trump,633.0,14.0,68,25
+Mills,Ted Cruz,633.0,21.9,96,1
+Glades,Donald Trump,632.0,12.2,78,14
+Shoshone,Donald Trump,632.0,13.5,94,0
+Clearwater,Donald Trump,629.0,15.5,94,0
+Magoffin,Bernie Sanders,626.0,8.9,98,0
+Telfair,Donald Trump,626.0,10.9,61,36
+Eagle,Bernie Sanders,623.0,47.0,95,1
+Alger,Bernie Sanders,622.0,17.1,85,6
+Atkinson,Donald Trump,619.0,7.7,77,17
+Winneshiek,Bernie Sanders,616.0,26.5,97,0
+Kearney,Donald Trump,614.0,26.4,97,0
+Pepin,Donald Trump,607.0,17.1,98,0
+Burt,Donald Trump,603.0,18.3,95,0
+Charlton,Donald Trump,602.0,9.4,65,32
+Caribou,Ted Cruz,602.0,17.5,97,0
+Chariton,Donald Trump,597.0,11.7,96,2
+Okfuskee,Bernie Sanders,596.0,11.1,64,8
+Pickett,Donald Trump,594.0,13.0,98,0
+Pendleton,Donald Trump,587.0,13.0,95,2
+Bland,Donald Trump,584.0,14.7,95,3
+Metcalfe,Bernie Sanders,582.0,8.6,96,1
+Garrard,Donald Trump,581.0,15.2,96,2
+Hartley,Ted Cruz,577.0,20.6,90,7
+Garza,Ted Cruz,574.0,9.5,90,7
+Fillmore,Donald Trump,574.0,18.2,97,0
+Woods,Ted Cruz,574.0,27.1,89,3
+Litchfield,Donald Trump,568.0,33.4,94,1
+Real,Ted Cruz,562.0,19.5,94,0
+Shackelford,Ted Cruz,560.0,25.4,95,1
+Prairie,Hillary Clinton,558.0,9.3,86,11
+La Salle,Hillary Clinton,557.0,5.1,96,1
+Rappahannock,Donald Trump,556.0,32.4,92,4
+Refugio,Hillary Clinton,549.0,11.2,90,6
+Furnas,Donald Trump,546.0,16.8,97,0
+Blaine,Donald Trump,543.0,44.7,95,0
+Trimble,Bernie Sanders,542.0,16.1,96,1
+Churchill,Donald Trump,538.0,16.8,85,2
+Stanton,Donald Trump,537.0,17.7,97,0
+Edmonson,Donald Trump,531.0,9.8,96,1
+Wahkiakum,Donald Trump,530.0,14.3,93,0
+Nowata,Bernie Sanders,530.0,13.8,69,2
+Schoolcraft,Donald Trump,529.0,12.4,86,0
+Hemphill,Ted Cruz,526.0,19.6,96,0
+Todd,Bernie Sanders,524.0,12.4,10,0
+Ontonagon,Donald Trump,519.0,15.3,96,0
+Powder River,Donald Trump,516.0,19.9,95,0
+Lipscomb,Ted Cruz,515.0,21.5,93,1
+Kiowa,Bernie Sanders,514.0,17.2,83,4
+Jenkins,Donald Trump,513.0,13.1,54,43
+Dixon,Donald Trump,513.0,16.5,97,0
+Lanier,Donald Trump,512.0,12.0,72,22
+Leslie,Donald Trump,503.0,7.3,98,0
+Love,Bernie Sanders,502.0,14.4,84,2
+Beadle,Hillary Clinton,501.0,18.6,88,1
+Catron,Donald Trump,501.0,18.5,93,0
+Wolfe,Bernie Sanders,499.0,11.8,98,0
+Greenlee,Hillary Clinton,497.0,11.1,91,1
+Castro,Ted Cruz,496.0,12.8,94,2
+Bailey,Ted Cruz,496.0,11.1,93,1
+Hamlin,Donald Trump,489.0,18.2,97,0
+Granite,Donald Trump,487.0,26.5,96,0
+Atchison,Donald Trump,487.0,21.3,97,0
+Evans,Donald Trump,481.0,14.1,65,31
+Gunnison,Bernie Sanders,481.0,54.5,94,0
+King and Queen,Hillary Clinton,477.0,14.1,68,26
+Chase,Donald Trump,476.0,18.2,98,0
+Tama,Hillary Clinton,476.0,16.1,88,0
+Poweshiek,Bernie Sanders,475.0,24.1,94,1
+Winkler,Ted Cruz,474.0,9.6,93,3
+Nemaha,Donald Trump,472.0,24.9,96,1
+Crane,Ted Cruz,468.0,13.6,93,3
+Baraga,Donald Trump,468.0,12.0,73,7
+Thayer,Donald Trump,466.0,16.3,97,0
+Carlisle,Bernie Sanders,462.0,15.5,96,1
+Hyde,Hillary Clinton,459.0,10.7,68,29
+Kimble,Ted Cruz,456.0,17.6,96,0
+Coal,Bernie Sanders,456.0,13.3,73,0
+Emery,Ted Cruz,455.0,12.5,97,0
+Trousdale,Donald Trump,453.0,12.9,87,9
+Tripp,Donald Trump,452.0,21.2,82,0
+Nuckolls,Donald Trump,446.0,13.7,98,0
+Estill,Hillary Clinton,446.0,8.3,98,0
+Childress,Ted Cruz,444.0,18.6,87,10
+Elliott,Bernie Sanders,443.0,7.7,95,3
+Swisher,Ted Cruz,442.0,16.3,88,8
+Perkins,Donald Trump,441.0,17.9,96,0
+Kimball,Donald Trump,439.0,16.4,94,0
+Treutlen,Donald Trump,437.0,12.3,66,32
+Hampden,Donald Trump,437.0,24.5,83,10
+Gentry,Donald Trump,435.0,15.3,97,0
+Lyman,Donald Trump,432.0,19.4,58,0
+Wirt,Donald Trump,431.0,10.9,98,0
+Edmunds,Donald Trump,426.0,22.2,98,0
+Grand Isle,Bernie Sanders,426.0,30.3,94,0
+Bracken,Bernie Sanders,424.0,14.2,97,0
+Pitkin,Bernie Sanders,421.0,56.8,95,0
+Kingsbury,Donald Trump,421.0,21.3,97,0
+Alfalfa,Ted Cruz,421.0,21.4,88,4
+Judith Basin,Donald Trump,421.0,29.7,97,0
+Power,Ted Cruz,421.0,15.9,92,1
+Montezuma,Bernie Sanders,412.0,27.3,83,0
+Clinch,Donald Trump,412.0,12.5,69,28
+McCone,Donald Trump,410.0,18.6,97,0
+Luce,Donald Trump,407.0,12.7,79,11
+Routt,Bernie Sanders,406.0,48.0,96,0
+Coke,Ted Cruz,405.0,17.4,95,1
+Glascock,Donald Trump,405.0,9.6,87,9
+Charles Mix,Donald Trump,404.0,16.6,64,0
+Chaffee,Bernie Sanders,404.0,33.9,94,1
+Roberts,Bernie Sanders,397.0,16.5,59,0
+Haakon,Donald Trump,397.0,20.2,93,0
+Meagher,Donald Trump,394.0,17.4,96,0
+Dallam,Ted Cruz,390.0,10.4,93,2
+Cotton,Bernie Sanders,388.0,14.7,81,2
+Hand,Donald Trump,385.0,18.3,98,0
+Wheatland,Donald Trump,380.0,19.2,95,0
+Sutton,Ted Cruz,379.0,17.9,96,0
+Garden,Donald Trump,372.0,20.8,97,0
+Dewey,Ted Cruz,363.0,19.5,88,0
+Reagan,Ted Cruz,360.0,10.6,92,3
+Kossuth,Hillary Clinton,360.0,18.3,97,0
+Donley,Ted Cruz,358.0,16.7,92,5
+Culberson,Hillary Clinton,355.0,16.5,91,1
+Baylor,Ted Cruz,355.0,24.1,94,3
+Crosby,Ted Cruz,353.0,13.8,92,4
+Cochran,Ted Cruz,353.0,12.4,90,5
+Stanley,Donald Trump,352.0,27.4,88,0
+O'Brien,Ted Cruz,347.0,18.9,97,0
+Tillman,Bernie Sanders,346.0,16.0,82,8
+Bon Homme,Donald Trump,343.0,17.9,89,1
+Day,Hillary Clinton,343.0,16.4,88,0
+Gregory,Donald Trump,341.0,17.0,88,0
+McPherson,Donald Trump,340.0,18.4,98,0
+Daniels,Donald Trump,340.0,22.9,95,0
+Greer,Bernie Sanders,332.0,14.4,84,7
+Schley,Donald Trump,331.0,14.2,76,21
+Menifee,Bernie Sanders,323.0,12.1,95,2
+McCook,Donald Trump,320.0,22.1,97,0
+Frontier,Donald Trump,315.0,16.5,98,0
+Nance,Donald Trump,310.0,13.2,98,0
+Buena Vista,Ted Cruz,309.0,20.0,85,2
+Fisher,Ted Cruz,306.0,15.2,92,3
+Hanson,Donald Trump,305.0,22.6,98,0
+Hitchcock,Donald Trump,305.0,13.8,97,0
+Allamakee,Hillary Clinton,304.0,14.9,96,1
+Spink,Donald Trump,302.0,19.7,96,0
+Harding,Donald Trump,298.0,35.1,95,0
+Hickory,Donald Trump,297.0,10.4,96,0
+Appanoose,Donald Trump,292.0,18.3,97,0
+Upton,Ted Cruz,290.0,11.5,92,2
+Sherman,Ted Cruz,284.0,20.0,95,1
+Harper,Ted Cruz,280.0,16.1,95,0
+Concho,Ted Cruz,280.0,10.8,94,2
+Deuel,Donald Trump,274.0,21.8,96,0
+Roger Mills,Bernie Sanders,268.0,19.7,89,0
+Echols,Donald Trump,268.0,5.7,88,5
+Dickens,Ted Cruz,267.0,13.5,88,6
+Schleicher,Ted Cruz,266.0,21.9,95,1
+Tyrrell,Hillary Clinton,266.0,8.4,58,36
+Collingsworth,Ted Cruz,266.0,18.9,89,5
+Moody,Hillary Clinton,262.0,24.1,81,0
+Gosper,Donald Trump,259.0,18.0,97,0
+Montrose,Bernie Sanders,258.0,24.5,94,0
+Chittenden,Bernie Sanders,254.0,47.4,91,2
+Addison,Bernie Sanders,251.0,35.6,95,1
+Keokuk,Hillary Clinton,250.0,13.4,98,0
+Brule,Donald Trump,245.0,22.3,87,0
+Briscoe,Ted Cruz,244.0,17.8,94,2
+Motley,Ted Cruz,239.0,18.1,95,2
+Taliaferro,Hillary Clinton,236.0,9.3,40,56
+Wibaux,Donald Trump,231.0,19.6,97,0
+Irion,Ted Cruz,228.0,13.0,95,1
+Gilliam,Donald Trump,227.0,14.7,95,0
+Guthrie,Hillary Clinton,220.0,17.1,98,0
+Dundy,Donald Trump,219.0,22.2,96,0
+Teller,Bernie Sanders,219.0,31.6,94,0
+Saguache,Bernie Sanders,219.0,23.8,92,0
+Faulk,Donald Trump,216.0,18.4,98,0
+Palo Alto,Hillary Clinton,213.0,16.5,97,0
+Sac,Donald Trump,212.0,19.1,98,0
+Kinney,Hillary Clinton,211.0,14.6,94,1
+Cimarron,Ted Cruz,204.0,18.5,95,0
+Golden Valley,Donald Trump,203.0,20.3,94,0
+Keya Paha,Donald Trump,203.0,17.2,98,0
+Glasscock,Ted Cruz,202.0,18.8,96,1
+Clear Creek,Bernie Sanders,199.0,39.8,95,0
+Rich,Ted Cruz,198.0,17.0,97,0
+Throckmorton,Ted Cruz,188.0,19.8,96,1
+Keweenaw,Bernie Sanders,188.0,23.9,98,0
+Audubon,Hillary Clinton,187.0,16.6,98,0
+Monona,Ted Cruz,185.0,14.3,97,0
+Chattahoochee,Hillary Clinton,182.0,27.5,72,19
+Bennett,Donald Trump,179.0,15.9,34,0
+Issaquena,Hillary Clinton,175.0,5.3,35,63
+Gilpin,Bernie Sanders,173.0,29.1,93,1
+White Pine,Donald Trump,172.0,13.8,86,4
+McMullen,Ted Cruz,172.0,6.8,95,1
+Owsley,Donald Trump,168.0,12.4,98,0
+Cottle,Ted Cruz,168.0,16.1,87,10
+Alamosa,Bernie Sanders,167.0,24.2,87,1
+Petroleum,Donald Trump,167.0,15.4,98,0
+Harmon,Bernie Sanders,167.0,17.8,84,8
+Lander,Donald Trump,165.0,12.0,90,0
+Borden,Ted Cruz,164.0,32.1,95,0
+Sterling,Ted Cruz,163.0,22.3,94,1
+Storey,Donald Trump,161.0,21.5,91,1
+Ouray,Bernie Sanders,156.0,47.5,96,0
+Archuleta,Bernie Sanders,156.0,32.9,92,0
+Aurora,Hillary Clinton,150.0,16.7,96,0
+Huerfano,Bernie Sanders,150.0,28.0,89,1
+Corson,Bernie Sanders,148.0,13.8,32,0
+Hudspeth,Hillary Clinton,147.0,10.1,94,1
+Treasure,Donald Trump,143.0,21.3,94,0
+Stonewall,Ted Cruz,141.0,20.2,92,3
+Laramie,Ted Cruz,141.0,25.1,91,3
+Ida,Donald Trump,136.0,19.6,97,0
+Sully,Donald Trump,133.0,30.9,95,0
+Ziebach,Bernie Sanders,132.0,14.7,24,0
+Ringgold,Hillary Clinton,132.0,17.6,98,0
+Camas,Donald Trump,130.0,22.3,94,0
+Alpine,Bernie Sanders,129.0,31.2,70,0
+Greeley,Donald Trump,125.0,15.0,98,0
+Sanborn,Donald Trump,122.0,16.4,97,0
+Hooker,Donald Trump,119.0,24.7,97,0
+Pershing,Donald Trump,118.0,10.5,87,4
+Foard,Bernie Sanders,112.0,21.8,92,5
+Miner,Hillary Clinton,109.0,21.7,97,0
+Banner,Donald Trump,108.0,15.8,96,2
+Las Animas,Bernie Sanders,106.0,16.3,91,1
+Hayes,Donald Trump,103.0,19.8,98,0
+Loup,Donald Trump,101.0,12.6,99,0
+Jerauld,Hillary Clinton,96.0,15.4,98,0
+Mellette,Donald Trump,87.0,16.8,41,0
+Piute,Ted Cruz,86.0,17.0,97,0
+Eureka,Donald Trump,81.0,24.7,92,1
+Conejos,Hillary Clinton,73.0,19.1,92,0
+Arthur,Donald Trump,68.0,31.7,96,0
+Costilla,Hillary Clinton,64.0,19.5,88,1
+Kenedy,Hillary Clinton,63.0,10.6,93,4
+Rio Grande,Bernie Sanders,59.0,20.3,93,0
+Esmeralda,Donald Trump,46.0,13.9,89,1
+Prowers,Hillary Clinton,40.0,14.1,95,0
+Daggett,Ted Cruz,36.0,18.8,96,0
+Moffat,Bernie Sanders,28.0,15.6,95,0
+Bent,Hillary Clinton,26.0,8.8,86,7
+Dolores,Bernie Sanders,22.0,18.4,93,0
+Natrona,Hillary Clinton,20.0,22.3,93,1
+Rio Blanco,Bernie Sanders,18.0,23.1,94,1
+Kit Carson,Bernie Sanders,16.0,13.5,94,2
+Crowley,Bernie Sanders,16.0,12.3,84,9
+Baca,Hillary Clinton,15.0,17.2,94,1
+Loving,Ted Cruz,14.0,7.9,96,0
+Sedgwick,Hillary Clinton,13.0,15.0,95,0
+Sweetwater,Bernie Sanders,12.0,18.1,94,1
+Hinsdale,Bernie Sanders,10.0,42.2,95,0
+Uinta,Bernie Sanders,5.0,18.9,95,0
+Oxford,Bernie Sanders,4.0,18.9,96,0
+Penobscot,Bernie Sanders,4.0,23.8,95,0
+Converse,Bernie Sanders,3.0,18.8,95,1
+Goshen,Hillary Clinton,3.0,20.5,95,1
+Sublette,Bernie Sanders,3.0,23.3,94,1
+Washakie,Hillary Clinton,2.0,23.6,94,0
+Niobrara,Bernie Sanders,2.0,18.5,95,1
+Weston,Hillary Clinton,1.0,17.2,95,0
+Hot Springs,Hillary Clinton,1.0,17.9,95,0
+Waldo,Bernie Sanders,0.0,28.2,96,0
+United States,,,28.8,77,13
+Alabama,,,22.6,69,26
+Alaska,,,27.5,66,3
+Aleutians East Borough,,,12.0,22,12
+Aleutians West Census Area,,,13.3,37,7
+Anchorage Municipality,,,32.8,66,6
+Bethel Census Area,,,11.7,12,0
+Bristol Bay Borough,,,19.4,46,0
+Denali Borough,,,28.1,86,1
+Dillingham Census Area,,,17.8,18,0
+Fairbanks North Star Borough,,,29.0,77,5
+Haines Borough,,,30.1,79,0
+Hoonah-Angoon Census Area,,,26.9,48,0
+Juneau City and Borough,,,36.7,69,1
+Kenai Peninsula Borough,,,23.7,84,0
+Ketchikan Gateway Borough,,,25.4,68,0
+Kodiak Island Borough,,,20.0,57,1
+Lake and Peninsula Borough,,,15.4,25,1
+Matanuska-Susitna Borough,,,21.3,83,1
+Nome Census Area,,,17.1,17,0
+North Slope Borough,,,14.5,33,1
+Northwest Arctic Borough,,,11.0,13,1
+Petersburg Borough,,,25.7,77,1
+Prince of Wales-Hyder Census Area,,,15.7,47,0
+Sitka City and Borough,,,34.1,67,1
+Skagway Municipality,,,24.3,89,0
+Southeast Fairbanks Census Area,,,23.1,80,1
+Valdez-Cordova Census Area,,,23.9,74,0
+Wade Hampton Census Area,,,5.4,5,0
+Wrangell City and Borough,,,16.7,70,0
+Yakutat City and Borough,,,22.7,39,2
+Yukon-Koyukuk Census Area,,,9.3,23,0
+Arizona,,,26.9,83,4
+St. Francis,,,11.7,44,52
+California,,,30.7,73,6
+Connecticut,,,36.5,81,11
+District Of Columbia,,,52.4,43,49
+District of Columbia,,,52.4,43,49
+Florida,,,26.4,77,16
+Georgia,,,28.0,62,31
+Kalawao,,,41.5,28,0
+Idaho,,,25.1,93,0
+Illinois,,,31.4,77,14
+De Witt,,,16.8,97,0
+Jo Daviess,,,23.7,97,0
+Kansas,,,30.3,86,6
+Barber,,,19.8,96,0
+Cloud,,,16.6,96,0
+Coffey,,,19.9,96,0
+Cowley,,,20.0,89,3
+Doniphan,,,17.5,92,3
+Ellsworth,,,20.8,92,5
+Finney,,,17.9,89,3
+Geary,,,20.8,69,18
+Gove,,,20.3,98,0
+Harvey,,,26.3,94,1
+Hodgeman,,,22.6,97,0
+Jewell,,,14.7,97,0
+Kearny,,,17.2,95,0
+Kingman,,,19.3,96,0
+Labette,,,20.4,88,4
+Leavenworth,,,28.7,85,9
+Morton,,,17.5,92,0
+Neosho,,,16.2,94,1
+Ness,,,19.0,96,0
+Norton,,,15.4,94,3
+Osborne,,,18.0,97,0
+Pratt,,,23.4,94,1
+Rawlins,,,23.3,97,0
+Reno,,,19.8,92,3
+Republic,,,19.8,97,0
+Rice,,,20.9,94,1
+Riley,,,45.0,84,6
+Rooks,,,20.9,97,0
+Shawnee,,,28.6,84,8
+Trego,,,21.5,97,0
+Wabaunsee,,,20.6,96,0
+Wallace,,,23.5,96,0
+Woodson,,,18.2,95,0
+Wyandotte,,,15.5,66,24
+Kentucky,,,21.5,88,8
+Larue,,,11.1,94,3
+Louisiana,,,21.8,63,32
+Acadia Parish,,,10.2,79,18
+Allen Parish,,,11.1,71,23
+Ascension Parish,,,24.9,74,22
+Assumption Parish,,,9.7,68,29
+Avoyelles Parish,,,9.7,66,29
+Beauregard Parish,,,15.0,82,13
+Bienville Parish,,,11.1,56,41
+Bossier Parish,,,25.2,73,21
+Caddo Parish,,,22.7,48,48
+Calcasieu Parish,,,19.9,71,25
+Caldwell Parish,,,8.2,81,17
+Cameron Parish,,,15.4,94,4
+Catahoula Parish,,,11.2,66,32
+Claiborne Parish,,,12.5,46,50
+Concordia Parish,,,11.3,57,40
+De Soto Parish,,,11.3,59,38
+East Baton Rouge Parish,,,34.2,48,46
+East Carroll Parish,,,9.2,30,67
+East Feliciana Parish,,,13.0,53,44
+Evangeline Parish,,,11.4,69,28
+Franklin Parish,,,11.6,66,32
+Grant Parish,,,10.2,80,16
+Iberia Parish,,,13.6,62,32
+Iberville Parish,,,12.8,49,49
+Jackson Parish,,,13.8,69,29
+Jefferson Parish,,,23.6,66,27
+Jefferson Davis Parish,,,13.0,79,17
+Lafayette Parish,,,28.3,70,26
+Lafourche Parish,,,14.8,80,13
+La Salle Parish,,,12.9,85,12
+Lincoln Parish,,,34.4,55,41
+Livingston Parish,,,17.5,91,6
+Madison Parish,,,11.2,36,62
+Morehouse Parish,,,12.9,50,47
+Natchitoches Parish,,,21.6,54,41
+Orleans Parish,,,33.7,35,59
+Ouachita Parish,,,22.9,60,37
+Plaquemines Parish,,,15.3,71,20
+Pointe Coupee Parish,,,14.3,62,35
+Rapides Parish,,,18.3,63,32
+Red River Parish,,,11.9,58,39
+Richland Parish,,,13.2,62,35
+Sabine Parish,,,13.0,70,16
+St. Bernard Parish,,,12.0,72,22
+St. Charles Parish,,,19.7,70,26
+St. Helena Parish,,,10.3,45,53
+St. James Parish,,,13.0,49,49
+St. John the Baptist Parish,,,14.5,42,55
+St. Landry Parish,,,13.2,56,41
+St. Martin Parish,,,13.3,66,30
+St. Mary Parish,,,10.8,61,32
+St. Tammany Parish,,,30.1,84,12
+Tangipahoa Parish,,,19.4,67,30
+Tensas Parish,,,10.3,43,54
+Terrebonne Parish,,,13.4,71,19
+Union Parish,,,13.1,72,26
+Vermilion Parish,,,12.6,81,14
+Vernon Parish,,,18.8,77,14
+Washington Parish,,,11.2,67,30
+Webster Parish,,,13.6,63,34
+West Baton Rouge Parish,,,18.0,59,38
+West Carroll Parish,,,9.5,81,16
+West Feliciana Parish,,,18.8,52,45
+Winn Parish,,,11.3,66,30
+Maine,,,27.9,95,1
+Androscoggin,,,18.8,92,3
+Aroostook,,,16.7,95,0
+Kennebec,,,24.6,96,0
+Piscataquis,,,16.4,96,0
+Sagadahoc,,,32.3,96,0
+Maryland,,,36.8,60,30
+Baltimore city,,,26.8,31,63
+Massachusetts,,,39.4,82,8
+Berkshire,,,30.3,92,3
+Dukes,,,40.7,90,3
+Michigan,,,25.9,79,14
+Minnesota,,,32.6,85,5
+Aitkin,,,14.7,94,0
+Anoka,,,26.9,86,5
+Becker,,,21.3,87,0
+Beltrami,,,26.9,74,0
+Big Stone,,,17.6,98,0
+Blue Earth,,,30.5,92,3
+Carlton,,,21.3,89,1
+Carver,,,44.5,93,1
+Chisago,,,21.0,95,1
+Cottonwood,,,17.2,93,1
+Crow Wing,,,22.5,96,0
+Faribault,,,16.9,97,0
+Freeborn,,,14.8,95,1
+Goodhue,,,22.9,95,1
+Hennepin,,,45.8,75,12
+Hubbard,,,23.6,94,0
+Isanti,,,16.5,96,0
+Itasca,,,21.4,93,0
+Kanabec,,,13.1,96,0
+Kandiyohi,,,20.7,94,3
+Kittson,,,20.7,98,0
+Koochiching,,,17.2,94,0
+Lac qui Parle,,,17.6,97,0
+Lake of the Woods,,,13.8,95,0
+Le Sueur,,,22.3,97,0
+McLeod,,,17.7,97,0
+Mahnomen,,,13.3,48,0
+Meeker,,,17.7,97,0
+Mille Lacs,,,15.0,91,0
+Morrison,,,16.0,97,0
+Mower,,,16.6,92,3
+Nicollet,,,32.1,94,2
+Nobles,,,14.5,86,4
+Norman,,,14.3,94,0
+Olmsted,,,40.1,85,5
+Otter Tail,,,22.4,96,1
+Pine,,,13.5,92,2
+Pipestone,,,16.8,94,1
+Ramsey,,,39.4,70,11
+Red Lake,,,16.0,95,0
+Redwood,,,16.4,89,0
+Renville,,,14.6,96,0
+Roseau,,,17.9,93,0
+St. Louis,,,26.1,92,1
+Sherburne,,,25.1,94,2
+Sibley,,,14.5,97,0
+Stearns,,,24.6,91,3
+Steele,,,24.9,94,2
+Swift,,,17.0,96,0
+Traverse,,,15.1,92,0
+Wabasha,,,20.0,97,0
+Wadena,,,13.6,96,1
+Waseca,,,18.8,94,2
+Watonwan,,,15.9,94,1
+Wilkin,,,16.5,96,0
+Winona,,,26.8,94,1
+Yellow Medicine,,,17.4,94,0
+Jefferson Davis,,,14.4,38,59
+Missouri,,,26.2,83,11
+Laclede,,,12.9,95,0
+St. Louis city,,,29.6,46,47
+Montana,,,28.7,89,0
+Nebraska,,,28.5,89,4
+New Hampshire,,,33.7,94,1
+New Jersey,,,35.8,73,14
+New Mexico,,,25.8,82,2
+De Baca,,,17.9,93,0
+Do±a Ana,,,26.6,92,2
+New York,,,33.2,70,17
+St. Lawrence,,,20.4,93,2
+North Carolina,,,27.3,71,22
+North Dakota,,,27.2,89,2
+Barnes,,,26.2,94,1
+Benson,,,11.6,43,0
+Billings,,,21.6,95,0
+Bottineau,,,20.9,94,0
+Bowman,,,20.7,95,0
+Burleigh,,,33.2,92,1
+Cavalier,,,16.4,97,0
+Dickey,,,23.6,96,1
+Divide,,,21.8,96,0
+Emmons,,,14.4,98,0
+Foster,,,19.6,97,0
+Grand Forks,,,32.6,88,3
+Griggs,,,14.8,98,0
+Hettinger,,,17.3,94,0
+Kidder,,,19.4,97,0
+LaMoure,,,21.5,98,0
+McKenzie,,,22.3,81,1
+Mountrail,,,18.3,68,0
+Oliver,,,16.4,95,0
+Pembina,,,19.2,95,0
+Ransom,,,16.5,97,0
+Rolette,,,19.9,20,0
+Sargent,,,17.9,96,0
+Slope,,,22.5,96,0
+Stutsman,,,23.7,95,1
+Towner,,,21.8,94,0
+Traill,,,28.9,96,0
+Walsh,,,18.3,95,0
+Le Flore,,,12.9,77,2
+Pennsylvania,,,27.5,82,11
+Rhode Island,,,31.3,85,7
+South Carolina,,,25.1,68,27
+South Dakota,,,26.2,85,1
+Tennessee,,,23.8,78,17
+DeWitt,,,12.4,87,9
+Lavaca,,,16.3,90,7
+Vermont,,,34.8,95,1
+Caledonia,,,26.6,96,0
+Lamoille,,,36.4,96,0
+Virginia,,,35.2,70,19
+Alexandria city,,,61.4,66,22
+Bedford city,,,25.0,0,0
+Bristol city,,,19.6,91,5
+Buena Vista city,,,14.9,90,5
+Charlottesville city,,,49.9,69,19
+Chesapeake city,,,29.3,62,30
+Colonial Heights city,,,20.5,79,13
+Covington city,,,8.3,83,12
+Danville city,,,17.2,47,49
+Emporia city,,,16.0,33,63
+Fairfax city,,,51.9,73,5
+Falls Church city,,,74.4,80,5
+Franklin city,,,20.6,39,57
+Fredericksburg city,,,35.1,68,24
+Galax city,,,14.5,89,7
+Hampton city,,,22.5,43,49
+Harrisonburg city,,,35.1,84,8
+Hopewell city,,,10.2,55,39
+Lexington city,,,41.7,84,9
+Lynchburg city,,,31.2,65,28
+Manassas city,,,28.7,73,15
+Manassas Park city,,,26.0,69,15
+Martinsville city,,,16.7,51,45
+Newport News city,,,23.9,50,41
+Norfolk city,,,25.3,49,42
+Norton city,,,20.5,89,6
+Petersburg city,,,14.9,18,77
+Poquoson city,,,37.2,94,1
+Portsmouth city,,,19.5,41,53
+Radford city,,,32.1,86,9
+Richmond city,,,34.8,44,49
+Roanoke city,,,23.6,65,29
+Salem city,,,30.8,88,7
+Staunton city,,,28.0,83,12
+Suffolk city,,,26.2,52,42
+Virginia Beach city,,,32.9,68,20
+Waynesboro city,,,19.1,83,11
+Williamsburg city,,,49.8,75,15
+Winchester city,,,28.6,81,11
+West Virginia,,,18.3,93,3
+Wisconsin,,,26.8,87,6

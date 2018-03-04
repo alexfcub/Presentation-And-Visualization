@@ -28,7 +28,7 @@
  }
 
   #infobox{
-    text-align: center;
+    text-align: right;
     position:absolute;
     height:150px;
     width:240px;
@@ -112,12 +112,15 @@
     d3.queue()
       .defer(d3.json, 'cb_2016_us_county_20m.json')
       .defer(d3.csv, './most_voted.csv')
-      .await(function(error, topo, data) {
-        process(topo, data)
+      .defer(d3.csv, './county_info.csv')
+      .await(function(error, topo, data, data2) {
+        console.log(data2);
+        process(topo, data, data2)
       })
 
-    function process(topo, data) {
+    function process(topo, data, data2) {
       console.log('USdata', data);
+      console.log('County data', data2);
 
       topo.objects['cb_2016_us_county_20m']
         .geometries.forEach(function(d) {
@@ -131,16 +134,30 @@
           d['numbers'] = +d['numbers'];
 
       });
+      data2.forEach( function(d) {
+          d['county'] = d['county'];
+          d['candidate'] = d['candidate'];
+          d['votes'] = +d['votes'];
+          d['educated'] = +d['educated'];
+          d['white'] = +d['white'];
+          d['black'] = +d['black'];
+
+      });
       var dataKV = data.reduce(function(res,el) {
+        res[el.county] = el;
+        return res;
+      },{});
+
+      var dataKV2 = data2.reduce(function(res,el) {
         res[el.county] = el;
         return res;
       },{});
 
       console.log("data",data); //cheat variable
       console.log("dataKV",dataKV); //cheat variable
+      console.log('dataKV2', dataKV2);
       var US = topojson.feature(topo, topo.objects.cb_2016_us_county_20m); //find geometries in JSON file
 
-      console.log("countys", US);
       // Setup the scale and translate
       var b, s, t;
       projection.scale(1).translate([0, 0]); //setup scale and translation
@@ -183,7 +200,6 @@
           if(dataKV[d.id].numbers == 4) image = './ss/kasich.jpeg';
           if(dataKV[d.id].numbers == 5) image = './ss/cruz.jpg';
           if(dataKV[d.id].numbers == 6) image = './ss/rubio.jpg';
-          //var image = './test.jpg';
           div.innerHTML = '<div>' + dataKV[d.id].county + '</div>' + 
                           '<img src="' + image + '" style="width:100px;height:auto"></img>';
         }
@@ -201,11 +217,25 @@
         else selected = true;
         id = d.id;
         if(selected) {
-          console.log(d.id);
           d3.selectAll('path').attr('fill-opacity',0.2) //all regions decrease opacity
           d3.selectAll('[id="cid-' + d.id +'"]')          //our specific region
             .transition().duration(500)         //the change is done in 500ms
             .attr('fill-opacity',1);   
+
+          var div = document.getElementById('infobox');
+          div.style.display="block"
+          //div.style.background="#ddf";
+          div.style.borderColor = "black";
+          div.innerHTML = '<h2 style="text-align:center">'+dataKV[d.id].county+' info' + '</h2>'+
+          '<dl>'+
+          '<dt>Winner:&nbsp; </dt>' +
+          '<dd>'+dataKV[d.id].candidate+'</dd>'+
+          '<dt>Educated people:&nbsp;'+'</dt>'+
+          '<dd>'+dataKV2[d.id].educated+'%'+'</dd>'+
+          '<dt>Black people:&nbsp;'+'</dt>'+
+          '<dd>'+dataKV2[d.id].black+'%' +'</dd>'+
+          '<dt>White people:&nbsp;'+'</dt>'+
+          '<dd>'+dataKV2[d.id].white+'%'+'</dd>';
         }
         else {
           d3.selectAll('path').attr('fill-opacity',1);
@@ -228,7 +258,6 @@
          .on("click", click)
          //.on("click",infobox)
          .attr("fill", function(d) {
-          console.log(d.id)
               try {
                 return color(dataKV[d.id].numbers)
               }

@@ -61,7 +61,7 @@
   <title>US election map</title>
 <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/85477FD3-6C9D-8745-8468-8D679893F98C/main.js" charset="UTF-8"></script></head>
 <body>
-  <div id="title">U.S. 2016 primary elections - Republican vs. Democrat vote</div>
+  <div id="title">U.S. 2016 primary elections - indication of black-white people percentage and educated people</div>
   <div id="map"></div>
   <div id="tooltip"></div>
   <div id="infobox"></div>
@@ -93,7 +93,7 @@
       .domain([0.125,0.25,0.375,0.5,0.625,0.75,0.85])
       .range(['#2171b5','#6baed6','#bdd7e7','#eff3ff','#fee5d9','#fcae91','#fb6a4a','#cb181d'].reverse()) //extracted from d3.schemeBuPu
 
-    var labels = ['> 85% white people percentage','75% to 85% white people percentage', '62.5% to 75% white people percentage', '50% to 62.5% white people percentage', '50% to 62.5%  black people percentage', '62.5% to 75% black people percentage', '75% to 85% black people percentage', ' black people percentage']
+    var labels = ['> 85% Republican vote','75% to 85% Republican vote', '62.5% to 75% Republican vote', '50% to 62.5% Republican vote', '50% to 62.5% Democrat vote', '62.5% to 75% Democrat vote', '75% to 85% Democrat vote', '> 85% Democrat vote']
       /* The legend */
     svg.append("g")
       .attr("class", "legendQuant")
@@ -125,10 +125,13 @@
 
       data.forEach( function(d) {
           d['county'] = d['county'];
-          d[''] = +d['Democrat'];
-          d['Republican'] = +d['Republican'];
-          d['proportion'] = +d['proportion'];
-          d['democratWin'] = d['democratWin'];
+          d['candidate'] = d['candidate'];
+          d['vote'] = +d['vote'];
+          d['educated (bacelor and higher)'] = +d['educated (bacelor and higher)'];
+          d['persentage of white people'] = +d['persentage of white people'];
+          d['persentage of black people'] = +d['persentage of black people'];
+          d['white-black percentage difference'] = +d['white-black percentage difference'];
+          d['more w']=+d['more w]
 
       });
       var dataKV = data.reduce(function(res,el) {
@@ -174,7 +177,7 @@
           div.style.left = event.pageX + 'px'; //we position it near the area
           div.style.top = event.pageY + 'px';
           div.style.width = "auto";
-          div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].proportion>0.5 ? Math.round(dataKV[d.id].proportion*100) : Math.round((1-dataKV[d.id].proportion)*100)) + '%';//we fill the tooltip with the county's name
+
         }
   		  
 		  };
@@ -200,10 +203,12 @@
           div.style.borderColor = "black";
           div.innerHTML = '<h2>'+dataKV[d.id].county+' votes' + '</h2>'+
           '<dl>'+
-          '<dt>Democrats: </dt>'+
-          '<dd>'+dataKV[d.id].Democrat+'</dd>'+
-          '<dt>Republicans: </dt>'+
-          '<dd>'+dataKV[d.id].Republican+'</dd>';
+          '<dt>Educated (bacelor and higher): </dt>'+
+          '<dd>'+dataKV[d.id].educated (bacelor and higher)+'</dd>'
+          '<dt>persentage of white people: </dt>'+
+          '<dd>'+dataKV[d.id].persentage of white people+'</dd>'
+          '<dt>persentage of black people: </dt>'+
+          '<dd>'+dataKV[d.id].persentage of black people+'</dd>';
         }
         else {
           d3.selectAll('path').attr('fill-opacity',1);

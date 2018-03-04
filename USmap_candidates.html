@@ -176,18 +176,7 @@
           div.style.width = "auto";
           div.style.textAlign = "center";
           //div.innerHTML = dataKV[d.id].county + ' - ' + (dataKV[d.id].candidate=='7' ? 'No info' : dataKV[d.id].candidate);//we fill the tooltip with the county's name
-          var image = '';
-          if(dataKV[d.id].numbers == 1) image = './ss/clinton.jpg';
-          if(dataKV[d.id].numbers == 2) image = './ss/trump.jpg';
-          if(dataKV[d.id].numbers == 3) image = './ss/sanders.jpg';
-          if(dataKV[d.id].numbers == 4) image = './ss/kasich.jpeg';
-          if(dataKV[d.id].numbers == 5) image = './ss/cruz.jpg';
-          if(dataKV[d.id].numbers == 6) image = './ss/rubio.jpg';
-          //var image = './test.jpg';
-          div.innerHTML = '<div>' + dataKV[d.id].county + '</div>' + 
-                          '<img src="' + image + '" style="width:100px;height:auto"></img>';
         }
-        
         
       };
 

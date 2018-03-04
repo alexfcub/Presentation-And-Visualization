@@ -90,10 +90,10 @@
 
     /* The scale */   
     var color = d3.scaleThreshold() 
-      .domain([0.125,0.25,0.375,0.5,0.625,0.75,0.85])
-      .range(['#2171b5','#6baed6','#bdd7e7','#eff3ff','#fee5d9','#fcae91','#fb6a4a','#cb181d'].reverse()) //extracted from d3.schemeBuPu
+      .domain([True,False])
+      .range(['#2171b5','#6baed6'].reverse()) //extracted from d3.schemeBuPu
 
-    var labels = ['> 85% Republican vote','75% to 85% Republican vote', '62.5% to 75% Republican vote', '50% to 62.5% Republican vote', '50% to 62.5% Democrat vote', '62.5% to 75% Democrat vote', '75% to 85% Democrat vote', '> 85% Democrat vote']
+    var labels = ['more white people','more black people']
       /* The legend */
     svg.append("g")
       .attr("class", "legendQuant")
@@ -131,7 +131,7 @@
           d['persentage of white people'] = +d['persentage of white people'];
           d['persentage of black people'] = +d['persentage of black people'];
           d['white-black percentage difference'] = +d['white-black percentage difference'];
-          d['more w']=+d['more w]
+          d['more w']=d['more w'];
 
       });
       var dataKV = data.reduce(function(res,el) {
@@ -177,10 +177,11 @@
           div.style.left = event.pageX + 'px'; //we position it near the area
           div.style.top = event.pageY + 'px';
           div.style.width = "auto";
-
-        }
-  		  
-		  };
+          div.style.textAlign = "center";
+          //div.innerHTML = dataKV[d.id].county + ' - ' : dataKV[d.id].candidate);//we fill the tooltip with the county's name
+          div.innerHTML = '<div>' + dataKV[d.id].county + '</div>';
+          }
+  		};
 
   		var focusout = function(d){
   			document.getElementById('tooltip')
@@ -232,7 +233,7 @@
          .attr("fill", function(d) {
           console.log(d.id)
               try {
-                return color(dataKV[d.id].proportion)
+                return color(dataKV[d.id].more w)
               }
               catch(err){
                 return "#ffffff";

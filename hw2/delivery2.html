@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<style>
+  #main{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    grid-template-rows: 150px 150px;
+  }
+  #el1 {grid-column-start:1;
+      grid-row-start:1;
+      background-color:green
+  }
+  #el2{grid-column-start:2;
+      grid-row-start:1;
+      background-color:blue
+      }
+  #el3{grid-column-start:3;
+      grid-row-start:1;
+      background-color:red
+      }
+  #el4{grid-column-start:4;
+      grid-row-start:1;
+      background-color:orange
+      }
+  #el5{grid-column-start:1;
+      grid-column-end:3;
+      grid-row-start:2;
+      background-color:pink
+     }
+  #el6{grid-column-start:3;
+      grid-column-end:5;
+      grid-row-start:2;
+      background-color:yellow
+  }
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>MY DASHBOARD</title>
+</head>
+<body>
+  <div id="title">MY DASHBOARD</div>
+  <div id="main">
+    <div id="el1"></div>
+    <div id="el2"></div>
+    <div id="el3"></div>
+    <div id="el4"></div>
+    <div id="el5"></div>
+    <div id="el6"></div>
+  </div>
+
+
+
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
+  <script>
+    d3.queue()
+      .defer(d3.csv, 'WA_Retail-SalesMarketing_-ProfitCost.csv')
+      .await(function(error, data) {
+        process(data)
+      })
+
+    function process(data)  {
+      console.log('data: ', data);
+      data.forEach( function(d) {
+
+      });
+    }
+  </script>
+</body>

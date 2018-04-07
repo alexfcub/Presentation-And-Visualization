@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+       text: "Comparison among Countries on Fertility Rate Vs Life Expectancy in 2009"
+      },
+      axisX: {
+        title:"Life Expectancy",
+       maximum: 10000000
+      },
+      axisY: {
+        title:"Fertility Rate"
+      },
+
+      legend:{
+        verticalAlign: "bottom",
+        horizontalAlign: "left"
+
+      },
+      data: [
+      {
+        type: "bubble",
+        legendText: "Size of Bubble Represents Gross profit",
+        legendMarkerType: "circle",
+ toolTipContent: "<strong>{name}</strong> <br/> Fetility Rate: {y}<br/> Life Expectancy: {x} yrs<br/> Population: {z} mn",
+     dataPoints: [
+    // { x: 64.8, y: 2.66, z:12074.4 , name: "India"},
+   //  { x: 73.1, y: 1.61, z:13313.8, name: "China"},
+     { x: 78.1, y: 2.00, z:306.77, name: "US" },
+     { x: 68.5, y: 2.15, z: 237.414, name: "Indonesia"},
+     { x: 72.5, y: 1.86, z: 193.24, name: "Brazil"},
+     { x: 76.5, y: 2.36, z: 112.24, name: "Mexico"},
+     { x: 50.9, y: 5.56, z: 154.48, name: "Nigeria"},
+     { x: 68.6, y: 1.54, z:141.91, name: "Russia" },
+
+     { x: 82.9, y: 1.37, z:127.55, name: "Japan" },
+     { x: 79.8, y: 1.36, z:81.90, name:"Australia" },
+     { x: 72.7, y: 2.78, z: 79.71, name: "Egypt"},
+     { x: 80.1, y: 1.94, z:61.81, name:"UK" },
+     { x: 55.8, y: 4.76, z: 39.24, name: "Kenya"},
+     { x: 81.5, y: 1.93, z:21.95, name:"Australia" },
+     { x: 68.1, y: 4.77, z: 31.09, name: "Iraq"},
+     { x: 47.9, y: 6.42, z: 33.42, name: "Afganistan"},
+     { x: 50.3, y: 5.58, z: 18.55, name: "Angola"}
+     ]
+   }
+   ]
+ });
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
+
+      var data = google.visualization.arrayToDataTable([
+['Retailer country','Revenue','Planned revenue','Gross profit']
+['Australia',35893188.499999985,37932817.02000001,14881848.539999994]
+['Austria',33801788.98,35308439.07000001,14193961.959999999]
+['Belgium',28186839.740000006,29528025.130000014,11700220.879999997]
+['Brazil',31440841.480000004,32914074.67000001,13120852.270000005]
+['Canada',73325209.39000003,76540904.15,30476271.11000002]
+['China',70633377.06000002,74282153.90000002,29391660.22999998]
+['Denmark',11954799.659999995,12369675.739999995,4971472.859999999]
+['Finland',44746715.93999998,47226849.74999999,18517491.89]
+['France',64209896.06999997,67234414.34000002,26800488.200000003]
+['Germany',57421831.50999996,60282231.75,23890284.579999994]
+['Italy',46625798.56,49001109.380000025,19459828.22999999]
+['Japan',83188254.15999998,86868609.70000002,34825798.12000001]
+['Korea',47014946.35000002,49692560.719999984,19481796.26999999]
+['Mexico',38401768.34,40679991.74000001,15866498.26]
+['Netherlands',46212968.04999998,48552513.710000016,19120427.87]
+['Singapore',47114688.34999998,49468030.65999996,19622174.510000005]
+['Spain',41679915.65999999,43892790.949999996,17389134.82000001]
+['Sweden',26308001.06,27501226.730000004,10998616.690000005]
+['Switzerland',32981706.700000007,34458717.15999999,13830501.100000005]
+['United Kingdom',64881658.380000025,68001166.08000003,27004679.13000001]
+['United States',191312080.1300001,200214575.71000004,79728814.47000004]
+]);
+
+      var options = {
+        title: 'Correlation between life expectancy, fertility rate ' +
+               'and population of some world countries (2010)',
+        hAxis: {title: 'Life Expectancy'},
+        vAxis: {title: 'Fertility Rate'},
+        bubble: {textStyle: {fontSize: 11}}
+      };
+
+      var chart = new google.visualization.BubbleChart(document.getElementById('series_chart_div'));
+      chart.draw(data, options);
+    }
+    </script>
+  </head>
+  <body>
+    <div id="series_chart_div" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>

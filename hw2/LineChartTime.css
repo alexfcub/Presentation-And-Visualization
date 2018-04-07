@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+.x-axis, .y-axis {
+	font-size:0.5em; 
+	font-family:Arial; 
+	text-anchor:end; 
+}
+
+.x-axis path, .x-axis line, .y-axis path, .y-axis line {
+	fill:none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.x-axis .tick, .y-axis .tick {
+	opacity:1 //0-1
+}
+.x-axis .tick line {
+	stroke:black; //#050505
+}
+.y-axis .tick:not(:first-of-type)  line {
+	stroke: #000; 
+	stroke-dasharray: 2,5
+}
+
+.label{ 
+	stroke:#000;
+	fill:#000;
+	stroke-width:0.3;
+	font-size:2em;
+	font-family:Garamond,roman;
+	display:visible
+}
+
+#time-line-chart{
+	float:left;
+}
+
+#colorLegend {
+	margin-top:50px;
+	display:block;
+	overflow:visible;
+	float:left;
+	width:150px;
+	height:300px;
+	font-size:1.2em;
+	font-family:Arial;
+}
+
+#colorLegend .label {
+	font-size:1em;
+	font-family:Arial;
+}
+
+line.variableA, .chartline.variableA{
+}
+
+line.variableB, .chartline.variableB{
+	stroke-dasharray: 5;
+}
+
+line.variableC, .chartline.variableC{
+	stroke-dasharray: 2;
+}
+
+line.variableD, .chartline.variableD{
+	stroke-dasharray: 4 2 1 2;
+}
+
+

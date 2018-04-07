@@ -1,87 +1,181 @@
 <!doctype html>
 <html lang="en">
 <style>
+  .title{
+    padding: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .logo {
+    position: absolute;
+    width: 90px;
+    height: auto;
+    right: 30px;
+  }
+  .total-profit {
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .star-image {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+  }
+  .best-product {
+    font-size:25px;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:22px;
+  }
+  #title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #header {
+    padding:5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align:center;
+    margin: 5px;
+  }
+  #caret-down {
+    width: 25px;
+    height: 25px;
+  }
+  #caret-down path {
+    
+    fill: red;
+  }
   #main{
     display:grid;
-    grid-template-columns:auto auto auto auto;
-    grid-template-rows: 400px 400px;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 150px 350px 530px;
   }
   #el1 {grid-column-start:1;
       grid-row-start:1;
+      grid-row-end:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
   }
   #el2{grid-column-start:2;
       grid-row-start:1;
       background-color:blue
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
       }
   #el3{grid-column-start:3;
       grid-row-start:1;
       background-color:red
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
       }
-  #el4{grid-column-start:4;
-      grid-row-start:1;
-      background-color:orange
+  #el4{grid-column-start:2;
+      grid-column-end:4;
+      grid-row-start:2;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
       }
   #el5{grid-column-start:1;
-      grid-column-end:3;
-      grid-row-start:2;
-      background-color:pink
+      grid-column-end:4;
+      grid-row-start:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
      }
-  #el6{grid-column-start:3;
+  /*#el6{grid-column-start:3;
       grid-column-end:5;
-      grid-row-start:2;
+      grid-row-start:3;
       background-color:yellow
-  }
+  }*/
 </style>
 <head>
   <meta charset="utf-8">
-  <title>MY DASHBOARD</title>
+  <title>Account Management Dashboard</title>
   <script src="http://d3js.org/d3.v4.min.js"></script>
   <script src="http://d3js.org/queue.v1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
-  <script src="singleTimeLineChart.js"></script> 
+  <script src="barChart.js"></script> 
+  <script src="singleTimeLineChart.js"></script>
+  <script src="donutChart.js"></script> 
+  <link rel="stylesheet" type="text/css" href="barChart.css">
+  <link rel="stylesheet" type="text/css" href="donutChart.css">
   <link rel="stylesheet" type="text/css" href="singleTimeLineChart.css">
 </head>
 <body>
-  <div id="title">MY DASHBOARD</div>
-  <div id="grafic"></div>
+  <div id="header">
+    <div id="title">Account Management Dashboard</div>
+    <img class="logo" src="./assets/Logo.png"></img>
+  </div>
   <div id="main">
-    <svg id="el1"></svg>
-    <div id="el2"></div>
-    <div id="el3"></div>
-    <div id="el4"></div>
-    <div id="el5"></div>
-    <div id="el6"></div>
+    <div id="el1">
+      <div class="title">Gross profit evolution</div>
+      <svg id="el1-chart"></svg>
+    </div>
+    <div id="el2">
+      <div class="title">Total year's profit</div>
+      <div class="total-profit">465.27M</div>
+      <svg id="caret-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/></svg>
+    </div>
+    <div id="el3">
+      <div class="title">Star product</div>
+      <img class="star-image" src='./assets/star.png'></img>
+      <div class="best-product">Hailstorm Titanium Woods Set</div>
+    </div>
+    <div id="el4">
+      <div class="title">Year's profit</div>
+      <svg id="el4-chart"></svg>
+    </div>
+    <div id="el5">
+      <div class="title">Year's profit</div>
+      <svg id="el5-chart"></svg>
+      <svg id="colorLegend"></svg>
+    </div>
+    
+    <!--<div id="el6"></div>-->
+  </div>
+  <div id="main-specific">
   </div>
 
   <script>
-    d3.queue()
-      .defer(d3.csv, 'WA_Retail-SalesMarketing_-ProfitCost.csv')
-      .await(function(error, data) {
-        process(data)
-      })
+      var barChart = BarChart() //we do a basic setup of the chart
+        .width(1000)
+        .height(500)
+        .x("Retailer country")
+        .y("value") //do not change
+        .padding(0.1)
+        .xLegend("Country")
+        .yLegend("Gross Profit");
 
-    function process(data)  {
-      console.log('data: ', data);
-      data.forEach( function(d) {
-        d['Year'] = +d['Year'];
-        d['Product line'] = d['Product line'];
-        d['Product type'] = d['Product type'];
-        d['Product'] = d['Product'];
-        d['Order method type'] = d['Order method type'];
-        d['Reatiler country'] = d['Retailer country'];
-        d['Revenue'] = +d['revenue'];
-        d['Planned Revenue'] = +d['Planned Revenue'];
-        d['Product cost'] = +d['Product cost'];
-        d['Quantity'] = +d['Quantity'];
-        d['Unit cost'] = +d['Unit cost'];
-        d['Unit price'] = +d['Unit price'];
-        d['Gross profit'] = +d['Gross profit'];
-        d['Unit sale price'] = +d['Unit sale price'];
+      d3.csv("data/country_product_gross_6.csv", parseRow, function (mydata){ 
+        //we load the data
+        d3.select("#el5-chart")  //select the svg that will hold the chart
+          .datum(mydata)     //assign the data
+          .call(barChart);       //call the function generating the chart   
       });
 
-
       var singleTimeLineChart = SingleTimeLineChart() //we do a basic setup of the chart
-        .width(400)
+        .width(520)
         .height(400)
         .x("Year")
         .y("Gross profit")
@@ -90,10 +184,26 @@
 
       d3.csv("data/year_profit.csv", parseRow, function (mydata){ 
         console.log(mydata);
-        d3.select("#el1")  //select the svg that will hold the chart
+        d3.select("#el1-chart")  //select the svg that will hold the chart
           .datum(mydata)     //assign the data
           .call(singleTimeLineChart);       //call the function generating the chart
-      });     
-    }
+      }); 
+
+      var donutChart = donutChart() 
+        .width(700)
+        .height(250)
+        .cornerRadius(3) //slice corners 
+        .padAngle(0.015) // gap between slices
+        .variable("Gross profit")
+        .category("Product line")
+
+      d3.csv("data/gross_by_product_line.csv", function (mydata){ 
+        console.log(mydata);
+        //we load the data
+        d3.select("#el4-chart")  //select the svg that will hold the chart
+            .datum(mydata)     //assign the data
+            .call(donutChart);       //call the function generating the chart   
+      });  
+      
   </script>
 </body>

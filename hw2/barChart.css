@@ -1,0 +1,60 @@
+#el5 {
+	body {
+	    margin: 0;
+		overflow:visible;
+	}
+
+	.x-axis, .y-axis {
+		font-size:0.7em; 
+		font-family:Arial; 
+		text-anchor:end; 
+	}
+	.x-axis path, .y-axis path { 
+		stroke:black; 
+	}
+	.x-axis .tick, .y-axis .tick {
+		opacity:1 //0-1
+	}
+	.x-axis .tick line {
+		stroke:black; //#050505
+	}
+	.y-axis .tick line {
+		stroke: #ccc; 
+		stroke-dasharray: 2,2
+	}
+
+	.tooltip{ 
+		font-size:2em;
+		font-family:Garamond,roman;
+		display:block;
+	}
+	.yLegend, .xLegend{
+		font-size:1.5em;
+		font-family:Garamond,roman;
+		fill:grey;
+		display:visible;
+	}
+
+
+
+}
+#el5-chart{
+		float:left;
+	}
+
+	#colorLegend {
+		margin-top:50px;
+		display:block;
+		float:left;
+		overflow:visible;
+		float:left;
+		width:150px;
+		height:300px;
+		font-size:1em;
+		font-family:Arial;
+	}
+
+	#colorLegend .label {
+		font-size:0.7em;
+		font-family:Arial;
+	}

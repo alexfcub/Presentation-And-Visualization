@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Donut Chart</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+	<!-- call the specific javascript and CSS -->
+    <script src="donutChart.js"></script> 
+    <link rel="stylesheet" type="text/css" href="donutChart.css">
+	<!-- end call-->
+  </head>
+  <body>
+    <svg id="donut-chart"><!-- we need and svg container with an id to hold the chart -->
+	</svg>
+	<script>
+      var donutChart = donutChart() 
+        .width(960)
+        .height(500)
+		.cornerRadius(3) //slice corners 
+		.padAngle(0.015) // gap between slices
+		.variable("Probability")
+		.category("Species")
+
+      d3.csv("donutChart.csv", function (mydata){ 
+	    	//we load the data
+			
+		
+      d3.select("#donut-chart")  //select the svg that will hold the chart
+          .datum(mydata)		 //assign the data
+          .call(donutChart);       //call the function generating the chart   
+      });		
+    </script>
+  </body>
+</html>

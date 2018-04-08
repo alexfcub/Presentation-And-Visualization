@@ -28,6 +28,7 @@ function donutChart(){
     var width,
         height,
 		radius,
+		num,
         margin = { top: 0, bottom: 0, left: 0, right: 0 },
 		variable="value",
 		category="name"
@@ -41,6 +42,7 @@ function donutChart(){
           
         if(!width) throw new Error("Donut Chart width must be defined.");
         if(!height) throw new Error("Donut Chart height must be defined.");
+        if(!num) throw new Error("Donut Chart identifier number must be defined");
        
         selection.each(function(data) {
 			/* container and graph group (#donut) */
@@ -59,7 +61,7 @@ function donutChart(){
 			
 			g = g.enter()
 				.append("g")
-				.attr("id","donut")
+				.attr("id","donut-"+num)
 				.attr("transform","translate(" + (innerWidth/2) + "," + (innerHeight/2) +")");
 				
 			g.append('g')
@@ -79,14 +81,49 @@ function donutChart(){
 				.domain(function(d){return d[category];})
 
 			colour = {
-						'Camping Equipment': '#1f77b4',
-						'Golf Equipment': '#ff7f0e',
-						'Mountaineering Equipment': '#2ca02c',
-						'Outdoor Protection': '#d62728',
-						'Personal Accessories': '#9467bd'
+						'Product line': {
+							'Camping Equipment': '#1f77b4',
+							'Golf Equipment': '#ff7f0e',
+							'Mountaineering Equipment': '#2ca02c',
+							'Outdoor Protection': '#d62728',
+							'Personal Accessories': '#9467bd'
+						},
+						'Retailer country': {
+							"Australia": "#e6194b",
+							"Austria": "#3cb44b",
+							"Belgium":"#ffe119",
+							"Brazil": "#0082c8",
+							"Canada":"#f58231",
+							"China": "#911eb4",
+							"Denmark": "#46f0f0",
+							"Finland": "#f032e6",
+							"France": "#d2f53c",
+							"Germany": "#fabebe",
+							"Italy": "#008080",
+							"Japan": "#e6beff",
+							"Korea": "#aa6e28",
+							"Mexico": "#fffac8",
+							"Netherlands": "#800000",
+							"Singapore": "#aaffc3",
+							"Spain": "#808000",
+							"Sweden": "#ffd8b1",
+							"Switzerland": "#000080",
+							"United Kingdom": "#808080",
+							"United States": "#000000"
+						},
+						'Order method type': {
+							"E-mail": "#e6194b",
+							"Fax": "#3cb44b",
+							"Mail":"#ffe119",
+							"Sales visit": "#0082c8",
+							"Special":"#f58231",
+							"Telephone": "#911eb4",
+							"Web": "#46f0f0",
+						}
+						
 					 };
 			function colour_assigned(d){
-				return colour[d];
+				return colour[category][d];
 
 			};
  		    /* end of scales */
@@ -96,7 +133,7 @@ function donutChart(){
 				
 			var pieGenerator = d3.pie() // Given an array of data, the pie generator will output an array of objects containing the original data augmented by start and end angles, which are needed by arc generator
 				.value(function(d) { return d[variable]; })
-				.sort(function(a,b) {return a[category].localeCompare(b[category]);});
+				.sort(function(a,b) {return a[variable].localeCompare(b[variable]);});
 				
 			arcGenerator = d3.arc() //arc generator
 				.outerRadius(radius * 0.8)
@@ -118,7 +155,8 @@ function donutChart(){
 				.on("mouseover", function(d) {donutSliceFocus(d)})
 				.on("focus", function(d) {donutSliceFocus(d)})
 				.on("mouseout", function(d) {donutSliceBlur(d)})
-				.on("blur", function(d) {donutSliceBlur(d)});
+				.on("blur", function(d) {donutSliceBlur(d)})
+				.on("click", function(d) {donutSliceClick(d)});
 
 			/* end of slices */
 
@@ -156,7 +194,8 @@ function donutChart(){
 				.on("mouseover", function(d) {donutLabelFocus(d)})
 				.on("focus", function(d) {donutLabelFocus(d)})
 				.on("mouseout", function(d) {donutLabelBlur(d)})
-				.on("blur", function(d) {donutLabelBlur(d)});
+				.on("blur", function(d) {donutLabelBlur(d)})
+				.on("click", function(d) {donutLabelClick(d)});
 
 			/* end slice labels*/
 
@@ -199,17 +238,24 @@ function donutChart(){
 			function donutSliceBlur(d){
 				removeToolTip(d);
 			}
+
+			function donutLabelClick(d) {
+				specificProduct(d.data, category);
+			}
+			function donutSliceClick(d) {
+				specificProduct(d.data, category);
+			}
 			
             /* tooltip */
             function toolTip(d){
-                d3.select("#donut").append('text')
+                d3.select("#donut-"+num).append('text')
                     .attr('class', 'toolCircle')
                     .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                     .html(toolTipHTML(d)) // add text to the circle.
                     .style('font-size', '.9em')
                     .style('text-anchor', 'middle'); // centres text in tooltip
 
-                d3.select("#donut").append('circle')
+                d3.select("#donut-"+num).append('circle')
                     .attr('class', 'toolCircle')
                     .attr('r', radius * 0.55) // radius of tooltip circle
                     .style('fill', zScale(d.data[category])) // colour based on category mouse is over
@@ -232,9 +278,9 @@ function donutChart(){
                 for (var key in d.data) {
 
                     var value = d.data[key];
-
+                    var million = (key=="Order method type" ? '' : 'M');
                     if (i === 0) tip += '<tspan x="0">' + key + ': ' + value + '</tspan>'; //first line 
-                    else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + 'M</tspan>'; //second and next lines, dy position them below
+                    else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + million +'</tspan>'; //second and next lines, dy position them below
                     i++;
                 }
 
@@ -273,6 +319,10 @@ function donutChart(){
 	my.height = function (value){
         return arguments.length ? (height = value, my) : height;
     };	
+
+    my.num = function (value){
+    	return arguments.length ? (num = value, my) : num;
+    }
 
 
 	my.margin = function (value){

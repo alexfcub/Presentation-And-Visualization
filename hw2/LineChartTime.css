@@ -1,26 +1,27 @@
-body {
+#el6 {
+	body {
     margin: 0;
 }
 
-.x-axis, .y-axis {
+.x-axis-lines, .y-axis-lines {
 	font-size:0.5em; 
 	font-family:Arial; 
 	text-anchor:end; 
 }
 
-.x-axis path, .x-axis line, .y-axis path, .y-axis line {
+.x-axis-lines path, .x-axis-lines line, .y-axis-lines path, .y-axis-lines line {
 	fill:none;
 	stroke: #000;
 	shape-rendering: crispEdges;
 }
 
-.x-axis .tick, .y-axis .tick {
+.x-axis-lines .tick, .y-axis-lines .tick {
 	opacity:1 //0-1
 }
-.x-axis .tick line {
+.x-axis-lines .tick line {
 	stroke:black; //#050505
 }
-.y-axis .tick:not(:first-of-type)  line {
+.y-axis-lines .tick:not(:first-of-type)  line {
 	stroke: #000; 
 	stroke-dasharray: 2,5
 }
@@ -38,21 +39,7 @@ body {
 	float:left;
 }
 
-#colorLegend {
-	margin-top:50px;
-	display:block;
-	overflow:visible;
-	float:left;
-	width:150px;
-	height:300px;
-	font-size:1.2em;
-	font-family:Arial;
-}
 
-#colorLegend .label {
-	font-size:1em;
-	font-family:Arial;
-}
 
 line.variableA, .chartline.variableA{
 }
@@ -67,6 +54,23 @@ line.variableC, .chartline.variableC{
 
 line.variableD, .chartline.variableD{
 	stroke-dasharray: 4 2 1 2;
+}
+
+}
+#colorLegend6 {
+	margin-top:50px;
+	display: inline-block;
+	//overflow:visible;
+	//float:left;
+	width:150px;
+	height:300px;
+	font-size:1em;
+	font-family:Arial;
+}
+
+#colorLegend6 .label {
+	font-size:1em;
+	font-family:Arial;
 }
 
 

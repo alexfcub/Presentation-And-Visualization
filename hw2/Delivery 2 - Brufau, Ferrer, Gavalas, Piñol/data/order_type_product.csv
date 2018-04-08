@@ -1,0 +1,36 @@
+Product line,Order method type,Gross profit
+Camping Equipment,E-mail,1.87
+Camping Equipment,Fax,0.8
+Camping Equipment,Mail,0.0
+Camping Equipment,Sales visit,9.68
+Camping Equipment,Special,0.44
+Camping Equipment,Telephone,2.97
+Camping Equipment,Web,116.87
+Golf Equipment,E-mail,2.17
+Golf Equipment,Fax,1.53
+Golf Equipment,Mail,0.0
+Golf Equipment,Sales visit,4.33
+Golf Equipment,Special,0.0
+Golf Equipment,Telephone,0.38
+Golf Equipment,Web,78.24
+Mountaineering Equipment,E-mail,1.26
+Mountaineering Equipment,Fax,0.85
+Mountaineering Equipment,Mail,0.0
+Mountaineering Equipment,Sales visit,5.27
+Mountaineering Equipment,Special,0.13
+Mountaineering Equipment,Telephone,2.24
+Mountaineering Equipment,Web,46.97
+Outdoor Protection,E-mail,0.03
+Outdoor Protection,Fax,0.01
+Outdoor Protection,Mail,0.0
+Outdoor Protection,Sales visit,0.09
+Outdoor Protection,Special,0.0
+Outdoor Protection,Telephone,0.05
+Outdoor Protection,Web,2.56
+Personal Accessories,E-mail,1.63
+Personal Accessories,Fax,0.31
+Personal Accessories,Mail,0.19
+Personal Accessories,Sales visit,3.12
+Personal Accessories,Special,0.05
+Personal Accessories,Telephone,1.31
+Personal Accessories,Web,179.92

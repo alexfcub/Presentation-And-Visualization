@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bar Chart</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script><!-- for legends -->
+	<!-- call the specific javascript and CSS -->
+    <script src="barChart.js"></script> 
+    <link rel="stylesheet" type="text/css" href="barChart.css">
+	<!-- end call-->
+  </head>
+  <body>
+    <svg id="bar-chart"><!-- svg container to hold the chart -->
+	</svg>
+	<svg id="colorLegend"></svg><!-- svg container to hold the color legend -->
+	<script>     
+      var barChart = BarChart() //we do a basic setup of the chart
+        .width(500)
+        .height(500)
+        .x("year")
+        .y("value") //do not change
+        .padding(0.1)
+		.xLegend("years")
+		.yLegend("values");
+
+      d3.csv("barChart.csv", parseRow, function (mydata){ 
+	    	//we load the data
+        d3.select("#bar-chart")  //select the svg that will hold the chart
+          .datum(mydata)		 //assign the data
+          .call(barChart);       //call the function generating the chart   
+      });		
+    </script>
+  </body>
+</html>

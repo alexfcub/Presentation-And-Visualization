@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<style>
+  .title{
+    padding: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .logo {
+    position: absolute;
+    width: 90px;
+    height: auto;
+    right: 30px;
+  }
+  .total-profit {
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 15px;
+  }
+  .star-image {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+  }
+  .best-product {
+    font-size:25px;
+    font-weight:bold;
+    display:inline-block;
+    margin-top:22px;
+  }
+  #title-donut {
+    display: inline-block;
+  }
+  #title {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #header {
+    padding:5px;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align:center;
+    margin: 5px;
+  }
+  #header-specific {
+    padding:2px;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align:center;
+    margin: 5px;
+  }
+  #header-specific2 {
+    padding:2px;
+    border-radius: 5px;
+    background-color: #ccc;
+    text-align:center;
+    margin: 5px;
+  }
+  #caret-down {
+    width: 25px;
+    height: 25px;
+  }
+  #caret-down path {
+    
+    fill: red;
+  }
+  #angle-up {
+    width: 50px;
+    height: 50px;
+  }
+  #main{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 150px 350px 530px;
+  }
+  #el1 {grid-column-start:1;
+      grid-row-start:1;
+      grid-row-end:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+  }
+  #el2{grid-column-start:2;
+      grid-row-start:1;
+      background-color:blue
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el3{grid-column-start:3;
+      grid-row-start:1;
+      background-color:red
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el4{grid-column-start:2;
+      grid-column-end:4;
+      grid-row-start:2;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el5{grid-column-start:1;
+      grid-column-end:4;
+      grid-row-start:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+     }
+   #main-spec {
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: 150px 350px 530px;
+   }
+   #el6 {grid-column-start:1;
+      grid-row-start:1;
+      grid-row-end:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+  }
+  #el7{grid-column-start:2;
+      grid-row-start:1;
+      background-color:blue
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el8{grid-column-start:3;
+      grid-row-start:1;
+      background-color:red
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el9{grid-column-start:2;
+      grid-column-end:4;
+      grid-row-start:2;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      }
+  #el10{grid-column-start:1;
+      grid-column-end:4;
+      grid-row-start:3;
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+     }
+   .select-donut {
+      position: absolute;
+      right: 30px;
+      margin-top: 7px;
+   }
+   #specific-title {
+      padding: 5px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+      margin: 5px;
+      text-align: center;
+      font-size: 30px;
+   }
+  /*#el6{grid-column-start:3;
+      grid-column-end:5;
+      grid-row-start:3;
+      background-color:yellow
+  }*/
+</style>
+<head>
+  <meta charset="utf-8">
+  <title>Account Management Dashboard</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://d3js.org/d3.v4.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.5/d3-legend.js"></script>
+  <script src="scripts/singleBarChart.js"></script>
+  <script src="scripts/barChart.js"></script> 
+  <script src="scripts/singleTimeLineChart.js"></script>
+  <script src="scripts/donutChart.js"></script> 
+  <script src="scripts/lineChartTime.js"></script> 
+  
+  <link rel="stylesheet" type="text/css" href="scripts/singleBarChart.css">
+  <link rel="stylesheet" type="text/css" href="scripts/lineChartTime.css">
+  <link rel="stylesheet" type="text/css" href="scripts/barChart.css">
+  <link rel="stylesheet" type="text/css" href="scripts/donutChart.css">
+  <link rel="stylesheet" type="text/css" href="scripts/singleTimeLineChart.css">
+</head>
+<body>
+  <div id="header">
+    <div id="title">Account Management Dashboard</div>
+    <img class="logo" src="./assets/Logo.png"></img>
+  </div>
+  <div id="main">
+    <div id="el1">
+      <div class="title">Gross profit evolution</div>
+      <svg id="el1-chart"></svg>
+    </div>
+    <div id="el2">
+      <div class="title">Total year's profit</div>
+      <div class="total-profit">465.27M</div>
+      <svg id="caret-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/></svg>
+    </div>
+    <div id="el3">
+      <div class="title">Star product</div>
+      <img class="star-image" src='./assets/star.png'></img>
+      <div class="best-product">Hailstorm Titanium Woods Set</div>
+    </div>
+    <div id="el4">
+      <div id="title-donut" class="title">Year's profit</div>
+      <select class="select-donut" onchange="donutBy()">
+        <option value="Product">Product line</option>
+        <option value="Country">Country</option>
+      </select>
+      <svg id="el4-chart-1"></svg>
+      <svg id="el4-chart-2"></svg>
+    </div>
+    <div id="el5">
+      <div class="title">Year's profit</div>
+      <svg id="el5-chart"></svg>
+      <svg id="colorLegend"></svg>
+    </div>
+    
+    <!--<div id="el6"></div>-->
+  </div>
+  <div id="main-specific">
+    <div id="header-specific" href="#header">
+      <svg id="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+    </div>
+    <div id="specific-elements">
+      <div id="specific-title" class="title"></div>
+      <div id="main-spec">
+        <div id="el6">
+          <div class="title">Revenue evolution</div>
+          <svg id="el6-chart"></svg>
+          <svg id="colorLegend6"></svg>
+        </div>
+        <div id="el7">
+          <div class="title">Total year's profit</div>
+          <div class="total-profit"></div>
+          <svg id="caret-down" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"/></svg>
+        </div>
+        <div id="el8">
+          <div class="title">Star product</div>
+          <img class="star-image" src='./assets/star.png'></img>
+          <div class="best-product"></div>
+        </div>
+        <div id="el9">
+          <div class="title">Order methods</div>
+          <svg id="el9-chart"></svg>
+        </div>
+        <div id="el10">
+          <div class="title">Year's profit</div>
+          <svg id="el10-chart" style="margin-top: 30px"></svg>
+        </div>
+      </div>
+    </div>
+    <div id="header-specific2" href="#header">
+      <svg id="angle-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/></svg>
+    </div>
+
+  </div>
+
+  <script>
+      $(document).ready(function(){
+        $("#specific-elements").hide();
+        $('#header-specific2').hide();
+        $("#el4-chart-2").hide();
+      });
+      var barChart = BarChart() //we do a basic setup of the chart
+        .width(1000)
+        .height(500)
+        .x("Retailer country")
+        .y("value") //do not change
+        .padding(0.1)
+        .xLegend("Country")
+        .yLegend("Gross Profit");
+
+      d3.csv("data/country_product_gross_6.csv", parseRow, function (mydata){ 
+        //we load the data
+        d3.select("#el5-chart")  //select the svg that will hold the chart
+          .datum(mydata)     //assign the data
+          .call(barChart);       //call the function generating the chart   
+      });
+
+      var singleTimeLineChart = SingleTimeLineChart() //we do a basic setup of the chart
+        .width(520)
+        .height(400)
+        .x("Year")
+        .y("Gross profit")
+        .xLegend("Year")
+        .yLegend("Gross profit")
+
+      d3.csv("data/year_profit.csv", parseRow, function (mydata){ 
+        d3.select("#el1-chart")  //select the svg that will hold the chart
+          .datum(mydata)     //assign the data
+          .call(singleTimeLineChart);       //call the function generating the chart
+      }); 
+
+      var donutChart1 = donutChart() 
+        .width(700)
+        .height(250)
+        .num(1)
+        .cornerRadius(3) //slice corners 
+        .padAngle(0.015) // gap between slices
+        .variable("Gross profit")
+        .category("Product line")
+
+      d3.csv("data/gross_by_product_line.csv", function (mydata){ 
+        //we load the data
+        d3.select("#el4-chart-1")  //select the svg that will hold the chart
+            .datum(mydata)     //assign the data
+            .call(donutChart1);       //call the function generating the chart   
+      });  
+
+      var donutChart2 = donutChart() 
+        .width(700)
+        .height(250)
+        .num(2)
+        .cornerRadius(3) //slice corners 
+        .padAngle(0.015) // gap between slices
+        .variable("Gross profit")
+        .category("Retailer country")
+
+      d3.csv("data/gross_by_country.csv", function (mydata){ 
+        //we load the data
+        d3.select("#el4-chart-2")  //select the svg that will hold the chart
+            .datum(mydata)     //assign the data
+            .call(donutChart2);       //call the function generating the chart   
+      });  
+
+      function donutBy() {
+        var value = $('.select-donut').val();
+        if(value == "Product") {
+          $("#el4-chart-2").hide();
+          $("#el4-chart-1").show();
+        }
+        else {
+          $("#el4-chart-1").hide();
+          $("#el4-chart-2").show();
+        }
+        
+      }
+      $(document).ready(function(){  
+        $("#header-specific").click(function(e) {
+          e.preventDefault();
+          $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000, function() {
+            $('#specific-elements').hide();
+            $('#header-specific2').hide();
+          });
+          
+        });
+        $("#header-specific2").click(function(e) {
+          e.preventDefault();
+          $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+          }, 1000, function() {
+            $('#specific-elements').hide();
+            $('#header-specific2').hide();
+          });
+          
+        });
+      });
+
+
+
+      function specificProduct(d, category) {
+        $('#specific-elements').show();
+        $('#header-specific2').show();
+        dataSpecific(d, category);
+        $('html, body').animate({
+            scrollTop: $("#header-specific").offset().top
+          }, 1000);
+      }
+
+      function dataSpecific(d, category) {
+        console.log(category);
+        var category_in = "";
+        if(category == "Product line") category_in = "Retailer country";
+        else category_in = "Product line";
+        $("#el6-chart").empty();
+        $("#el9-chart").empty();
+        $("#specific-title").text(d[category]);
+        $("#el10-chart").empty();
+        var csv6="";
+        var csv7="";
+        var csv8="";
+        var csv9="";
+        var csv10="data/donut_product_country_profit.csv";
+        if(category=="Product line") {
+          csv6 = "data/year_product_rev_planned_cost_7.csv";
+          csv7 = "data/year_product_profit.csv";
+          csv8 = "data/max_product_line.csv"
+          csv9 = "data/order_type_product.csv";        
+        }
+        else {
+          csv6 = "data/year_country_rev_planned_cost_7.csv";
+          csv7 = "data/year_country_profit.csv";
+          csv8 = "data/max_country.csv"
+          csv9 = "data/order_type_country.csv";
+        }
+        
+        var lineChartTime = LineChartTime() //we do a basic setup of the chart
+          .width(300)
+          .height(400)
+          .x("Year")
+          .y("value") //do not change
+          .z("variables")
+          .xLegend("years")
+          .yLegend("€")
+          .zLegend("variables");
+
+        d3.csv(csv6, parseRow, function (mydata){ 
+          mydata2 = [];
+          for(var i=0; i < mydata.length; ++i) {
+            if(mydata[i][category] == d[category]) {
+              var elem = mydata[i];
+              delete elem[category];
+              delete elem["value"];
+              delete elem["year"];
+              mydata2.push(elem);
+            }
+          }
+          mydata2.columns = mydata['columns'];
+          mydata2.columns.splice(1,1);
+          //we load the data
+          d3.select("#el6-chart")  //select the svg that will hold the chart
+            .datum(mydata2)     //assign the data
+            .call(lineChartTime);       //call the function generating the chart   
+        });  
+
+        d3.csv(csv7, parseRow, function(mydata){
+          var profit = 0;
+          for(var i=0; i < mydata.length; ++i) {
+            if(mydata[i][category] == d[category]) profit = mydata[i]['Gross profit'];
+          }
+          $("#el7 .total-profit").text(profit+'M');
+        }); 
+
+        d3.csv(csv8, parseRow, function(mydata){
+          var profit = "";
+          for(var i=0; i < mydata.length; ++i) {
+            if(mydata[i][category] == d[category]) profit = mydata[i]['Product'];
+          }
+          $("#el8 .best-product").text(profit);
+        }); 
+
+        var donutChart3 = donutChart() 
+          .width(700)
+          .height(250)
+          .num(3)
+          .cornerRadius(3) //slice corners 
+          .padAngle(0.015) // gap between slices
+          .variable("Gross profit")
+          .category("Order method type")
+
+        d3.csv(csv9, function (mydata){ 
+          //we load the data
+          mydata2 = [];
+          for(var i=0; i < mydata.length; ++i) {
+            if(mydata[i][category] == d[category]) {
+              var elem = mydata[i];
+              mydata2.push(elem);
+            }
+          }
+          mydata2.columns = mydata['columns'];
+          console.log(mydata2);
+          d3.select("#el9-chart")  //select the svg that will hold the chart
+              .datum(mydata2)     //assign the data
+              .call(donutChart3);       //call the function generating the chart   
+        });  
+
+        var width = (category=="Product line" ? 1000 : 500);
+        var singleBarChart = singleBarChart1() //basic setup of the chart
+          .width(width)  //(compulsory) size of the chart
+          .height(400) //(compulsory) size of the chart
+          .x(category_in)   //(compulsory) dataset column with the items' name
+          .y("Gross profit")  //(compulsory) dataset column with the attributes' name
+          .padding(0.1) //(optional) sets the distance between bars
+          .xLegend(category_in) //(optional) legend title for x axis
+          .yLegend("Gross profit");  //(optional) legend title for y axis
+
+        d3.csv(csv10, parseRow, function (mydata){ 
+          //we load the data
+          mydata2 = [];
+          for(var i=0; i < mydata.length; ++i) {
+            if(mydata[i][category] == d[category]) {
+              var elem = mydata[i];
+              mydata2.push(elem);
+            }
+          }
+          mydata2.columns = mydata['columns'];
+          console.log(mydata2);
+          d3.select("#el10-chart")  //select the svg that will hold the chart
+            .datum(mydata2)        //assign the data
+            .call(singleBarChart);        //call the function generating the chart   
+        }); 
+      }
+
+      
+      
+  </script>
+</body>

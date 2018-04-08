@@ -1,0 +1,148 @@
+Retailer country,Order method type,Gross profit
+Australia,E-mail,0.0
+Australia,Fax,0.0
+Australia,Mail,0.0
+Australia,Sales visit,0.32
+Australia,Special,0.0
+Australia,Telephone,0.89
+Australia,Web,13.67
+Austria,E-mail,0.0
+Austria,Fax,0.0
+Austria,Mail,0.0
+Austria,Sales visit,1.48
+Austria,Special,0.0
+Austria,Telephone,0.0
+Austria,Web,12.72
+Belgium,E-mail,0.0
+Belgium,Fax,0.28
+Belgium,Mail,0.0
+Belgium,Sales visit,0.0
+Belgium,Special,0.0
+Belgium,Telephone,0.0
+Belgium,Web,11.42
+Brazil,E-mail,0.11
+Brazil,Fax,0.0
+Brazil,Mail,0.0
+Brazil,Sales visit,0.0
+Brazil,Special,0.0
+Brazil,Telephone,0.0
+Brazil,Web,13.01
+Canada,E-mail,2.62
+Canada,Fax,0.0
+Canada,Mail,0.0
+Canada,Sales visit,0.0
+Canada,Special,0.0
+Canada,Telephone,1.43
+Canada,Web,26.43
+China,E-mail,0.0
+China,Fax,0.0
+China,Mail,0.0
+China,Sales visit,0.0
+China,Special,0.0
+China,Telephone,0.0
+China,Web,29.39
+Denmark,E-mail,0.0
+Denmark,Fax,0.0
+Denmark,Mail,0.0
+Denmark,Sales visit,0.0
+Denmark,Special,0.0
+Denmark,Telephone,0.0
+Denmark,Web,4.97
+Finland,E-mail,0.0
+Finland,Fax,0.0
+Finland,Mail,0.0
+Finland,Sales visit,0.0
+Finland,Special,0.0
+Finland,Telephone,0.0
+Finland,Web,18.52
+France,E-mail,0.0
+France,Fax,0.0
+France,Mail,0.0
+France,Sales visit,3.14
+France,Special,0.0
+France,Telephone,0.03
+France,Web,23.62
+Germany,E-mail,1.1
+Germany,Fax,0.0
+Germany,Mail,0.0
+Germany,Sales visit,0.75
+Germany,Special,0.0
+Germany,Telephone,1.31
+Germany,Web,20.74
+Italy,E-mail,0.7
+Italy,Fax,0.0
+Italy,Mail,0.0
+Italy,Sales visit,0.83
+Italy,Special,0.0
+Italy,Telephone,0.71
+Italy,Web,17.21
+Japan,E-mail,1.51
+Japan,Fax,0.0
+Japan,Mail,0.0
+Japan,Sales visit,3.2
+Japan,Special,0.0
+Japan,Telephone,1.05
+Japan,Web,29.06
+Korea,E-mail,0.0
+Korea,Fax,0.0
+Korea,Mail,0.0
+Korea,Sales visit,0.64
+Korea,Special,0.0
+Korea,Telephone,0.0
+Korea,Web,18.84
+Mexico,E-mail,0.0
+Mexico,Fax,0.0
+Mexico,Mail,0.0
+Mexico,Sales visit,0.0
+Mexico,Special,0.0
+Mexico,Telephone,0.0
+Mexico,Web,15.87
+Netherlands,E-mail,0.0
+Netherlands,Fax,0.0
+Netherlands,Mail,0.19
+Netherlands,Sales visit,0.32
+Netherlands,Special,0.0
+Netherlands,Telephone,0.0
+Netherlands,Web,18.61
+Singapore,E-mail,0.0
+Singapore,Fax,0.57
+Singapore,Mail,0.0
+Singapore,Sales visit,0.32
+Singapore,Special,0.63
+Singapore,Telephone,0.0
+Singapore,Web,18.11
+Spain,E-mail,0.0
+Spain,Fax,1.45
+Spain,Mail,0.0
+Spain,Sales visit,1.21
+Spain,Special,0.0
+Spain,Telephone,0.0
+Spain,Web,14.73
+Sweden,E-mail,0.2
+Sweden,Fax,0.0
+Sweden,Mail,0.0
+Sweden,Sales visit,0.7
+Sweden,Special,0.0
+Sweden,Telephone,1.31
+Sweden,Web,8.79
+Switzerland,E-mail,0.0
+Switzerland,Fax,0.23
+Switzerland,Mail,0.0
+Switzerland,Sales visit,0.57
+Switzerland,Special,0.0
+Switzerland,Telephone,0.0
+Switzerland,Web,13.03
+United Kingdom,E-mail,0.48
+United Kingdom,Fax,0.14
+United Kingdom,Mail,0.0
+United Kingdom,Sales visit,1.5
+United Kingdom,Special,0.0
+United Kingdom,Telephone,0.22
+United Kingdom,Web,24.67
+United States,E-mail,0.26
+United States,Fax,0.82
+United States,Mail,0.0
+United States,Sales visit,7.51
+United States,Special,0.0
+United States,Telephone,0.0
+United States,Web,71.14

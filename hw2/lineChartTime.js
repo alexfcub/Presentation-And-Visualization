@@ -42,7 +42,7 @@ function LineChartTime(){
 		yticks = 10,
 		xticksSize = 5,
 		yticksSize = 5,
-		yticksFormatNumber=d3.format(".0f")
+		yticksFormatNumberLine=d3.format(".0f")
 		distanceLabel=10
 		yLegend="value",
 		xLegend="time",
@@ -55,10 +55,9 @@ function LineChartTime(){
         if(!y) throw new Error("Line Chart y column must be defined.");
         if(!width) throw new Error("Line Chart width must be defined.");
         if(!height) throw new Error("Line Chart height must be defined.");
-       
+       	
         selection.each(function(data) {
 			/* container and graph group (#lines) */
-			
 		var datalines = data.columns.slice(1).map(function(id) {
 			return {
 				id: id,
@@ -79,7 +78,7 @@ function LineChartTime(){
 			  
             g = g.enter()
 				.append("g")
-				.attr('id','lines')
+				.attr('id','liness')
                 .attr("transform",
                       "translate(" + margin.left + "," + margin.top +")");
 			
@@ -120,13 +119,13 @@ function LineChartTime(){
 			  
 			/* x-axis */
 			  
-			d3.select('.x-axis').remove(); //delete old axis
+			d3.select('.x-axis-lines').remove(); //delete old axis
 
 			xAxis.tickSize(xticksSize);
 			
-            xAxisG=d3.select("#lines")	//create new axis
+            xAxisG=d3.select("#liness")	//create new axis
 			    .append("g")
-					.attr("class", "x-axis")
+					.attr("class", "x-axis-lines")
 					.attr("transform", "translate(0," + innerHeight +")")
 					.call(xAxis)
 				.selectAll("text")
@@ -135,7 +134,7 @@ function LineChartTime(){
 					.attr("transform","rotate(-45)")
 					.style("text-anchor","end");
 
-			d3.select("#lines .x-axis") //x-axis Legend
+			d3.select("#liness .x-axis-lines") //x-axis Legend
 				.append("text")
 					.attr("class","label")
 					.attr("x",innerWidth)
@@ -148,8 +147,8 @@ function LineChartTime(){
 			
 			/* lines */
 					
-            var chartLines = d3.select("#lines");
-			
+            var chartLines = d3.select("#liness");
+			console.log(zLegend);
 			var chartLine = chartLines.selectAll(zLegend)
 				.data(datalines) //we use our preprocessed data
 		
@@ -188,15 +187,15 @@ function LineChartTime(){
 
 			/* y-axis */
 			
-			d3.select('.y-axis').remove(); //delete old axis
+			d3.select('.y-axis-lines').remove(); //delete old axis
 
 			yAxis.tickSize(yticksSize)
-				.tickFormat(yticksFormatNumber);
+				.tickFormat(yticksFormatNumberLine);
 
 			
-            yAxisG=d3.select("#lines") //create new axis
+            yAxisG=d3.select("#liness") //create new axis
 				.append("g")
-					.attr("class", "y-axis")
+					.attr("class", "y-axis-lines")
 					.call(yAxis)
 				.append("text") //y-axis legend
 					.attr("class","label")
@@ -206,11 +205,11 @@ function LineChartTime(){
 					.style("text-anchor", "end")
 					.text(yLegend);			
 
-			d3.select("#lines .y-axis") //delete the original line
+			d3.select("#liness .y-axis-lines") //delete the original line
 				.select(".domain")
 				.remove();
 								
-			lines=d3.select("#lines").selectAll('.y-axis .tick:not(:first-of-type)  line')
+			lines=d3.select("#liness").selectAll('.y-axis-lines .tick:not(:first-of-type)  line')
 					.attr('stroke','#fff')
 					.attr('stroke-dasharray','2,2')
 					.attr('x2',innerWidth)
@@ -221,7 +220,7 @@ function LineChartTime(){
 			
 			/* color legend */
 		
-			var colorLegendSVG = d3.select("#colorLegend")
+			var colorLegendSVG = d3.select("#colorLegend6")
 
 			var legendOrdinal = d3.legendColor()
 				.shape("line")
@@ -238,7 +237,7 @@ function LineChartTime(){
 			  .call(legendOrdinal);		
 			
 			/* We assign a class to every element of the colorlegend */
-			colorCells = d3.select("#colorLegend")
+			colorCells = d3.select("#colorLegend6")
 				.selectAll(".cell line")
 			colorCells=colorCells._groups[0];
 			
@@ -344,8 +343,8 @@ function LineChartTime(){
         return arguments.length ? (distanceLabel = value, my) : distanceLabel;
     };
 
-    my.yticksFormatNumber = function (value){
-        return arguments.length ? (yticksFormatNumber = value, my) : yticksFormatNumber;
+    my.yticksFormatNumberLine = function (value){
+        return arguments.length ? (yticksFormatNumberLine = value, my) : yticksFormatNumberLine;
     };
 		
 	/* end SETTERS AND GETTERS */

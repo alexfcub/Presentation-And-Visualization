@@ -37,7 +37,7 @@ function SingleTimeLineChart(){
 		yticks = 10,
 		xticksSize = 5,
 		yticksSize = 5,
-		yticksFormatNumber=d3.format(".0f")
+		yticksFormatNumberLine=d3.format(".0f")
 		distanceLabel=10
 		yLegend="value",
 		xLegend="time";
@@ -155,7 +155,7 @@ function SingleTimeLineChart(){
 			d3.select('.y-axis-line').remove(); //delete old axis
 
 			yAxis.tickSize(yticksSize)
-				.tickFormat(yticksFormatNumber);
+				.tickFormat(yticksFormatNumberLine);
 
 			
             yAxisG=d3.select("#lines") //create new axis
@@ -265,8 +265,8 @@ function SingleTimeLineChart(){
         return arguments.length ? (distanceLabel = value, my) : distanceLabel;
     };
 
-    my.yticksFormatNumber = function (value){
-        return arguments.length ? (yticksFormatNumber = value, my) : yticksFormatNumber;
+    my.yticksFormatNumberLine = function (value){
+        return arguments.length ? (yticksFormatNumberLine = value, my) : yticksFormatNumberLine;
     };
 		
 	/* end SETTERS AND GETTERS */

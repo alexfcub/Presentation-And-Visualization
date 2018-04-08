@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Single Bar Chart</title>
+	<!-- d3 library -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+	<!-- call the specific javascript and CSS -->
+    <script src="singleBarChart.js"></script> 
+    <link rel="stylesheet" type="text/css" href="singleBarChart.css">
+	<!-- end call-->
+  </head>
+  <body>
+    <svg id="single-bar-chart"><!-- svg container to hold the chart -->
+	</svg>
+	<script>     
+      var singleBarChart = singleBarChart() //basic setup of the chart
+        .width(500)	 //(compulsory) size of the chart
+        .height(500) //(compulsory) size of the chart
+        .x("name")	 //(compulsory) dataset column with the items' name
+        .y("value")	 //(compulsory) dataset column with the attributes' name
+        .padding(0.1)	//(optional) sets the distance between bars
+		.xLegend("persons")	//(optional) legend title for x axis
+		.yLegend("years");  //(optional) legend title for y axis
+
+      d3.csv("singleBarChart.csv", parseRow, function (mydata){ 
+	    	//we load the data
+        d3.select("#single-bar-chart")  //select the svg that will hold the chart
+          .datum(mydata)		 		//assign the data
+          .call(singleBarChart);        //call the function generating the chart   
+      });		
+    </script>
+  </body>
+</html>

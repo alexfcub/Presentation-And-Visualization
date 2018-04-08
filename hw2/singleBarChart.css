@@ -1,0 +1,41 @@
+#el10 {
+	rect {
+		fill:#da0; 
+	}
+
+	.x-axis-single, .y-axis-single {
+		font-size:0.7em; 
+		font-family:Arial; 
+		text-anchor:end; 
+	}
+	.x-axis-single path, .y-axis-single path { 
+		stroke:black; 
+	}
+	.x-axis-single .tick, .y-axis-single .tick {
+		opacity:1 //0-1
+	}
+	.x-axis-single .tick line {
+		stroke:black; //#050505
+	}
+	.y-axis-single .tick line {
+		stroke: #fff; 
+		stroke-dasharray: 2,2
+	}
+
+	.label{ 
+		display:visible; 
+		fill:#fff;
+		font-family:Arial
+	}
+	.x-axis-single .label, .y-axis-single .label{ 
+		display:visible; 
+		fill:#000;
+		stroke:#000;
+		font-family:Garamond,roman;
+		font-size:2em
+	}
+}
+	
+
+
+

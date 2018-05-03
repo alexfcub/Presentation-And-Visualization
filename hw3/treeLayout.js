@@ -19,9 +19,12 @@ https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd , https://bl.ocks.or
 		
 	/*************** end initial settings ****************/
 
-	
 	function my(selection) {
-		
+		var color = d3.scaleOrdinal()
+		.domain(["Product line","Product type", "Product"])
+		.range(['#CCCCFF', '#92A1CF', '#2A52BE']);
+
+		var colors = ['#CCCCFF', '#92A1CF', '#2A52BE'];
 	
 		selection.each(function(data) {
 			
@@ -61,7 +64,7 @@ https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd , https://bl.ocks.or
 		/*********** scales ****************************************/
 		
 		zScale
-			.domain(["leaf","internal"])
+			.domain(["Product line","Product type", "Product"])
 
 		
 		/*********** end of scales *********************************/
@@ -124,7 +127,7 @@ https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd , https://bl.ocks.or
 				.attr("id",function(d) {return d.data.name;})
 				.classed(function(d) {return d.children || d._children ? "internal" : "leaf";},true)
 				.attr('r', function(d) {return Math.sqrt(d.data.radius)*50+1;})
-				.attr("fill",function(d) {return d.children || d._children ? zScale("internal") : zScale("leaf");});
+				.attr("fill",function(d) {return colors[d.data.level-1]/* d.children || d._children ? zScale("internal") : zScale("leaf")*/;});
 
 				
 		//Labels enter
@@ -149,9 +152,9 @@ https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd , https://bl.ocks.or
 
 	  // Update the node attributes and style
 	  nodeUpdate.select('circle.node')
-		.attr('r', 10)
-		.style("fill", function(d) {return d._children ? 
-									zScale("internal") : zScale("leaf");})
+		.attr('r',  function(d) {return Math.sqrt(d.data.radius)*50+1;})
+		.style("fill", function(d) {return colors[d.data.level-1]/*d._children ? 
+									zScale("internal") : zScale("leaf")*/;})
 		.attr('cursor', 'pointer');
 
 		
@@ -231,7 +234,7 @@ https://bl.ocks.org/d3noob/43a860bc0024792f8803bba8ca0d5ecd , https://bl.ocks.or
 		
 		var legendOrdinal = d3.legendColor()
 			.shapePadding(5)
-			.scale(zScale)
+			.scale(color)
 			.title(zLegend)
 			.labelWrap(20)
 			.on("cellclick",legendColorsCellClick())

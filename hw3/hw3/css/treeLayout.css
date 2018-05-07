@@ -1,0 +1,27 @@
+.node circle.internal {
+	fill: lightsteelblue;
+	stroke:#000
+}
+
+.node circle.leaf  {
+	fill: #fff
+}
+
+.node text {
+  font: 12px sans-serif;
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 2px;
+}
+
+#tree, #colorLegend {
+	display:block;
+	float:left;
+}
+
+.legendTitle {
+	overflow:visible;
+}
